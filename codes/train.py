@@ -54,7 +54,6 @@ def main():
 
     print ("hyper-patameters:")
     print (hps)
-    input("please check the hyper-parameters, and then press any key to continue >")
 
     wm_model = WorkingMemoryModel(hps, device)
     wm_model = wm_model.to(device)

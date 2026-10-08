@@ -1,0 +1,4787 @@
+========================================
+Job ID:     3483558
+Node:       n165
+Start:      Wed Oct  7 15:08:21 CEST 2026
+Python:     /nobackup/proj/disk/naiss2026-4-902/shared/yizhil/envs/wmpoetry/bin/python
+========================================
+Python: /nobackup/proj/disk/naiss2026-4-902/shared/yizhil/envs/wmpoetry/bin/python
+Architecture: aarch64
+PyTorch: 2.12.0+cu130
+NumPy: 1.26.4
+CUDA available: True
+CUDA version: 13.0
+GPU: NVIDIA GH200 120GB
+========================================
+Starting WMPoetry training
+========================================
+hyper-patameters:
+HParams(vocab_size=7024, pad_idx=0, bos_idx=3, word_emb_size=256, ph_emb_size=64, len_emb_size=32, hidden_size=512, mem_size=512, global_trace_size=512, topic_trace_size=20, his_mem_slots=4, topic_slots=4, sens_num=4, sen_len=10, key_len=2, batch_size=128, drop_ratio=0.25, attn_drop_ratio=0.1, weight_decay=0.00025, clip_grad_norm=2.0, max_lr=0.001, min_lr=5e-08, init_lr=0.0001, warmup_steps=6000, min_tr=0.8, burn_down_tr=3, decay_tr=10, tau_annealing_steps=30000, min_tau=0.01, log_steps=100, sample_num=1, max_epoches=14, save_epoches=2, validate_epoches=1, vocab_path='../corpus/vocab.pickle', ivocab_path='../corpus/ivocab.pickle', train_data='../corpus/train_data.pickle', valid_data='../corpus/valid_data.pickle', model_dir='../checkpoint/', data_dir='../data/', train_log_path='../log/wm_train_log.txt', valid_log_path='../log/wm_valid_log.txt', corrupt_ratio=0.1, dseq_epoches=10, dseq_batch_size=256, dseq_max_lr=0.001, dseq_min_lr=5e-05, dseq_init_lr=0.0001, dseq_warmup_steps=6000, dseq_min_tr=0.8, dseq_burn_down_tr=3, dseq_decay_tr=7, dseq_log_steps=200, dseq_validate_epoches=1, dseq_save_epoches=2, dseq_train_log_path='../log/dae_train_log.txt', dseq_valid_log_path='../log/dae_valid_log.txt')
+dseq pretraining...
+building data for dseq...
+train batch num: 4458
+valid batch num: 285
+inp: 不被东UNK相鼓弄
+trg: 春山只有老苍官
+out: 感阡躞爻睐蘖失你
+
+epoch: 1, 1/4458 0.0%, 0.01s per iter, lr: 0.0001, tr: 1.00, tau: 1.000
+  gen loss: 8.858  ppl:7029.55
+______________________
+inp: 几度悲鸣夜寂UNK
+trg: 万里沙场风飒飒
+out: 不是
+
+epoch: 1, 201/4458 4.5%, 0.01s per iter, lr: 0.0001, tr: 1.00, tau: 1.000
+  gen loss: 6.534  ppl:688.07
+______________________
+inp: 不烦UNK雉先张翳
+trg: 自有琴中威凤声
+out: 不是无风不不人
+
+epoch: 1, 401/4458 9.0%, 0.01s per iter, lr: 0.0002, tr: 1.00, tau: 1.000
+  gen loss: 6.121  ppl:455.32
+______________________
+inp: 毡衣韦帽白漫UNK
+trg: 祇应田舍骑牛者
+out: 不风不处无花去
+
+epoch: 1, 601/4458 13.5%, 0.01s per iter, lr: 0.0002, tr: 1.00, tau: 1.000
+  gen loss: 5.928  ppl:375.30
+______________________
+inp: 梁金华石依然UNK
+trg: 屈指重来十五年
+out: 不日人来一里天
+
+epoch: 1, 801/4458 18.0%, 0.01s per iter, lr: 0.0002, tr: 1.00, tau: 1.000
+  gen loss: 5.789  ppl:326.56
+______________________
+inp: 日长饮罢支UNK坐
+trg: 忘却浮生鬓发苍
+out: 不日不来无不长
+
+epoch: 1, 1001/4458 22.5%, 0.01s per iter, lr: 0.0003, tr: 1.00, tau: 1.000
+  gen loss: 5.679  ppl:292.79
+______________________
+inp: 门UNK演仙千古在
+trg: 道人何事学无名
+out: 一人不是不如情
+
+epoch: 1, 1201/4458 26.9%, 0.01s per iter, lr: 0.0003, tr: 1.00, tau: 1.000
+  gen loss: 5.586  ppl:266.75
+______________________
+inp: 三千宫女露蛾UNK
+trg: 笑煮黄金日月迟
+out: 不道山昏无月知
+
+epoch: 1, 1401/4458 31.4%, 0.01s per iter, lr: 0.0003, tr: 1.00, tau: 1.000
+  gen loss: 5.515  ppl:248.28
+______________________
+inp: 踏遍UNK涯两足存
+trg: 西驰未定又南奔
+out: 不风吹见不人村
+
+epoch: 1, 1601/4458 35.9%, 0.01s per iter, lr: 0.0003, tr: 1.00, tau: 1.000
+  gen loss: 5.450  ppl:232.86
+______________________
+inp: UNK水吴山道路难
+trg: 今日送君须尽醉
+out: 一日不君不可笑
+
+epoch: 1, 1801/4458 40.4%, 0.01s per iter, lr: 0.0004, tr: 1.00, tau: 1.000
+  gen loss: 5.392  ppl:219.64
+______________________
+inp: 荆州太守紫UNK仙
+trg: 远寄渔翁白玉泉
+out: 一与山翁不发天
+
+epoch: 1, 2001/4458 44.9%, 0.01s per iter, lr: 0.0004, tr: 1.00, tau: 1.000
+  gen loss: 5.340  ppl:208.43
+______________________
+inp: 篙人不UNK凭舟意
+trg: 径逐西风过水源
+out: 一下青风一一门
+
+epoch: 1, 2201/4458 49.4%, 0.02s per iter, lr: 0.0004, tr: 1.00, tau: 1.000
+  gen loss: 5.293  ppl:198.98
+______________________
+inp: 东去山UNK接大宁
+trg: 可恨何年陷沙漠
+out: 一是不知无万里
+
+epoch: 1, 2401/4458 53.9%, 0.01s per iter, lr: 0.0005, tr: 1.00, tau: 1.000
+  gen loss: 5.254  ppl:191.24
+______________________
+inp: 虚空UNK识幻来因
+trg: 游魂若返众香国
+out: 不人不问无人事
+
+epoch: 1, 2601/4458 58.3%, 0.01s per iter, lr: 0.0005, tr: 1.00, tau: 1.000
+  gen loss: 5.216  ppl:184.11
+______________________
+inp: 金章紫绶UNK雕鞍
+trg: 君恩好是承朝日
+out: 一王不事无恩暮
+
+epoch: 1, 2801/4458 62.8%, 0.01s per iter, lr: 0.0005, tr: 1.00, tau: 1.000
+  gen loss: 5.181  ppl:177.82
+______________________
+inp: 空UNK复空泣
+trg: 朝朝君未归
+out: 谁知不自归
+
+epoch: 1, 3001/4458 67.3%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 5.149  ppl:172.30
+______________________
+inp: 后夜五UNK最深处
+trg: 众星高护北辰居
+out: 一生不尽玉窗居
+
+epoch: 1, 3201/4458 71.8%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 5.120  ppl:167.33
+______________________
+inp: 夜UNK泪沾衣
+trg: 空叹复空泣
+out: 不馀秋不月
+
+epoch: 1, 3401/4458 76.3%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 5.093  ppl:162.85
+______________________
+inp: 分明UNK出人间瑞
+trg: 好报端年入圣朝
+out: 不是春风一海朝
+
+epoch: 1, 3601/4458 80.8%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 5.069  ppl:158.99
+______________________
+inp: 曾否闻歌忆UNK舆
+trg: 一曲阳春难和郢
+out: 今道江台无得气
+
+epoch: 1, 3801/4458 85.3%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 5.045  ppl:155.19
+______________________
+inp: UNK宫春暖日初长
+trg: 花气浑如百和香
+out: 玉落无无玉露香
+
+epoch: 1, 4001/4458 89.7%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 5.023  ppl:151.92
+______________________
+inp: 肃肃宵UNK造友庐
+trg: 共向深山无别计
+out: 不看山山对此去
+
+epoch: 1, 4201/4458 94.2%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 5.003  ppl:148.81
+______________________
+inp: 孤UNK莫厌风霜甚
+trg: 昨夜春雷拆甲声
+out: 一夜东风一自声
+
+epoch: 1, 4401/4458 98.7%, 0.01s per iter, lr: 0.0008, tr: 1.00, tau: 1.000
+  gen loss: 4.983  ppl:145.92
+______________________
+run validation...
+in training mode: 0
+epoch: 1, lr: 0.0008, tr: 0.80, tau: 1.000
+  gen loss: 4.396  ppl:81.13
+______________________
+validation Done: 1
+teach forcing ratio decay...
+shuffle data...
+inp: 莫摘李花繁UNK枝
+trg: 客心浩荡东风急
+out: 春来无荡无风急
+
+epoch: 2, 1/4458 0.0%, 0.00s per iter, lr: 0.0008, tr: 1.00, tau: 1.000
+  gen loss: 4.976  ppl:144.96
+______________________
+inp: 自从UNK桂蟾宫去
+trg: 剩馥残膏几岁寒
+out: 不有当红不度寒
+
+epoch: 2, 201/4458 4.5%, 0.01s per iter, lr: 0.0008, tr: 1.00, tau: 1.000
+  gen loss: 4.945  ppl:140.54
+______________________
+inp: 中闺正肃鸣UNK节
+trg: 吉日爰逢采术时
+out: 不气何来一药时
+
+epoch: 2, 401/4458 9.0%, 0.01s per iter, lr: 0.0008, tr: 1.00, tau: 1.000
+  gen loss: 4.916  ppl:136.42
+______________________
+inp: 触UNK伤离好断魂
+trg: 莫怪杜鹃飞去尽
+out: 不道故鹃啼絮后
+
+epoch: 2, 601/4458 13.5%, 0.01s per iter, lr: 0.0009, tr: 1.00, tau: 1.000
+  gen loss: 4.888  ppl:132.67
+______________________
+inp: 春来何处不UNK忧
+trg: 林间鸟语随时好
+out: 一花有雀无风处
+
+epoch: 2, 801/4458 18.0%, 0.01s per iter, lr: 0.0009, tr: 1.00, tau: 1.000
+  gen loss: 4.861  ppl:129.12
+______________________
+inp: UNK间小阁临清濑
+trg: 俯槛观鱼立许时
+out: 不仰声书亦马时
+
+epoch: 2, 1001/4458 22.5%, 0.01s per iter, lr: 0.0009, tr: 1.00, tau: 1.000
+  gen loss: 4.835  ppl:125.86
+______________________
+inp: 桑UNK闲闲人已蚕
+trg: 剪韭不妨千取百
+out: 不烛不知闲里酒
+
+epoch: 2, 1201/4458 26.9%, 0.01s per iter, lr: 0.0009, tr: 1.00, tau: 1.000
+  gen loss: 4.811  ppl:122.84
+______________________
+inp: 清宵为问UNK亭鹤
+trg: 瘴岭骢还几度闻
+out: 不雨云鸣有度闻
+
+epoch: 2, 1401/4458 31.4%, 0.01s per iter, lr: 0.0010, tr: 1.00, tau: 1.000
+  gen loss: 4.787  ppl:119.93
+______________________
+inp: UNK窗色皎犹疑月
+trg: 刮骨寒知不是霜
+out: 不影清光不断香
+
+epoch: 2, 1601/4458 35.9%, 0.01s per iter, lr: 0.0010, tr: 1.00, tau: 1.000
+  gen loss: 4.765  ppl:117.37
+______________________
+inp: 世间万绪判悠UNK
+trg: 草堂盖罢浑无事
+out: 一堂自世无无用
+
+epoch: 2, 1801/4458 40.4%, 0.01s per iter, lr: 0.0010, tr: 1.00, tau: 1.000
+  gen loss: 4.745  ppl:115.06
+______________________
+inp: UNK风一片伤春意
+trg: 欲向何人诉断肠
+out: 不向人人问上肠
+
+epoch: 2, 2001/4458 44.9%, 0.01s per iter, lr: 0.0010, tr: 1.00, tau: 1.000
+  gen loss: 4.725  ppl:112.72
+______________________
+inp: 陟磴苔UNK滑
+trg: 穿岩雨脚收
+out: 时林人过收
+
+epoch: 2, 2201/4458 49.4%, 0.01s per iter, lr: 0.0009, tr: 1.00, tau: 1.000
+  gen loss: 4.706  ppl:110.57
+______________________
+inp: 頖宫官冷非UNK举
+trg: 一斗何能醉十围
+out: 不日清曾不不围
+
+epoch: 2, 2401/4458 53.9%, 0.01s per iter, lr: 0.0009, tr: 1.00, tau: 1.000
+  gen loss: 4.687  ppl:108.50
+______________________
+inp: 分明只欠UNK秋景
+trg: 黄土墙头匾豆花
+out: 不菊青头有豆花
+
+epoch: 2, 2601/4458 58.3%, 0.01s per iter, lr: 0.0009, tr: 1.00, tau: 1.000
+  gen loss: 4.669  ppl:106.54
+______________________
+inp: 万丈青UNK梯
+trg: 晓见居庸雪
+out: 不日天人处
+
+epoch: 2, 2801/4458 62.8%, 0.01s per iter, lr: 0.0009, tr: 1.00, tau: 1.000
+  gen loss: 4.651  ppl:104.73
+______________________
+inp: 雪花光满玉楼UNK
+trg: 虬池漏水知多少
+out: 楼髯不泄无何少
+
+epoch: 2, 3001/4458 67.3%, 0.01s per iter, lr: 0.0009, tr: 1.00, tau: 1.000
+  gen loss: 4.635  ppl:103.06
+______________________
+inp: 南京公馆多闲UNK
+trg: 时咏武公淇澳诗
+out: 北有新夷淇澳儿
+
+epoch: 2, 3201/4458 71.8%, 0.01s per iter, lr: 0.0009, tr: 1.00, tau: 1.000
+  gen loss: 4.619  ppl:101.37
+______________________
+inp: 如今不独扬UNK种
+trg: 江北江南总是春
+out: 谁上江南有是春
+
+epoch: 2, 3401/4458 76.3%, 0.01s per iter, lr: 0.0009, tr: 1.00, tau: 1.000
+  gen loss: 4.603  ppl:99.81
+______________________
+inp: 香山楼北UNK师房
+trg: 夜深起凭阑干立
+out: 君夜灯来吹干看
+
+epoch: 2, 3601/4458 80.8%, 0.01s per iter, lr: 0.0008, tr: 1.00, tau: 1.000
+  gen loss: 4.588  ppl:98.28
+______________________
+inp: 新主怜非旧UNK翁
+trg: 此日看花与君别
+out: 一日相花还君子
+
+epoch: 2, 3801/4458 85.3%, 0.01s per iter, lr: 0.0008, tr: 1.00, tau: 1.000
+  gen loss: 4.573  ppl:96.82
+______________________
+inp: UNK棹芜城君独往
+trg: 月明今夜我江南
+out: 莫明环夜宿相南
+
+epoch: 2, 4001/4458 89.7%, 0.01s per iter, lr: 0.0008, tr: 1.00, tau: 1.000
+  gen loss: 4.558  ppl:95.41
+______________________
+inp: 十二官街踏UNK泥
+trg: 归来门巷晚凄迷
+out: 一来犹巷绿风凄
+
+epoch: 2, 4201/4458 94.2%, 0.01s per iter, lr: 0.0008, tr: 1.00, tau: 1.000
+  gen loss: 4.544  ppl:94.05
+______________________
+inp: 城南UNK北万株花
+trg: 池面冰消水见沙
+out: 春上青姿不底沙
+
+epoch: 2, 4401/4458 98.7%, 0.01s per iter, lr: 0.0008, tr: 1.00, tau: 1.000
+  gen loss: 4.531  ppl:92.81
+______________________
+run validation...
+in training mode: 0
+epoch: 2, lr: 0.0008, tr: 1.00, tau: 1.000
+  gen loss: 4.259  ppl:70.74
+______________________
+validation Done: 1
+saving model...
+teach forcing ratio decay...
+shuffle data...
+inp: 断取沧UNK趣
+trg: 移来六月天
+out: 生来不十天
+
+epoch: 3, 1/4458 0.0%, 0.00s per iter, lr: 0.0008, tr: 1.00, tau: 1.000
+  gen loss: 4.527  ppl:92.45
+______________________
+inp: 冰UNK精神绝点埃
+trg: 人间无物似寒梅
+out: 一间何事不春灰
+
+epoch: 3, 201/4458 4.5%, 0.01s per iter, lr: 0.0008, tr: 1.00, tau: 1.000
+  gen loss: 4.510  ppl:90.96
+______________________
+inp: 童UNK相呼去饭牛
+trg: 极目平坡烟草细
+out: 不目青生烟水色
+
+epoch: 3, 401/4458 9.0%, 0.01s per iter, lr: 0.0008, tr: 1.00, tau: 1.000
+  gen loss: 4.495  ppl:89.57
+______________________
+inp: 白金镕铸能UNK豆
+trg: 百颗匀圆白雪同
+out: 不岁须囊几玉中
+
+epoch: 3, 601/4458 13.5%, 0.01s per iter, lr: 0.0008, tr: 1.00, tau: 1.000
+  gen loss: 4.481  ppl:88.29
+______________________
+inp: 不似UNK头桃与杏
+trg: 强夸颜色媚春风
+out: 一颜颜色到春风
+
+epoch: 3, 801/4458 18.0%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 4.467  ppl:87.06
+______________________
+inp: 病身长是恋UNK乡
+trg: 短发那堪著六梁
+out: 老棹萧堪更眼郎
+
+epoch: 3, 1001/4458 22.5%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 4.453  ppl:85.92
+______________________
+inp: 天寒六UNK风
+trg: 水仙来往处
+out: 谁流无自事
+
+epoch: 3, 1201/4458 26.9%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 4.441  ppl:84.83
+______________________
+inp: 一筇归去UNK庵居
+trg: 卧听修廊吼木鱼
+out: 三看云篁闻竹书
+
+epoch: 3, 1401/4458 31.4%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 4.428  ppl:83.78
+______________________
+inp: 妙年学UNK独超群
+trg: 早领乡书会缙绅
+out: 不晚江心寄晤绅
+
+epoch: 3, 1601/4458 35.9%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 4.416  ppl:82.76
+______________________
+inp: 半UNK凉意转春寒
+trg: 似曲江头紫陌看
+out: 一是江梅春翠看
+
+epoch: 3, 1801/4458 40.4%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 4.404  ppl:81.80
+______________________
+inp: 酸风频捲马UNK尘
+trg: 我朝三百年忠厚
+out: 不来不十年前孝
+
+epoch: 3, 2001/4458 44.9%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 4.393  ppl:80.91
+______________________
+inp: 雁落UNK风蓼半黄
+trg: 云澹雨疏孤屿远
+out: 一影烟晴人枕冷
+
+epoch: 3, 2201/4458 49.4%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 4.383  ppl:80.05
+______________________
+inp: 政尔神交UNK靖节
+trg: 月斜霜落忽闻鸡
+out: 莫明犹月见相鸡
+
+epoch: 3, 2401/4458 53.9%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 4.372  ppl:79.18
+______________________
+inp: UNK利场中车马尘
+trg: 区区有愧百年身
+out: 不区区愧子年人
+
+epoch: 3, 2601/4458 58.3%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 4.361  ppl:78.35
+______________________
+inp: 更鼓无声夜UNK长
+trg: 天运乾乾同转磨
+out: 坐上孤坤天一我
+
+epoch: 3, 2801/4458 62.8%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 4.351  ppl:77.56
+______________________
+inp: 涢水UNK深战未停
+trg: 庐山秋老梦方宁
+out: 一山遥水白魂听
+
+epoch: 3, 3001/4458 67.3%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 4.342  ppl:76.83
+______________________
+inp: 临UNK一苇捷于神
+trg: 羊裘滩下休停棹
+out: 不裘不上多相马
+
+epoch: 3, 3201/4458 71.8%, 0.01s per iter, lr: 0.0007, tr: 1.00, tau: 1.000
+  gen loss: 4.332  ppl:76.10
+______________________
+inp: 此日老夫UNK拣择
+trg: 慇勤直到看花飞
+out: 一勤为与此花飞
+
+epoch: 3, 3401/4458 76.3%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.323  ppl:75.40
+______________________
+inp: 昕陛延贤日UNK曛
+trg: 金莲阅奏夜常分
+out: 不牛花世武深文
+
+epoch: 3, 3601/4458 80.8%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.314  ppl:74.73
+______________________
+inp: 不缘斗米挂UNK衣
+trg: 自是知几勇赋归
+out: 山是山音有退归
+
+epoch: 3, 3801/4458 85.3%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.305  ppl:74.07
+______________________
+inp: 泥UNK草𪨗自扶轮
+trg: 来上平冈问谷神
+out: 一向高安一字人
+
+epoch: 3, 4001/4458 89.7%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.297  ppl:73.44
+______________________
+inp: UNK雨才乾径草长
+trg: 野鹤已随溪客远
+out: 翠鹤不随春上去
+
+epoch: 3, 4201/4458 94.2%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.288  ppl:72.82
+______________________
+inp: UNK服初成丽景迟
+trg: 步随流水玩晴漪
+out: 小虚流水出涓漪
+
+epoch: 3, 4401/4458 98.7%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.280  ppl:72.25
+______________________
+run validation...
+in training mode: 0
+epoch: 3, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.280  ppl:72.26
+______________________
+validation Done: 1
+teach forcing ratio decay...
+shuffle data...
+inp: 若道琼台UNK下少
+trg: 迷楼千载尚飞尘
+out: 长人高载有堪尘
+
+epoch: 4, 1/4458 0.0%, 0.00s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.278  ppl:72.07
+______________________
+inp: 田夫所入最UNK艰
+trg: 终岁辛勤不得闲
+out: 一日无勤苦奈闲
+
+epoch: 4, 201/4458 4.5%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.268  ppl:71.35
+______________________
+inp: 他山总UNK如
+trg: 君看道傍石
+out: 何王有路谷
+
+epoch: 4, 401/4458 9.0%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.258  ppl:70.69
+______________________
+inp: 膊UNK全无项
+trg: 胸前别有头
+out: 来中有有求
+
+epoch: 4, 601/4458 13.5%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.249  ppl:70.04
+______________________
+inp: 不比UNK侯心似水
+trg: 归舟自掷石门西
+out: 何来何是钓头西
+
+epoch: 4, 801/4458 18.0%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.240  ppl:69.43
+______________________
+inp: 六月携UNK玩泉石
+trg: 大飞惊见此山人
+out: 夜江山起海山春
+
+epoch: 4, 1001/4458 22.5%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.232  ppl:68.85
+______________________
+inp: 闲来埽石UNK香坐
+trg: 幽鸟相亲不肯飞
+out: 不鸟飞呼意肯归
+
+epoch: 4, 1201/4458 26.9%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.224  ppl:68.29
+______________________
+inp: 看书闲罢UNK
+trg: 自在信缘心
+out: 无是白陵深
+
+epoch: 4, 1401/4458 31.4%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.216  ppl:67.76
+______________________
+inp: 几度广UNK宫里过
+trg: 桂花吹动满天香
+out: 天花香落玉城香
+
+epoch: 4, 1601/4458 35.9%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.208  ppl:67.23
+______________________
+inp: 金UNK津渡小山楼
+trg: 一宿行人自可愁
+out: 月夜云人到在愁
+
+epoch: 4, 1801/4458 40.4%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.200  ppl:66.71
+______________________
+inp: 虚直UNK明是此中
+trg: 玉振许谁知万古
+out: 不佩金分同我里
+
+epoch: 4, 2001/4458 44.9%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.193  ppl:66.23
+______________________
+inp: 悟得空UNK总不愁
+trg: 毕竟生来何所有
+out: 若竟不涯无处似
+
+epoch: 4, 2201/4458 49.4%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.186  ppl:65.73
+______________________
+inp: 范蠡归来未UNK心
+trg: 三十馀年穷学道
+out: 绨十六年今梦士
+
+epoch: 4, 2401/4458 53.9%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.179  ppl:65.27
+______________________
+inp: 潮UNK如屋打孤蓬
+trg: 漂零行路丹心苦
+out: 如零不尽人青切
+
+epoch: 4, 2601/4458 58.3%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.172  ppl:64.82
+______________________
+inp: UNK草虫鸣树影中
+trg: 不待南城吹鼓角
+out: 一是东风春不吹
+
+epoch: 4, 2801/4458 62.8%, 0.01s per iter, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.165  ppl:64.38
+______________________
+inp: 归计新传种树UNK
+trg: 人境不应容拓落
+out: 莫道不知知易得
+
+epoch: 4, 3001/4458 67.3%, 0.01s per iter, lr: 0.0005, tr: 1.00, tau: 1.000
+  gen loss: 4.158  ppl:63.95
+______________________
+inp: 祠灵经UNK锁苍苔
+trg: 豚蹄卮酒能多少
+out: 自蹄宝罢黄歌少
+
+epoch: 4, 3201/4458 71.8%, 0.01s per iter, lr: 0.0005, tr: 1.00, tau: 1.000
+  gen loss: 4.152  ppl:63.54
+______________________
+inp: 未知清处UNK煎茶
+trg: 便应归去烧松叶
+out: 一须桃去山丹下
+
+epoch: 4, 3401/4458 76.3%, 0.01s per iter, lr: 0.0005, tr: 1.00, tau: 1.000
+  gen loss: 4.145  ppl:63.14
+______________________
+inp: 若教时宰知公UNK
+trg: 悔不当初作从伶
+out: 肯不当时荐主伶
+
+epoch: 4, 3601/4458 80.8%, 0.01s per iter, lr: 0.0005, tr: 1.00, tau: 1.000
+  gen loss: 4.139  ppl:62.75
+______________________
+inp: 鸾UNK声清草木薰
+trg: 金阙玉楼行欲遍
+out: 金锁瑶堂人不遍
+
+epoch: 4, 3801/4458 85.3%, 0.01s per iter, lr: 0.0005, tr: 1.00, tau: 1.000
+  gen loss: 4.133  ppl:62.38
+______________________
+inp: 几UNK黄金碾
+trg: 珍羞莫与俦
+out: 不重不怨俦
+
+epoch: 4, 4001/4458 89.7%, 0.01s per iter, lr: 0.0005, tr: 1.00, tau: 1.000
+  gen loss: 4.127  ppl:62.00
+______________________
+inp: 春事纷来似UNK家
+trg: 恨无仙术驻年华
+out: 青无人客比春华
+
+epoch: 4, 4201/4458 94.2%, 0.01s per iter, lr: 0.0005, tr: 1.00, tau: 1.000
+  gen loss: 4.121  ppl:61.64
+______________________
+inp: 铃索UNK风自动摇
+trg: 昼下珠帘猧子睡
+out: 不漏不帘看不语
+
+epoch: 4, 4401/4458 98.7%, 0.01s per iter, lr: 0.0005, tr: 1.00, tau: 1.000
+  gen loss: 4.115  ppl:61.28
+______________________
+run validation...
+in training mode: 0
+epoch: 4, lr: 0.0005, tr: 1.00, tau: 1.000
+  gen loss: 4.315  ppl:74.79
+______________________
+validation Done: 1
+saving model...
+teach forcing ratio decay...
+shuffle data...
+inp: 数声啼鸟UNK云暮
+trg: 竹外一枝梅小春
+out: 一夜飞声风雨春
+
+epoch: 5, 1/4458 0.0%, 0.00s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.114  ppl:61.18
+______________________
+inp: UNK记月明闻铁笛
+trg: 人间无处著秋声
+out: 一家何处不逢迎
+
+epoch: 5, 201/4458 4.5%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.111  ppl:61.00
+______________________
+inp: 催赐金鞍UNK得稳
+trg: 翠华明日幸温泉
+out: 莫娥如月上天泉
+
+epoch: 5, 401/4458 9.0%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.107  ppl:60.79
+______________________
+inp: 绣毬圆簇UNK如霜
+trg: 我无艳眼相酬答
+out: 谁知丽句看和处
+
+epoch: 5, 601/4458 13.5%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.104  ppl:60.60
+______________________
+inp: 长日销魂UNK路赊
+trg: 一鞭残照见人家
+out: 客年归雪背青家
+
+epoch: 5, 801/4458 18.0%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.101  ppl:60.41
+______________________
+inp: 江UNK谁识玉堂公
+trg: 万言书在人人读
+out: 当山不卷无间识
+
+epoch: 5, 1001/4458 22.5%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.098  ppl:60.24
+______________________
+inp: 六UNK歌舞散香风
+trg: 豪游已作三年梦
+out: 一家不觉五千梦
+
+epoch: 5, 1201/4458 26.9%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.095  ppl:60.04
+______________________
+inp: 卧看UNK云草木香
+trg: 弹指遍游尘刹尽
+out: 几指往游人土处
+
+epoch: 5, 1401/4458 31.4%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.092  ppl:59.83
+______________________
+inp: UNK国山河在
+trg: 梁原草树深
+out: 何王不木深
+
+epoch: 5, 1601/4458 35.9%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.088  ppl:59.62
+______________________
+inp: 攀条折蕊UNK骚人
+trg: 迟恐颠风扫玉尘
+out: 不尔风狂不秕匀
+
+epoch: 5, 1801/4458 40.4%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.086  ppl:59.47
+______________________
+inp: 元UNK江南珠浦滨
+trg: 归掩玄关力精进
+out: 天去扁都都不洁
+
+epoch: 5, 2001/4458 44.9%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.083  ppl:59.30
+______________________
+inp: 人与花枝UNK艳妆
+trg: 重重珠翠绮罗香
+out: 不来天翠碧罗裳
+
+epoch: 5, 2201/4458 49.4%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.080  ppl:59.16
+______________________
+inp: 初入纳楼天气UNK
+trg: 黑鸦白崄信跻攀
+out: 一云飞处过知攀
+
+epoch: 5, 2401/4458 53.9%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.078  ppl:59.04
+______________________
+inp: 相呼正喜无UNK缴
+trg: 又被孤城画角催
+out: 何向春舟一角催
+
+epoch: 5, 2601/4458 58.3%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.075  ppl:58.88
+______________________
+inp: 少时绿发UNK行间
+trg: 今时大半成霜雪
+out: 老朝不泽无何叶
+
+epoch: 5, 2801/4458 62.8%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.072  ppl:58.70
+______________________
+inp: 城南秋草碧于UNK
+trg: 无数白鹅随我船
+out: 村奈青云不可眠
+
+epoch: 5, 3001/4458 67.3%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.070  ppl:58.58
+______________________
+inp: 到处消UNK感旧游
+trg: 多谢长条似相识
+out: 不少故安在秋识
+
+epoch: 5, 3201/4458 71.8%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.068  ppl:58.43
+______________________
+inp: 恩过UNK成怨
+trg: 非关怨者尤
+out: 寒关一楚愁
+
+epoch: 5, 3401/4458 76.3%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.066  ppl:58.31
+______________________
+inp: 西风相UNK认
+trg: 红尽绿枫林
+out: 吹入万杨阴
+
+epoch: 5, 3601/4458 80.8%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.064  ppl:58.19
+______________________
+inp: 睡魔懒祟UNK驱去
+trg: 要与窗驹斗着鞭
+out: 不看人前一草泉
+
+epoch: 5, 3801/4458 85.3%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.062  ppl:58.07
+______________________
+inp: 舞阑香UNK粉融腮
+trg: 洗妆懒趁霜钟早
+out: 不妆不向春风晓
+
+epoch: 5, 4001/4458 89.7%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.059  ppl:57.93
+______________________
+inp: 飞花只合秦楼UNK
+trg: 莫与金钗压鬓蝉
+out: 一怪山针不阵蝉
+
+epoch: 5, 4201/4458 94.2%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.057  ppl:57.78
+______________________
+inp: 杖头挑取UNK壶春
+trg: 要使朱颜日日新
+out: 不识人门不日新
+
+epoch: 5, 4401/4458 98.7%, 0.01s per iter, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.054  ppl:57.64
+______________________
+run validation...
+in training mode: 0
+epoch: 5, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.314  ppl:74.74
+______________________
+validation Done: 1
+teach forcing ratio decay...
+shuffle data...
+inp: 春卿UNK诏捧云盘
+trg: 日照金龙系彩竿
+out: 玉日宫华玉玉鸾
+
+epoch: 6, 1/4458 0.0%, 0.00s per iter, lr: 0.0005, tr: 0.85, tau: 1.000
+  gen loss: 4.053  ppl:57.60
+______________________
+inp: 一日西家鼠运UNK
+trg: 太丘忽有社亡时
+out: 不平天报见中时
+
+epoch: 6, 201/4458 4.5%, 0.01s per iter, lr: 0.0005, tr: 0.85, tau: 1.000
+  gen loss: 4.051  ppl:57.46
+______________________
+inp: 枕UNK离痕两自知
+trg: 空床无语只疑痴
+out: 梦阶无语对愁思
+
+epoch: 6, 401/4458 9.0%, 0.01s per iter, lr: 0.0005, tr: 0.85, tau: 1.000
+  gen loss: 4.049  ppl:57.33
+______________________
+inp: 弟子名中被UNK留
+trg: 昨日教坊新进入
+out: 若日邻坊新进退
+
+epoch: 6, 601/4458 13.5%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.047  ppl:57.21
+______________________
+inp: 断虹饮海日UNK移
+trg: 西北云屯少定姿
+out: 中望东山一一疑
+
+epoch: 6, 801/4458 18.0%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.045  ppl:57.12
+______________________
+inp: 水边UNK草度萤光
+trg: 天际微云过雁行
+out: 白际孤帆不可行
+
+epoch: 6, 1001/4458 22.5%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.043  ppl:57.01
+______________________
+inp: 秪在UNK灯双树间
+trg: 怪底禅心犹未灭
+out: 不底山床无未了
+
+epoch: 6, 1201/4458 26.9%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.041  ppl:56.88
+______________________
+inp: 烟消灶底鱼UNK熟
+trg: 台笠蒙头粥半瓯
+out: 不上风头粥饭牛
+
+epoch: 6, 1401/4458 31.4%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.039  ppl:56.76
+______________________
+inp: 湖水春来UNK
+trg: 山云忧亦繁
+out: 春花落国村
+
+epoch: 6, 1601/4458 35.9%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.037  ppl:56.64
+______________________
+inp: 凄凉一UNK水
+trg: 知是锦袍湾
+out: 犹是几江还
+
+epoch: 6, 1801/4458 40.4%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.035  ppl:56.54
+______________________
+inp: 通天台上接三UNK
+trg: 景命重临清醮开
+out: 龙物朝来万昼台
+
+epoch: 6, 2001/4458 44.9%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.033  ppl:56.44
+______________________
+inp: 自与江郎黯UNK别
+trg: 马头春草是他乡
+out: 相嘶春色不春乡
+
+epoch: 6, 2201/4458 49.4%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.031  ppl:56.33
+______________________
+inp: 自是高僧不UNK老
+trg: 老夫髭发总皤然
+out: 不夫犹与鬓皤然
+
+epoch: 6, 2401/4458 53.9%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.029  ppl:56.22
+______________________
+inp: UNK枝轻带雨
+trg: 泪湿贵妃妆
+out: 春湿水人妆
+
+epoch: 6, 2601/4458 58.3%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.027  ppl:56.08
+______________________
+inp: 烟UNK春事悠
+trg: 祇令卧花月
+out: 不愁风病雨
+
+epoch: 6, 2801/4458 62.8%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.025  ppl:55.98
+______________________
+inp: 弦弦UNK近不相离
+trg: 入调频将玉手移
+out: 太守声中有殿垂
+
+epoch: 6, 3001/4458 67.3%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.024  ppl:55.91
+______________________
+inp: 他时京UNK应相忆
+trg: 细雨孤蓬上钓舟
+out: 莫雨斜灯一客舟
+
+epoch: 6, 3201/4458 71.8%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.022  ppl:55.83
+______________________
+inp: 此乐得知UNK一日
+trg: 无须眼底觅知音
+out: 不人更力觅花音
+
+epoch: 6, 3401/4458 76.3%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.020  ppl:55.71
+______________________
+inp: 林间高阁UNK车尘
+trg: 紫霞杯里千年酒
+out: 日阳红酒无金事
+
+epoch: 6, 3601/4458 80.8%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.019  ppl:55.62
+______________________
+inp: 薄酒难禁二UNK寒
+trg: 可惜一溪桃李树
+out: 今惜春枝三李树
+
+epoch: 6, 3801/4458 85.3%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.017  ppl:55.51
+______________________
+inp: 昼永人闲啼UNK静
+trg: 花飞无语春冥冥
+out: 隔枝蝴蝶莺风冥
+
+epoch: 6, 4001/4458 89.7%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.015  ppl:55.42
+______________________
+inp: 古UNK此是埋冤树
+trg: 今日还栖战死魂
+out: 何日相成不血恩
+
+epoch: 6, 4201/4458 94.2%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.013  ppl:55.34
+______________________
+inp: UNK定真如和作香
+trg: 今古虽殊同一法
+out: 不日无然无臭死
+
+epoch: 6, 4401/4458 98.7%, 0.01s per iter, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.012  ppl:55.26
+______________________
+run validation...
+in training mode: 0
+epoch: 6, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.321  ppl:75.28
+______________________
+validation Done: 1
+saving model...
+teach forcing ratio decay...
+shuffle data...
+inp: 酡颜腻UNK转容与
+trg: 轻罗未剥香先溢
+out: 不红衫袖浑风到
+
+epoch: 7, 1/4458 0.0%, 0.00s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 4.012  ppl:55.24
+______________________
+inp: 七里滩UNK问去津
+trg: 崭岩渔石藓花春
+out: 却崭云壑自萦新
+
+epoch: 7, 201/4458 4.5%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 4.010  ppl:55.15
+______________________
+inp: 已有UNK犀一点通
+trg: 采笔春归横槊后
+out: 不药未来春不好
+
+epoch: 7, 401/4458 9.0%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 4.009  ppl:55.07
+______________________
+inp: 烟起山坳UNK竹庐
+trg: 篷窗一半对风虚
+out: 一窗聊枕梦床除
+
+epoch: 7, 601/4458 13.5%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 4.008  ppl:55.02
+______________________
+inp: UNK楼逆旅棣华西
+trg: 窗扇烟埃暗旧题
+out: 细外风笼细语题
+
+epoch: 7, 801/4458 18.0%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 4.006  ppl:54.94
+______________________
+inp: 玉莲香UNK涌华漪
+trg: 锦凫绣雁今安在
+out: 采囊飞扇红朝去
+
+epoch: 7, 1001/4458 22.5%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 4.005  ppl:54.87
+______________________
+inp: 相UNK庑下朔风吹
+trg: 更截牛衣为裹儿
+out: 依有飞衣一洗尸
+
+epoch: 7, 1201/4458 26.9%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 4.004  ppl:54.80
+______________________
+inp: 西风千里暗惊UNK
+trg: 送君归去寒山外
+out: 早君不去无人去
+
+epoch: 7, 1401/4458 31.4%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 4.002  ppl:54.72
+______________________
+inp: 况是UNK孙芳草外
+trg: 休添离恨画双螺
+out: 谁将前别恨眉蛾
+
+epoch: 7, 1601/4458 35.9%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 4.001  ppl:54.64
+______________________
+inp: 卷UNK觅酒便颓然
+trg: 一生百斛无馀事
+out: 风时不斛无穷事
+
+epoch: 7, 1801/4458 40.4%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 3.999  ppl:54.56
+______________________
+inp: 瘦马长UNK懒著鞭
+trg: 客怀牢落五更天
+out: 不怀牢落更更前
+
+epoch: 7, 2001/4458 44.9%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 3.998  ppl:54.49
+______________________
+inp: 病起乌藤UNK自扶
+trg: 三三径里晓晴初
+out: 几更月上又逢初
+
+epoch: 7, 2201/4458 49.4%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 3.997  ppl:54.43
+______________________
+inp: 歌喉UNK指粉红腮
+trg: 群拥山翁醉玉颓
+out: 何事兰房学玉杯
+
+epoch: 7, 2401/4458 53.9%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 3.996  ppl:54.36
+______________________
+inp: 应笑倦游尘滓UNK
+trg: 鬓毛萧瑟事铅丹
+out: 故毛如飒一偏丹
+
+epoch: 7, 2601/4458 58.3%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 3.994  ppl:54.30
+______________________
+inp: 安排诸院UNK行廊
+trg: 外槛周回十里强
+out: 不事营旋紫二长
+
+epoch: 7, 2801/4458 62.8%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 3.993  ppl:54.21
+______________________
+inp: 宫袍一UNK换朝衣
+trg: 院门不锁松花落
+out: 不知不锁朱颜发
+
+epoch: 7, 3001/4458 67.3%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 3.992  ppl:54.15
+______________________
+inp: 学得而翁UNK半痴
+trg: 从此要归归便得
+out: 新此不知终去后
+
+epoch: 7, 3201/4458 71.8%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 3.991  ppl:54.09
+______________________
+inp: 何人咆哮UNK龙门
+trg: 荡踏千厓似有痕
+out: 老子金山万列痕
+
+epoch: 7, 3401/4458 76.3%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 3.989  ppl:54.02
+______________________
+inp: 腊月榴UNK带雪红
+trg: 闭阁寂寥常对此
+out: 相户门寥无寂坐
+
+epoch: 7, 3601/4458 80.8%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 3.988  ppl:53.96
+______________________
+inp: 丁UNK童子休轻剖
+trg: 甫里先生恐寄书
+out: 且里相生一个书
+
+epoch: 7, 3801/4458 85.3%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 3.987  ppl:53.90
+______________________
+inp: 去UNK风尘不自由
+trg: 迟回江上一扁舟
+out: 归迟犹自夕枝舟
+
+epoch: 7, 4001/4458 89.7%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 3.986  ppl:53.84
+______________________
+inp: UNK帘翠袖拥秦娥
+trg: 火树如山奈乐何
+out: 琐急齐丝万尔何
+
+epoch: 7, 4201/4458 94.2%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 3.985  ppl:53.76
+______________________
+inp: 分UNK都门岁月赊
+trg: 思君夜夜梦梅花
+out: 莫君不夜酒中花
+
+epoch: 7, 4401/4458 98.7%, 0.01s per iter, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 3.984  ppl:53.71
+______________________
+run validation...
+in training mode: 0
+epoch: 7, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 4.327  ppl:75.75
+______________________
+validation Done: 1
+teach forcing ratio decay...
+shuffle data...
+inp: 漪涟不UNK秋塘静
+trg: 独拄寒筇绕岸行
+out: 独倚寒风伴砌行
+
+epoch: 8, 1/4458 0.0%, 0.00s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.983  ppl:53.70
+______________________
+inp: 今日我来台UNK看
+trg: 残春寂寞野花开
+out: 老春无寞几人开
+
+epoch: 8, 201/4458 4.5%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.982  ppl:53.62
+______________________
+inp: 吹UNK井梧方是凉
+trg: 拂拭桃笙阴处卧
+out: 欲拭春风愁不去
+
+epoch: 8, 401/4458 9.0%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.981  ppl:53.57
+______________________
+inp: 王昌近UNK墙东住
+trg: 可惜残红取次飞
+out: 一是闲阳不次归
+
+epoch: 8, 601/4458 13.5%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.980  ppl:53.52
+______________________
+inp: 细草九UNK今熨眼
+trg: 游丝百尺即遮人
+out: 春人莫里自为人
+
+epoch: 8, 801/4458 18.0%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.979  ppl:53.46
+______________________
+inp: 片虹天外UNK
+trg: 斜照媚林塘
+out: 云照白红香
+
+epoch: 8, 1001/4458 22.5%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.978  ppl:53.43
+______________________
+inp: 得UNK君家亦未多
+trg: 缃帙牙签数椽屋
+out: 缃帙未签当百里
+
+epoch: 8, 1201/4458 26.9%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.977  ppl:53.37
+______________________
+inp: 白云容与翳UNK扉
+trg: 悬崖瀑水自今古
+out: 一知老布流相古
+
+epoch: 8, 1401/4458 31.4%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.976  ppl:53.32
+______________________
+inp: 不如载取中UNK酒
+trg: 来就江心丙穴鱼
+out: 辄就西山作子书
+
+epoch: 8, 1601/4458 35.9%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.975  ppl:53.27
+______________________
+inp: 翠壁丹UNK有路通
+trg: 杰阁凌烟欲飞去
+out: 白阁凌霄寒不改
+
+epoch: 8, 1801/4458 40.4%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.975  ppl:53.23
+______________________
+inp: 百叶盆UNK照眼明
+trg: 桐阴初密暑犹清
+out: 莫庐初日夏难清
+
+epoch: 8, 2001/4458 44.9%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.974  ppl:53.18
+______________________
+inp: 谁怜花泪UNK离离
+trg: 南梳北裹无心好
+out: 一来不客南人在
+
+epoch: 8, 2201/4458 49.4%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.973  ppl:53.12
+______________________
+inp: 当年UNK就伊谁力
+trg: 白首铭心感渭阳
+out: 今首青书一慨阳
+
+epoch: 8, 2401/4458 53.9%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.972  ppl:53.09
+______________________
+inp: 太常迎UNK乐声齐
+trg: 戏马场中舞象犀
+out: 不彩金中走袖蹄
+
+epoch: 8, 2601/4458 58.3%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.971  ppl:53.04
+______________________
+inp: 朱轓何事UNK来频
+trg: 不为溪山只为民
+out: 不见苍头一自人
+
+epoch: 8, 2801/4458 62.8%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.970  ppl:52.99
+______________________
+inp: 玉山知为UNK人颓
+trg: 紫云有语君知否
+out: 不云不路君知否
+
+epoch: 8, 3001/4458 67.3%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.969  ppl:52.94
+______________________
+inp: UNK系白杨归不得
+trg: 清江如画主人留
+out: 鹧鸪风雨下人愁
+
+epoch: 8, 3201/4458 71.8%, 0.01s per iter, lr: 0.0004, tr: 0.80, tau: 1.000
+  gen loss: 3.969  ppl:52.91
+______________________
+inp: 花名药品两相UNK
+trg: 种菊虽多岂避嫌
+out: 不向春中二有严
+
+epoch: 8, 3401/4458 76.3%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.968  ppl:52.88
+______________________
+inp: 腊雪UNK香径
+trg: 朝晖上绮甍
+out: 晴晖暮下甍
+
+epoch: 8, 3601/4458 80.8%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.967  ppl:52.84
+______________________
+inp: UNK袜青鞋日日催
+trg: 长啸一声啼鸟外
+out: 一夏忽番春日散
+
+epoch: 8, 3801/4458 85.3%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.967  ppl:52.80
+______________________
+inp: 不如UNK里风吹尽
+trg: 踏作花泥透脚香
+out: 留取春间一片香
+
+epoch: 8, 4001/4458 89.7%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.966  ppl:52.77
+______________________
+inp: UNK旗落暗尘
+trg: 唐尧遂不见
+out: 不朝千不得
+
+epoch: 8, 4201/4458 94.2%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.965  ppl:52.74
+______________________
+inp: 暂谢UNK嚣向此行
+trg: 盛境也须游历遍
+out: 安事本知天戏处
+
+epoch: 8, 4401/4458 98.7%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.965  ppl:52.71
+______________________
+run validation...
+in training mode: 0
+epoch: 8, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 4.336  ppl:76.42
+______________________
+validation Done: 1
+saving model...
+teach forcing ratio decay...
+shuffle data...
+inp: 井田UNK校竟终天
+trg: 盐铁舟车讫万年
+out: 磻铁方中讫国年
+
+epoch: 9, 1/4458 0.0%, 0.00s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.965  ppl:52.70
+______________________
+inp: 日晒风UNK古路头
+trg: 莫怪今朝聊点破
+out: 莫道春风相送检
+
+epoch: 9, 201/4458 4.5%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.963  ppl:52.64
+______________________
+inp: 阿子汝闻UNK
+trg: 灯前百叹辞
+out: 何前夜味时
+
+epoch: 9, 401/4458 9.0%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.962  ppl:52.56
+______________________
+inp: 客来系马成UNK事
+trg: 风雨寒窗一觉眠
+out: 不雨敲窗一夜眠
+
+epoch: 9, 601/4458 13.5%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.961  ppl:52.51
+______________________
+inp: 不妨紫UNK飞来晚
+trg: 认得烟菆有旧巢
+out: 但觉长霞染几巢
+
+epoch: 9, 801/4458 18.0%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.960  ppl:52.46
+______________________
+inp: 乾坤交泰气氤UNK
+trg: 烟雨标名望意云
+out: 山雨连名万古文
+
+epoch: 9, 1001/4458 22.5%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.959  ppl:52.41
+______________________
+inp: 秋UNK乱杂橹声中
+trg: 倦游归去浑忘事
+out: 遥知未去无无却
+
+epoch: 9, 1201/4458 26.9%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.958  ppl:52.37
+______________________
+inp: UNK虏鲸鲵世共雠
+trg: 汉公勋业过伊周
+out: 汉家何业在淮州
+
+epoch: 9, 1401/4458 31.4%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.958  ppl:52.33
+______________________
+inp: 想到越UNK春睡足
+trg: 不知何似蓟门寒
+out: 一知何处在门寒
+
+epoch: 9, 1601/4458 35.9%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.957  ppl:52.29
+______________________
+inp: UNK史莫辞迎候远
+trg: 相公亲破蔡州回
+out: 东逢肯见一州媒
+
+epoch: 9, 1801/4458 40.4%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.956  ppl:52.26
+______________________
+inp: UNK风羽翼徽
+trg: 不能欺暗室
+out: 鸣须为晓色
+
+epoch: 9, 2001/4458 44.9%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.955  ppl:52.22
+______________________
+inp: 更持蟾泪湿云UNK
+trg: 欲知千载凄凉意
+out: 万知此日何凉甚
+
+epoch: 9, 2201/4458 49.4%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.955  ppl:52.19
+______________________
+inp: UNK然不受人间暑
+trg: 谁道清风有歇时
+out: 谁道春凉一几时
+
+epoch: 9, 2401/4458 53.9%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.954  ppl:52.14
+______________________
+inp: 惜李常钻UNK
+trg: 商财自执筹
+out: 何山不可羞
+
+epoch: 9, 2601/4458 58.3%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.953  ppl:52.09
+______________________
+inp: UNK毁与人夺
+trg: 似隔几重山
+out: 独有洞重山
+
+epoch: 9, 2801/4458 62.8%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.952  ppl:52.05
+______________________
+inp: 自是高歌UNK斗上
+trg: 不须骑气夜行天
+out: 祗知重见不深天
+
+epoch: 9, 3001/4458 67.3%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.951  ppl:52.01
+______________________
+inp: 黄花UNK主为谁容
+trg: 冷落疏篱曲径中
+out: 白落秋篱竹折中
+
+epoch: 9, 3201/4458 71.8%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.951  ppl:51.97
+______________________
+inp: 诗UNK赋罢闲凭处
+trg: 花满春池斗鸭阑
+out: 一落春花碧草寒
+
+epoch: 9, 3401/4458 76.3%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.950  ppl:51.93
+______________________
+inp: UNK寒浑忘是春天
+trg: 霜侵绿鬓张居士
+out: 冻房睡鬓无榆士
+
+epoch: 9, 3601/4458 80.8%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.949  ppl:51.89
+______________________
+inp: 翠璧UNK层合
+trg: 高松飒飒寒
+out: 山楼拂飒寒
+
+epoch: 9, 3801/4458 85.3%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.948  ppl:51.86
+______________________
+inp: 再挹泓UNK嗽凤泉
+trg: 客鬓自怜尘土满
+out: 一里不知尘土涴
+
+epoch: 9, 4001/4458 89.7%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.948  ppl:51.82
+______________________
+inp: 舟人曾UNK得吴侬
+trg: 煮粒烹鲜别有功
+out: 遥茗频茶不味通
+
+epoch: 9, 4201/4458 94.2%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.947  ppl:51.79
+______________________
+inp: 书成不寄UNK云客
+trg: 却忆平生贺克恭
+out: 却忆当生旧老农
+
+epoch: 9, 4401/4458 98.7%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.946  ppl:51.74
+______________________
+run validation...
+in training mode: 0
+epoch: 9, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 4.339  ppl:76.65
+______________________
+validation Done: 1
+teach forcing ratio decay...
+shuffle data...
+inp: 八觚台UNK净无尘
+trg: 六尺屏风一欠伸
+out: 当月昆风一样伸
+
+epoch: 10, 1/4458 0.0%, 0.00s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.946  ppl:51.74
+______________________
+inp: 溪光斜日两相UNK
+trg: 清影和香上客衫
+out: 溪上行风入柳岩
+
+epoch: 10, 201/4458 4.5%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.945  ppl:51.69
+______________________
+inp: 羁魂梦UNK惊
+trg: 秋风一夜起
+out: 秋风吹千月
+
+epoch: 10, 401/4458 9.0%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.944  ppl:51.65
+______________________
+inp: 不觉篮舆UNK日暮
+trg: 坐怜清泚住多时
+out: 强中身泚上中时
+
+epoch: 10, 601/4458 13.5%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.943  ppl:51.60
+______________________
+inp: 苍生UNK此色
+trg: 四海正丰年
+out: 不海岂萧年
+
+epoch: 10, 801/4458 18.0%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.942  ppl:51.55
+______________________
+inp: UNK意花枝手自提
+trg: 好景未知何处是
+out: 不似不能何处是
+
+epoch: 10, 1001/4458 22.5%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.942  ppl:51.50
+______________________
+inp: UNK知送老桑麻野
+trg: 悔失安西万里行
+out: 且杀严期不里行
+
+epoch: 10, 1201/4458 26.9%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.941  ppl:51.45
+______________________
+inp: 菱盘不复藏UNK水
+trg: 蒲剑犹能战晚风
+out: 犹扇犹能护一风
+
+epoch: 10, 1401/4458 31.4%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.940  ppl:51.41
+______________________
+inp: 当年开设事难UNK
+trg: 水里乾坤又一层
+out: 今上山坤一一层
+
+epoch: 10, 1601/4458 35.9%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.939  ppl:51.37
+______________________
+inp: 独UNK率意还同阮
+trg: 但到穷途泪不垂
+out: 犹觉春风不未垂
+
+epoch: 10, 1801/4458 40.4%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.938  ppl:51.33
+______________________
+inp: 旁人不识予心UNK
+trg: 将谓偷闲学少年
+out: 只向诗闲不士年
+
+epoch: 10, 2001/4458 44.9%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.938  ppl:51.30
+______________________
+inp: 莘野磻溪亦UNK然
+trg: 每逢耕钓忆前贤
+out: 笑逢佳节不江贤
+
+epoch: 10, 2201/4458 49.4%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.937  ppl:51.25
+______________________
+inp: 燕齐得浪UNK
+trg: 丹青此堂上
+out: 何青无奇上
+
+epoch: 10, 2401/4458 53.9%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.936  ppl:51.20
+______________________
+inp: 罗汉亲崇UNK法台
+trg: 龙峰凤岭四山隈
+out: 一门虎岭转时隈
+
+epoch: 10, 2601/4458 58.3%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.935  ppl:51.15
+______________________
+inp: 千年老干对壶UNK
+trg: 不数槐庭两翠龙
+out: 不为看山竹髻松
+
+epoch: 10, 2801/4458 62.8%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.934  ppl:51.11
+______________________
+inp: 绿琐银台UNK焰红
+trg: 月痕斜过井梧东
+out: 采明斜倚小桥桐
+
+epoch: 10, 3001/4458 67.3%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.933  ppl:51.08
+______________________
+inp: 儿UNK旋旋立新条
+trg: 不知断臂缘何事
+out: 不知不臂缘何事
+
+epoch: 10, 3201/4458 71.8%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.933  ppl:51.04
+______________________
+inp: UNK娥新琢玉
+trg: 何夕忽遗簪
+out: 玉处照相音
+
+epoch: 10, 3401/4458 76.3%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.932  ppl:51.01
+______________________
+inp: 缺月UNK空夜未央
+trg: 荷风细细袭衣香
+out: 手花吹雨袭衣裳
+
+epoch: 10, 3601/4458 80.8%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.931  ppl:50.98
+______________________
+inp: 却嗟螳臂UNK当辙
+trg: 万甲桓桓画虎熊
+out: 不里千金万不熊
+
+epoch: 10, 3801/4458 85.3%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.931  ppl:50.94
+______________________
+inp: 曾谓千UNK意
+trg: 能酬一饭恩
+out: 而忘一里恩
+
+epoch: 10, 4001/4458 89.7%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.930  ppl:50.91
+______________________
+inp: 中间万UNK张
+trg: 不知烟雾里
+out: 不知秋雨里
+
+epoch: 10, 4201/4458 94.2%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.929  ppl:50.87
+______________________
+inp: 夹路UNK花送马蹄
+trg: 却恨当年轻踏过
+out: 惟恨离年行别恨
+
+epoch: 10, 4401/4458 98.7%, 0.01s per iter, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 3.929  ppl:50.84
+______________________
+run validation...
+in training mode: 0
+epoch: 10, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 4.345  ppl:77.11
+______________________
+validation Done: 1
+saving model...
+teach forcing ratio decay...
+shuffle data...
+dseq pretraining done!
+restore checkpoint from ../checkpoint/model_ckpt_dseq_10e.tar
+loading...
+load state dic, params: 41...
+checkpoint exsits! directly recover!
+building data for wm...
+train batch num: 2971
+valid batch num: 190
+keywords: 楚云|梦魂|PAD|PAD
+target: 六合沉冥四壁空|梦魂只绕楚云东|明当挂席黄天荡|卧看茫茫柳絮风
+output: 嫔胜更天天不重相|天天不不相不尽重|俎卤更重相相不相|林重尽不相不长重
+
+epoch: 1, 1/2971 0.0%, 0.02s per iter, lr: 0.0001, tr: 1.00, tau: 1.000
+  gen loss: 12.757  ppl:347094.66
+______________________
+keywords: 丹青|山云|花气|PAD
+target: 山云送我丹青幅|花气撩人兰麝香|诗债幸然逢入务|被渠催索又奔忙
+output: 一山山水无如路|一日青来一自香|不是春年春不酒|一君不上是相香
+
+epoch: 1, 101/2971 3.4%, 0.15s per iter, lr: 0.0001, tr: 1.00, tau: 0.985
+  gen loss: 6.037  ppl:418.84
+______________________
+keywords: 病中|梅花|PAD|PAD
+target: 病中犹未见梅花|何日尧夫驾小车|为觅小盆分少树|东风如到野人家
+output: 一花春是不春花|一处相君一上书|一我一园无客客|一花吹雨玉花花
+
+epoch: 1, 201/2971 6.8%, 0.15s per iter, lr: 0.0001, tr: 1.00, tau: 0.970
+  gen loss: 5.515  ppl:248.46
+______________________
+keywords: 遗爱|侏儒|指点|青铜
+target: 贞元美化出成都|遗爱文翁道岂殊|三寸青铜人未识|可堪指点笑侏儒
+output: 一心不事不天都|不国无人不不无|不十何山无不识|一年不作是无儒
+
+epoch: 1, 301/2971 10.1%, 0.15s per iter, lr: 0.0001, tr: 1.00, tau: 0.955
+  gen loss: 5.249  ppl:190.32
+______________________
+keywords: 人争|鉴湖|清溪|菰蒲
+target: 龙眼离支十万株|清溪几道绕菰蒲|浙东酿酒人争至|此水皆言似鉴湖
+output: 一口何波一二珠|一风一度不山蒲|一山水酒无家醉|一日何从是水湖
+
+epoch: 1, 401/2971 13.5%, 0.15s per iter, lr: 0.0002, tr: 1.00, tau: 0.940
+  gen loss: 5.075  ppl:160.01
+______________________
+keywords: 船头|东邻|PAD|PAD
+target: 婚娶家家礼俗谙|东邻少妇嫁童男|园篱缚架开筵宴|借得船头一片帆
+output: 江嫁江家不乐酣|不风西日不相担|一林不客无人下|一得春头看日酣
+
+epoch: 1, 501/2971 16.9%, 0.15s per iter, lr: 0.0002, tr: 1.00, tau: 0.926
+  gen loss: 4.947  ppl:140.80
+______________________
+keywords: 汉宫|细柳|寒食|春风
+target: 细柳垂秦苑|棠梨出汉宫|可怜寒食夜|空自怨春风
+output: 春雨春杨水|春花花柳宫|春怜春色后|不见落春风
+
+epoch: 1, 601/2971 20.2%, 0.15s per iter, lr: 0.0002, tr: 1.00, tau: 0.912
+  gen loss: 4.853  ppl:128.06
+______________________
+keywords: 暮雨|中兴|PAD|PAD
+target: 羡尔无知野性真|乱搔蓬发笑看人|闲冲暮雨骑牛去|肯问中兴社稷臣
+output: 雨尔登人不水真|一云深岛自相人|一来一雨归鲸去|却是西原不里人
+
+epoch: 1, 701/2971 23.6%, 0.15s per iter, lr: 0.0002, tr: 1.00, tau: 0.898
+  gen loss: 4.770  ppl:117.87
+______________________
+keywords: 燕子|PAD|PAD|PAD
+target: 软红尘里度韶华|杨柳桥边旧酒家|燕子不归春渐老|东风开尽刺桐花
+output: 燕燕燕燕燕归家|不柳阴头路钓家|春子不知春又晚|一风吹落绿杨花
+
+epoch: 1, 801/2971 27.0%, 0.15s per iter, lr: 0.0002, tr: 1.00, tau: 0.884
+  gen loss: 4.704  ppl:110.37
+______________________
+keywords: 绝胜|颗颗|PAD|PAD
+target: 颗颗苞甘液|年年饫老饕|绝胜九千岁|三度窃蟠桃
+output: 霜叶寒肌骨|春年春寿饕|不胜三日雨|风月窃遗桃
+
+epoch: 1, 901/2971 30.3%, 0.15s per iter, lr: 0.0002, tr: 1.00, tau: 0.871
+  gen loss: 4.649  ppl:104.44
+______________________
+keywords: 欢喜|新句|写|PAD
+target: 刺齿搜新句|濡毫写短笺|读来疏脱少|欢喜不成眠
+output: 新史如诗钱|人毫不字篇|不书无雨稿|不笑有新年
+
+epoch: 1, 1001/2971 33.7%, 0.15s per iter, lr: 0.0003, tr: 1.00, tau: 0.858
+  gen loss: 4.603  ppl:99.81
+______________________
+keywords: 子规|PAD|PAD|PAD
+target: 人从北固山前去|云水苍茫日向西|今夜渡江何处宿|杨花落尽子规啼
+output: 一间何望无中路|不水茫茫月暮西|天日天头人处是|一花飞尽白规啼
+
+epoch: 1, 1101/2971 37.1%, 0.15s per iter, lr: 0.0003, tr: 1.00, tau: 0.845
+  gen loss: 4.562  ppl:95.77
+______________________
+keywords: 短檠|风露|PAD|PAD
+target: 浮瓯雪色喜初尝|中有祝融风露香|径欲与君同晤赏|短檠清夜正相望
+output: 风云亭上月相长|不有诗融不露香|不上春君同一语|一墙疏露不思霜
+
+epoch: 1, 1201/2971 40.4%, 0.15s per iter, lr: 0.0003, tr: 1.00, tau: 0.832
+  gen loss: 4.528  ppl:92.53
+______________________
+keywords: 中华|PAD|PAD|PAD
+target: 高鼻胡奴入汉关|皂旗千队射雕还|君看万古昏星月|洗出中华叠翠山
+output: 中节当年不梦关|不知吹里下雕关|龙王不里封云斗|不尽尘原一叠山
+
+epoch: 1, 1301/2971 43.8%, 0.15s per iter, lr: 0.0003, tr: 1.00, tau: 0.819
+  gen loss: 4.494  ppl:89.49
+______________________
+keywords: 骖鸾|远寄|PAD|PAD
+target: 折得瑶华付与谁|人间铅粉弄妆迟|直须远寄骖鸾客|鬓脚飘飘可一枝
+output: 寄得梅池一曲池|莫将春粉污春眉|何须更近天鸾侣|莫发无零不可悲
+
+epoch: 1, 1401/2971 47.2%, 0.15s per iter, lr: 0.0003, tr: 1.00, tau: 0.806
+  gen loss: 4.466  ppl:86.98
+______________________
+keywords: 凤凰|翛翛|PAD|PAD
+target: 已看秀色动高林|会见翛翛满翠岑|不学渭川千亩富|欲闻嶰谷凤凰音
+output: 春无春色映秋阴|何见云然一道阴|何似当川淇上下|一将嶰谷与凰音
+
+epoch: 1, 1501/2971 50.5%, 0.15s per iter, lr: 0.0003, tr: 1.00, tau: 0.794
+  gen loss: 4.441  ppl:84.82
+______________________
+keywords: 贪|握手|城郭|PAD
+target: 万里相逢贪握手|蓬门今始为君开|留连城郭今如此|有底忙时不肯来
+output: 一里山逢一笑手|不知何处有君开|不知万郭无何在|不客无来不肯来
+
+epoch: 1, 1601/2971 53.9%, 0.15s per iter, lr: 0.0003, tr: 1.00, tau: 0.782
+  gen loss: 4.417  ppl:82.83
+______________________
+keywords: 宫中|新花|仙人|PAD
+target: 蚤时曾侍御屏东|上苑新花赐晚红|不信仙人乘鹤去|绝无馀梦入宫中
+output: 仙陪仙见玉筵风|御苑新花锦旧红|何是仙人无鸾去|一缘人韵到仙宫
+
+epoch: 1, 1701/2971 57.3%, 0.15s per iter, lr: 0.0004, tr: 1.00, tau: 0.770
+  gen loss: 4.395  ppl:81.04
+______________________
+keywords: 渠|著书|PAD|PAD
+target: 季子论才到履驹|十年不调可怜渠|自闻马祖今非佛|不似潜夫但著书
+output: 一子何诗未此书|一杯不复更须除|一从一上今何敌|不是人身不有书
+
+epoch: 1, 1801/2971 60.6%, 0.15s per iter, lr: 0.0004, tr: 1.00, tau: 0.758
+  gen loss: 4.377  ppl:79.58
+______________________
+keywords: 窈窕|满庭|PAD|PAD
+target: 一径缘云入寿星|竹间窈窕见疏棂|阑干数曲观台上|幽草靓花常满庭
+output: 满地桃深满望庭|仙林深窕绕清星|一干不点无音处|一草幽人落自庭
+
+epoch: 1, 1901/2971 64.0%, 0.15s per iter, lr: 0.0004, tr: 1.00, tau: 0.747
+  gen loss: 4.358  ppl:78.10
+______________________
+keywords: 沙洲|木落|霜清|人家
+target: 霜清木落见沙洲|洲上人家半在舟|射雁归来鱼满笱|瓮中先见问扶头
+output: 霜林月落雁南头|扁渚江南路不舟|水的不来花上纸|不头犹有一平头
+
+epoch: 1, 2001/2971 67.4%, 0.15s per iter, lr: 0.0004, tr: 1.00, tau: 0.736
+  gen loss: 4.341  ppl:76.76
+______________________
+keywords: 浩荡|沧溟|PAD|PAD
+target: 歇马高林见水源|时从明月咏潺湲|不知浩荡沧溟上|万折东趋路几千
+output: 浩别长楼月上天|一时西月照沧浪|长是青然天海水|犹古青流一几千
+
+epoch: 1, 2101/2971 70.7%, 0.15s per iter, lr: 0.0004, tr: 1.00, tau: 0.724
+  gen loss: 4.324  ppl:75.46
+______________________
+keywords: 彩毫|春风|PAD|PAD
+target: 国香那藉彩毫工|千载猗兰曲未终|金石交情期岁晚|棘丛未实漫春风
+output: 一香不得一番红|千里春兰一不终|今缕不情今不晚|东闱丛见满芳风
+
+epoch: 1, 2201/2971 74.1%, 0.15s per iter, lr: 0.0004, tr: 1.00, tau: 0.713
+  gen loss: 4.309  ppl:74.40
+______________________
+keywords: 清响|杨枝|殿|PAD
+target: 笠戴圆阴楚地棕|磬敲清响蜀山铜|秋来说偈寅朝殿|爽爽杨枝满手风
+output: 清晓新蟾覆畹寒|自声清响响山葱|风风不与人间事|帘气清花拂树风
+
+epoch: 1, 2301/2971 77.4%, 0.15s per iter, lr: 0.0004, tr: 1.00, tau: 0.702
+  gen loss: 4.296  ppl:73.40
+______________________
+keywords: 满目|旧游|山川|PAD
+target: 横塘烟雨不胜愁|满目山川忆旧游|今夜一杯三白酒|犹疑同醉太湖舟
+output: 满山诗水湿胜秋|水目风川水旧游|今日不川风百酒|不疑三是五湖舟
+
+epoch: 1, 2401/2971 80.8%, 0.15s per iter, lr: 0.0005, tr: 1.00, tau: 0.692
+  gen loss: 4.282  ppl:72.39
+______________________
+keywords: 还寻|天机|PAD|PAD
+target: 辞社还寻高处藏|留予常系五云乡|时来时去天机在|羡尔一双羽翼长
+output: 天我方须一处长|不心不自不湖光|君时莫有相涯约|莫尔青生天翼长
+
+epoch: 1, 2501/2971 84.2%, 0.15s per iter, lr: 0.0005, tr: 1.00, tau: 0.681
+  gen loss: 4.269  ppl:71.48
+______________________
+keywords: 隐|里社|PAD|PAD
+target: 啮雪犹能活窖中|侩牛亦可隐墙东|来归里社当知幸|万卷书边一老翁
+output: 隐草归来日日中|不人不有共天东|不时不客知时德|不里书书一径通
+
+epoch: 1, 2601/2971 87.5%, 0.15s per iter, lr: 0.0005, tr: 1.00, tau: 0.671
+  gen loss: 4.258  ppl:70.67
+______________________
+keywords: 熟|情分|读书|度
+target: 自明自灭度方池|熠熠飞来去觉迟|入坐点衣情分熟|纳交元在读书时
+output: 一从身古不天知|不熠何曾得不迟|一日不知无不薄|不知应不有书诗
+
+epoch: 1, 2701/2971 90.9%, 0.15s per iter, lr: 0.0005, tr: 1.00, tau: 0.661
+  gen loss: 4.249  ppl:70.00
+______________________
+keywords: 露冷|灿烂|迎霜|莲房
+target: 露冷莲房老|迎霜灿烂开|谁是看不足|剪落片霞来
+output: 露浥烟茎露|黄秋玉笋来|谁识闺花见|却得乃云来
+
+epoch: 1, 2801/2971 94.3%, 0.15s per iter, lr: 0.0005, tr: 1.00, tau: 0.651
+  gen loss: 4.238  ppl:69.29
+______________________
+keywords: 青天|PAD|PAD|PAD
+target: 江草青青江水生|故人相见总怜情|云来雨去青天里|一日阴晴几变更
+output: 青上青青青帝青|一人何送说相情|江中若后青天色|一片青晴一度清
+
+epoch: 1, 2901/2971 97.6%, 0.15s per iter, lr: 0.0005, tr: 1.00, tau: 0.641
+  gen loss: 4.229  ppl:68.64
+______________________
+run validation...
+in training mode: 0
+epoch: 1, lr: 0.0005, tr: 0.80, tau: 0.634
+  gen loss: 4.165  ppl:64.39
+______________________
+validation Done: 1
+teach forcing ratio decay...
+shuffle data...
+keywords: 残月|PAD|PAD|PAD
+target: 雨过河光雁影遥|银床冰簟自秋宵|长门杨柳摇残月|报道君王已视朝
+output: 残月残残月影遥|风河灯簟月生宵|月安月柳秋摇月|一答春王不不朝
+
+epoch: 2, 1/2971 0.0%, 0.00s per iter, lr: 0.0005, tr: 1.00, tau: 0.634
+  gen loss: 4.223  ppl:68.22
+______________________
+keywords: 说著|清明|花满|PAD
+target: 破艇争划忽罢喧|野童村女闯篱边|令人说著苏堤路|花满清明画鼓船
+output: 清屋轻先一浴眠|清人吹店竞西边|只人只与都州柳|花落清明月不船
+
+epoch: 2, 101/2971 3.4%, 0.15s per iter, lr: 0.0006, tr: 1.00, tau: 0.624
+  gen loss: 4.202  ppl:66.79
+______________________
+keywords: 幽居|经营|髀肉|归计
+target: 归计无成须绝望|幽居有意漫经营|自怜心异刘玄德|更喜年来髀肉生
+output: 四去不人可计行|一居无客在相营|更怜不地无郎德|不向何来不肉生
+
+epoch: 2, 201/2971 6.8%, 0.15s per iter, lr: 0.0006, tr: 1.00, tau: 0.615
+  gen loss: 4.181  ppl:65.44
+______________________
+keywords: 京华|风月|江山|PAD
+target: 少时曾识京华乐|老得江山怀抱开|风月不谈辜此夕|恨随潮去与潮回
+output: 江年风见江华客|不去江山一古来|江月江知诗负趣|此无风水到人回
+
+epoch: 2, 301/2971 10.1%, 0.15s per iter, lr: 0.0006, tr: 1.00, tau: 0.605
+  gen loss: 4.162  ppl:64.18
+______________________
+keywords: 沧溟|飞尘|PAD|PAD
+target: 北楼千尺午犹寒|冉冉飞尘不可干|横望沧溟了无际|贵人休向画图看
+output: 万风南里势风寒|冉冉飞来不可看|我笛沧溟何不寐|一人不说此图看
+
+epoch: 2, 401/2971 13.5%, 0.15s per iter, lr: 0.0006, tr: 1.00, tau: 0.596
+  gen loss: 4.143  ppl:63.00
+______________________
+keywords: 乾坤|石门|桃花|中天
+target: 峭壁危崖暮霭屯|桃花开落自乾坤|中天积翠无人到|万岫飞霞锁石门
+output: 一壁无峰路雨昏|半花飞处洞春坤|天天不雪无人到|只里千泉过翠门
+
+epoch: 2, 501/2971 16.9%, 0.15s per iter, lr: 0.0006, tr: 1.00, tau: 0.587
+  gen loss: 4.126  ppl:61.92
+______________________
+keywords: 辕门|钓鱼|PAD|PAD
+target: 报国虽贪死后名|还家亦慰老来情|钓鱼船上湾湾月|何用辕门报五更
+output: 一国门无未却生|今家一有老夫生|儿丝船上钓头水|不处龙门作所更
+
+epoch: 2, 601/2971 20.2%, 0.15s per iter, lr: 0.0006, tr: 1.00, tau: 0.578
+  gen loss: 4.110  ppl:60.92
+______________________
+keywords: 菊花|秋晚|PAD|PAD
+target: 寂寂经旬病卧家|起来都不记年华|一声檐上惊秋晚|墙外初闻卖菊花
+output: 晚寞无秋病不斜|一看庭作怕年华|一杯秋外秋残晚|万下黄黄雨酒花
+
+epoch: 2, 701/2971 23.6%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.569
+  gen loss: 4.094  ppl:59.97
+______________________
+keywords: 觅句|秋娘|痴儿|杜牧
+target: 幕中从事最能诗|恐是当年杜牧之|渠为秋娘方觅句|莫将公事恼痴儿
+output: 一中新此不多诗|青被当年杜若之|不是儿风墓索句|不将墨子问衣儿
+
+epoch: 2, 801/2971 27.0%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.560
+  gen loss: 4.079  ppl:59.09
+______________________
+keywords: 逢春|PAD|PAD|PAD
+target: 老去诗情在|逢春祇欲狂|飞来枝上雀|似亦爱幽香
+output: 春去无思处|春春不自狂|江花花上雪|殷有不山芳
+
+epoch: 2, 901/2971 30.3%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.552
+  gen loss: 4.065  ppl:58.27
+______________________
+keywords: 石壁|PAD|PAD|PAD
+target: 崆峒杀气黑|洒血暗郊坰|哀笳晓幽咽|石壁断空青
+output: 石峒高气概|空石落中坰|万鸣不更咽|空壁弹桥青
+
+epoch: 2, 1001/2971 33.7%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.544
+  gen loss: 4.052  ppl:57.50
+______________________
+keywords: 拂云|春树|PAD|PAD
+target: 陇头春树拂云红|学语声嫣弄晚风|上国祗今辞远贡|漫愁双翮闭雕笼
+output: 春头春树晚云红|百得春名动晓风|上有秖应天远贡|莫天春眼涴门笼
+
+epoch: 2, 1101/2971 37.1%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.535
+  gen loss: 4.039  ppl:56.78
+______________________
+keywords: 别驾|PAD|PAD|PAD
+target: 明朝别驾过金坛|暂到茅山亦不难|我忆江门归未得|为君沽酒庆茅山
+output: 别年别驾一江銮|莫别山亭处不难|何亦故南问未得|一君来酒酹分山
+
+epoch: 2, 1201/2971 40.4%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.527
+  gen loss: 4.027  ppl:56.09
+______________________
+keywords: 泊船|PAD|PAD|PAD
+target: 泊船到得暮钟时|等待诸船不肯齐|等得船齐方过闸|又须五鼓到荆溪
+output: 山船舟处泛潮低|等与闲公载得齐|却是小头头外客|船随帆月过南溪
+
+epoch: 2, 1301/2971 43.8%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.519
+  gen loss: 4.015  ppl:55.45
+______________________
+keywords: 满林|道人|PAD|PAD
+target: 道人已跨龙潭鹤|童子能煎雀舌茶|一夜山中满林雪|客来无处觅梅花
+output: 满人不作青林去|紫子乘言石舌斜|老夜满林寒松下|便来不事不诗花
+
+epoch: 2, 1401/2971 47.2%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.511
+  gen loss: 4.004  ppl:54.84
+______________________
+keywords: 星霜|过|折枝|寿
+target: 老藤横路几星霜|骨相清坚寿自长|敢惮侧巾方可过|折枝为子也何妨
+output: 一根移截接层霜|绝冷相寒手一长|不向花经穿寸掬|人枝如寄为无郎
+
+epoch: 2, 1501/2971 50.5%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.503
+  gen loss: 3.994  ppl:54.28
+______________________
+keywords: 惆怅|PAD|PAD|PAD
+target: 狂夫一去不思归|桃叶能随柳絮飞|惆怅北溪溪上路|只同梦里唱金衣
+output: 惆澜不个更如归|江李摇开柳絮飞|惆怅美风桃上路|春愁相里看歌衣
+
+epoch: 2, 1601/2971 53.9%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.496
+  gen loss: 3.984  ppl:53.74
+______________________
+keywords: 区区|怒涛|晴雪|PAD
+target: 峡束洪流起怒涛|乱翻晴雪与云高|徐看行处元无事|小处区区枉用劳
+output: 一口晴波砥怒涛|万山云雪作天高|忽行万尽无无用|一立还区只自劳
+
+epoch: 2, 1701/2971 57.3%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.488
+  gen loss: 3.975  ppl:53.23
+______________________
+keywords: 欹枕|天气|PAD|PAD
+target: 一冬天气暖无霜|欹枕山楼客□乡|睡又不成吟又懒|溪风吹送野梅香
+output: 天天天气润晴光|春枕哦头夜未凉|几起不知眠未去|月声吹断落云香
+
+epoch: 2, 1801/2971 60.6%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.481
+  gen loss: 3.965  ppl:52.74
+______________________
+keywords: 天香|取次|幽花|PAD
+target: 只恐幽花取次开|哦诗忍冻几徘徊|莫猜野服风情浅|解把天香暗里来
+output: 天怪天人落次开|却诗不冷不时徊|不言此菜非流在|一得天香洗度来
+
+epoch: 2, 1901/2971 64.0%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.473
+  gen loss: 3.957  ppl:52.28
+______________________
+keywords: 海棠|PAD|PAD|PAD
+target: 如此湖山正好嬉|游人船上醉如泥|黄莺不入垂杨柳|却立海棠花上啼
+output: 海海梅边不好溪|每人偏上又如泥|如金恰解春杨树|飞向春棠花发啼
+
+epoch: 2, 2001/2971 67.4%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.466
+  gen loss: 3.948  ppl:51.84
+______________________
+keywords: 碧玉|山形|青山|PAD
+target: 渐近青山水渐湾|水湾回处正当山|山形飞落青霄凤|水势旋为碧玉环
+output: 青入青山入碧闲|船声新首碧青关|山中一瀑山山上|山绕山添云海环
+
+epoch: 2, 2101/2971 70.7%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.459
+  gen loss: 3.940  ppl:51.42
+______________________
+keywords: 钟声|朝天|幽斋|PAD
+target: 幽斋昨夜梦朝天|丹陛徐趋进讲编|何处钟声忽惊醒|错疑犹在御炉前
+output: 钟窗一夜雨初天|不灶钟行旧讲泉|一处不山山惊梦|坐疑身是石炉烟
+
+epoch: 2, 2201/2971 74.1%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.452
+  gen loss: 3.932  ppl:51.03
+______________________
+keywords: 伤心|断云|别离|PAD
+target: 老去谁堪远别离|断云流水死生期|伤心欲解延陵剑|絓向空林若个枝
+output: 断去无怜送别离|春肠衰水下离期|伤心不寄愁陵客|絓马残山望个时
+
+epoch: 2, 2301/2971 77.4%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.445
+  gen loss: 3.925  ppl:50.65
+______________________
+keywords: 水沉|PAD|PAD|PAD
+target: 病起清臞不自持|纱巾一幅倚筇枝|水沉香冷红蕉晚|恰似道山群玉时
+output: 水起无风白可持|江笼欲幅水阑枝|风沉帘案炉炉细|误似江人如翠池
+
+epoch: 2, 2401/2971 80.8%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.438
+  gen loss: 3.918  ppl:50.30
+______________________
+keywords: 霏霏|花气|闭门|北窗
+target: 闭门连日雨霏霏|一醉谁忧生事微|睡起不知风色暮|北窗花气湿人衣
+output: 霏门烟日雨霏霏|一点花知万白微|不起不知春雨好|夜枝花影满胭衣
+
+epoch: 2, 2501/2971 84.2%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.432
+  gen loss: 3.911  ppl:49.96
+______________________
+keywords: 景物|楼头|PAD|PAD
+target: 令宰风流踏月观|紫衫乌帽酒颜丹|楼头不识官员贵|也当元宵景物看
+output: 景尹楼流迥雪看|金茎花帽竞初欢|黄头不用人宫去|也胜诗宵是物难
+
+epoch: 2, 2601/2971 87.5%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.425
+  gen loss: 3.905  ppl:49.64
+______________________
+keywords: 楼船|旄头|PAD|PAD
+target: 十万楼船不得骄|洪波血立注青霄|天弧一举旄头落|不似浔阳枉射鲛
+output: 海载年头一系骄|一涛浩蜃万河霄|一工不片无头立|吹用河阳海射潮
+
+epoch: 2, 2701/2971 90.9%, 0.15s per iter, lr: 0.0010, tr: 1.00, tau: 0.419
+  gen loss: 3.898  ppl:49.33
+______________________
+keywords: 朱门|繁华|苍苔|春深
+target: 梦冷繁华金谷园|春深葵麦暗朱门|东风日日吹花急|红雨苍苔泪几痕
+output: 深里花华满殿园|春风犹藿不生门|花风不日无芳雨|不白斑苔屐满痕
+
+epoch: 2, 2801/2971 94.3%, 0.15s per iter, lr: 0.0010, tr: 1.00, tau: 0.412
+  gen loss: 3.892  ppl:49.03
+______________________
+keywords: 红梅|PAD|PAD|PAD
+target: 景寂人闲喜得兼|绝浓峰色又当檐|红梅未放春消息|移向山窗护布帘
+output: 红色无家花不迟|春胜收顶照相檐|青楼雨熟春风息|一向长中一晓帘
+
+epoch: 2, 2901/2971 97.6%, 0.15s per iter, lr: 0.0010, tr: 1.00, tau: 0.406
+  gen loss: 3.887  ppl:48.75
+______________________
+run validation...
+in training mode: 0
+epoch: 2, lr: 0.0010, tr: 1.00, tau: 0.402
+  gen loss: 4.228  ppl:68.60
+______________________
+validation Done: 1
+saving model...
+teach forcing ratio decay...
+shuffle data...
+keywords: 断|松风|行人|PAD
+target: 一派泉分九窍流|地中窍窍尽通幽|行人到此肠堪断|不用松风满月楼
+output: 松曲清声水曲秋|行行窍窍是藏舟|行人莫处方堪断|不是乘风吹袖钩
+
+epoch: 3, 1/2971 0.0%, 0.00s per iter, lr: 0.0010, tr: 1.00, tau: 0.402
+  gen loss: 3.883  ppl:48.56
+______________________
+keywords: 回首|夕照|扁舟|PAD
+target: 扁舟此日信归风|海上潮生夕照红|送别何须重回首|括山遥在碧云中
+output: 扁舟载日欲陵篷|回上扁生水照浓|回客扁年问九首|括苍回望碧云中
+
+epoch: 3, 101/2971 3.4%, 0.15s per iter, lr: 0.0010, tr: 1.00, tau: 0.395
+  gen loss: 3.876  ppl:48.22
+______________________
+keywords: 珍重|君家|道人|PAD
+target: 纷纷褦襶久相忘|只忆僧斋昼梦长|珍重道人留客语|君家无此北窗凉
+output: 道纷夭襶自无忘|欲有君家读漏长|安重君人应卜饮|为看自复问窗凉
+
+epoch: 3, 201/2971 6.8%, 0.15s per iter, lr: 0.0010, tr: 1.00, tau: 0.389
+  gen loss: 3.869  ppl:47.90
+______________________
+keywords: 甘心|琵琶|PAD|PAD
+target: 鸡絮交欢远|琵琶寄恨深|早知胡地冷|永巷亦甘心
+output: 琵黍悲交笑|琵琶泪远深|哀知秋蝶下|不夜夜无心
+
+epoch: 3, 301/2971 10.1%, 0.15s per iter, lr: 0.0010, tr: 1.00, tau: 0.384
+  gen loss: 3.863  ppl:47.60
+______________________
+keywords: 青琐|PAD|PAD|PAD
+target: 属城甘雨几经春|圣主全分付越人|俗眼不知青琐贵|江头争看碧油新
+output: 青车春旨泽时春|东主恩为一与人|若子不知何琐后|一南笑看白莲尘
+
+epoch: 3, 401/2971 13.5%, 0.15s per iter, lr: 0.0010, tr: 1.00, tau: 0.378
+  gen loss: 3.857  ppl:47.31
+______________________
+keywords: 欲识|PAD|PAD|PAD
+target: 一色千峰翠作围|忽然齐换紫绡衣|客来欲识楼中景|祇等金鸦浴海时
+output: 欲片青峰翠作围|风然飞下玉芝衣|何来自问真中句|尽恐梅茎与鸟时
+
+epoch: 3, 501/2971 16.9%, 0.15s per iter, lr: 0.0010, tr: 1.00, tau: 0.372
+  gen loss: 3.851  ppl:47.03
+______________________
+keywords: 回首|题诗|刘郎|灯火
+target: 小帘灯火屡题诗|回首青山失后期|未老刘郎定重到|烦君说与故人知
+output: 故园灯火夜相诗|回首人山隔旧期|回省渔郎归何续|烦君题我故人知
+
+epoch: 3, 601/2971 20.2%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.366
+  gen loss: 3.845  ppl:46.77
+______________________
+keywords: 青天|PAD|PAD|PAD
+target: 杪秋凉雨湿行鞯|山路泥深费折旋|多病不堪来往数|可能顽石补青天
+output: 青来风露入天天|十下青深不不传|溪谢不堪来往客|空无无石补青天
+
+epoch: 3, 701/2971 23.6%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.361
+  gen loss: 3.840  ppl:46.52
+______________________
+keywords: 东风|开帘|萋萋|朝日
+target: 朝日残莺伴妾啼|开帘只见草萋萋|庭前时有东风入|杨柳千条尽向西
+output: 妾日东妆啼晓啼|杏帘不隔杏萋萋|春前杨见东风软|不柳阴丝护日西
+
+epoch: 3, 801/2971 27.0%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.355
+  gen loss: 3.835  ppl:46.28
+______________________
+keywords: 园林|罗袜|翠袖|红妆
+target: 红妆翠袖一番新|又向园林作好春|却笑华清夸睡足|只今罗袜久无尘
+output: 粉妆翠袖拂般新|翠向园林学翠春|不笑牡堂憔手足|玉愁风袜不无尘
+
+epoch: 3, 901/2971 30.3%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.350
+  gen loss: 3.830  ppl:46.05
+______________________
+keywords: 称|PAD|PAD|PAD
+target: 智出建成上|贤于子纠多|至今称让帝|当日唤宁哥
+output: 为慧本章叔|猿哉在母多|不今犹汉主|不日到人哥
+
+epoch: 3, 1001/2971 33.7%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.344
+  gen loss: 3.825  ppl:45.81
+______________________
+keywords: 杜宇|游子|PAD|PAD
+target: 片片桃花下钓矶|声声杜宇暮春时|迩来夔峡多游子|正好从头唤取归
+output: 游片飞花不水丝|江声杜宇绕天时|东来不子今游子|谁是乘今饱杀归
+
+epoch: 3, 1101/2971 37.1%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.339
+  gen loss: 3.820  ppl:45.59
+______________________
+keywords: 金齑|诚斋|PAD|PAD
+target: 除却金齑霜后枨|更无一物可诗情|诚斋配以彭生脔|岂不冤哉五鼎烹
+output: 斋辱金莲荐露生|此无一点可能情|悬斋不尽诗泽脔|不是忘哉一十烹
+
+epoch: 3, 1201/2971 40.4%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.334
+  gen loss: 3.815  ppl:45.38
+______________________
+keywords: 青松|老僧|袅袅|PAD
+target: 袅袅枯藤淡绛葩|夤缘直上照残霞|老僧不作依栖想|将谓青松自有花
+output: 袅袅松藤袅欲霞|夤缘不上玉青霞|老僧只识寻然处|只谓青山是在花
+
+epoch: 3, 1301/2971 43.8%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.329
+  gen loss: 3.810  ppl:45.16
+______________________
+keywords: 舟子|牵|渔人|PAD
+target: 入怀宣化雨|打面紫关风|舟子牵江黑|渔人炊火红
+output: 舟山江子地|不贼不微中|谁子无牛上|渔舟来黍红
+
+epoch: 3, 1401/2971 47.2%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.324
+  gen loss: 3.806  ppl:44.96
+______________________
+keywords: 开花|柴门|秋日|竹屋
+target: 紫梨红枣八九树|竹屋柴门三四家|机杼声迟秋日晚|绕篱寒菊自开花
+output: 竹霞花日满千重|不叶柴门掩月家|秋杼不中春水永|几阶黄菊日开花
+
+epoch: 3, 1501/2971 50.5%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.319
+  gen loss: 3.801  ppl:44.76
+______________________
+keywords: 禅房|PAD|PAD|PAD
+target: 江边灯火似秋萤|哀怨山歌不可听|自怪今春牢落甚|禅房止酒读黄庭
+output: 禅南老火夜禅星|病怨离中一忍听|但是得宵有不尽|几僧花渴不书庭
+
+epoch: 3, 1601/2971 53.9%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.314
+  gen loss: 3.797  ppl:44.56
+______________________
+keywords: 明灯|入|PAD|PAD
+target: 珠箔因风起|飞蛾入最能|不教人夜作|方便杀明灯
+output: 明箔三何起|声来入画棱|明知明不雨|疑始是明灯
+
+epoch: 3, 1701/2971 57.3%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.309
+  gen loss: 3.793  ppl:44.38
+______________________
+keywords: 邂逅|乞米|慷慨|悬知
+target: 鲁公乞米出于真|邂逅周瑜慷慨人|借谓囊犹未为瘿|悬知甑已不生尘
+output: 窜公饮食食东民|邂逅相瑜慷慨人|若问高中知为瘿|悬知老里已曾身
+
+epoch: 3, 1801/2971 60.6%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.305
+  gen loss: 3.788  ppl:44.19
+______________________
+keywords: 照人|闻君|琼玖|君侯
+target: 闻君久得煎茶赋|故我先吟投李诗|为报君侯休吝惜|照人琼玖算多时
+output: 闻君滟矣同茶饭|雅老分生一老诗|为问君王应借惜|一人犹玖算时时
+
+epoch: 3, 1901/2971 64.0%, 0.15s per iter, lr: 0.0009, tr: 1.00, tau: 0.300
+  gen loss: 3.784  ppl:44.01
+______________________
+keywords: 张|PAD|PAD|PAD
+target: 石上一仙夫|箱中五岳图|不知张孺子|识得老人无
+output: 叶上坐枝都|人持有百图|大须何颢子|谁此是夫无
+
+epoch: 3, 2001/2971 67.4%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.295
+  gen loss: 3.780  ppl:43.83
+______________________
+keywords: 机|进步|竿头|PAD
+target: 道妙无为无不为|从他是是与非非|更须进步如平地|百尺竿头向上机
+output: 四上本机用所知|此来心处老山非|人于一履迟何日|直尺竿头一日机
+
+epoch: 3, 2101/2971 70.7%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.291
+  gen loss: 3.776  ppl:43.66
+______________________
+keywords: 清|PAD|PAD|PAD
+target: 适口滋甘是处生|酸咸得诀有馀清|何须越国求珍错|狗欲伤身长嗜萌
+output: 清爱清时味阿生|非甜甘请助神清|不须更鸟为遗异|自监枭神悔自争
+
+epoch: 3, 2201/2971 74.1%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.287
+  gen loss: 3.773  ppl:43.49
+______________________
+keywords: 夔龙|名字|大臣|PAD
+target: 齐鲁云何两大臣|初无名字挂朝绅|若将出处评高致|更是夔龙以上人
+output: 大道高霄万大臣|不封名字是名绅|逡言文济全文处|不恐谁州第后人
+
+epoch: 3, 2301/2971 77.4%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.282
+  gen loss: 3.769  ppl:43.33
+______________________
+keywords: 园花|探|日日|PAD
+target: 五日才能一日来|眼生方觉有春回|向来日日频来探|只道园花不肯开
+output: 日日春晴到日回|乡前无沼有无回|无人花日无相往|今有春中不见开
+
+epoch: 3, 2401/2971 80.8%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.278
+  gen loss: 3.765  ppl:43.16
+______________________
+keywords: 道人|岁寒|PAD|PAD
+target: 一枕春眠到日斜|梦回喜对小山茶|道人赠我岁寒种|不是寻常儿女花
+output: 道道羲风不岁斜|不回犹见岁桃斜|道人不我未寒信|岁是梅常俗辈花
+
+epoch: 3, 2501/2971 84.2%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.274
+  gen loss: 3.761  ppl:43.00
+______________________
+keywords: 他日|PAD|PAD|PAD
+target: 问疾曾飞晏海诗|更从群从叙宗支|他日长山疑梦处|诸生济济夜眠迟
+output: 他道他无不几时|我将江彦叙彝思|他日招安万有里|莫郎应济不何时
+
+epoch: 3, 2601/2971 87.5%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.269
+  gen loss: 3.758  ppl:42.85
+______________________
+keywords: 重阳|PAD|PAD|PAD
+target: 两年为客逢秋节|千里孤舟济水傍|忽见黄花倍惆怅|故园明日又重阳
+output: 重重重尔重秋菊|一里南山载岁长|云忆西庭无惆怅|不将今月是重阳
+
+epoch: 3, 2701/2971 90.9%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.265
+  gen loss: 3.754  ppl:42.69
+______________________
+keywords: 鳞鳞|繁华|吴门|PAD
+target: 吴门西路版桥通|万室鳞鳞水接空|鹤市鸡陂何处是|繁华都在画图中
+output: 吴门淞去接舆东|日里千鳞万接空|一驾不声春处是|蓬华应在画图中
+
+epoch: 3, 2801/2971 94.3%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.261
+  gen loss: 3.751  ppl:42.55
+______________________
+keywords: 隔岁|灯下|士女|头
+target: 士女当春重采头|神前灯下卜三筹|若逢皆胜为神许|许请灯归隔岁酬
+output: 城女来年问怆头|东仙人火火灯筹|忽为父得王霖赋|莫借如前夜海周
+
+epoch: 3, 2901/2971 97.6%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.257
+  gen loss: 3.747  ppl:42.40
+______________________
+run validation...
+in training mode: 0
+epoch: 3, lr: 0.0008, tr: 1.00, tau: 0.255
+  gen loss: 4.198  ppl:66.53
+______________________
+validation Done: 1
+teach forcing ratio decay...
+shuffle data...
+keywords: 城阙|荒草|PAD|PAD
+target: 鲁公城阙已丘墟|荒草无由认玉除|因笑臧孙才智少|东门钟鼓祀鶢鶋
+output: 旅城城下旧荒墟|松草荒人感得除|天想臧孙归二得|不风何鼓亦鶢鶋
+
+epoch: 4, 1/2971 0.0%, 0.00s per iter, lr: 0.0008, tr: 1.00, tau: 0.255
+  gen loss: 3.745  ppl:42.30
+______________________
+keywords: 赫赫|PAD|PAD|PAD
+target: 声名赫赫在穷塞|眉宇堂堂真丈夫|腰剑臂弓轻赴敌|无人不伏魏黄须
+output: 赫名赫赫赫何塞|不宇何中有可夫|死下当弓今赴敌|不人解解斩郎珠
+
+epoch: 4, 101/2971 3.4%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.251
+  gen loss: 3.740  ppl:42.11
+______________________
+keywords: 片帆|PAD|PAD|PAD
+target: 片帆何处去|匹马独归迟|惆怅江南北|青山欲暮时
+output: 片帆风处去|长马吊行时|风怅江南路|今山空暮时
+
+epoch: 4, 201/2971 6.8%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.247
+  gen loss: 3.736  ppl:41.92
+______________________
+keywords: 残花|钩帘|杨柳|PAD
+target: 青石阑干绕曲池|株株杨柳倒垂丝|水心亭上钩帘坐|鱼唼残花口动时
+output: 柳柳楼干柳岸溪|新株杨柳半垂垂|春边不上春帘幕|红腹鱼花趁上时
+
+epoch: 4, 301/2971 10.1%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.243
+  gen loss: 3.731  ppl:41.74
+______________________
+keywords: 槐花|PAD|PAD|PAD
+target: 往年六月蝉应到|每到闻时骨欲惊|今日槐花还似发|却愁听尽更无声
+output: 一来不月春声噪|未到花花不已成|今日又阴浑独雪|不疑无尽不无声
+
+epoch: 4, 401/2971 13.5%, 0.16s per iter, lr: 0.0008, tr: 1.00, tau: 0.239
+  gen loss: 3.727  ppl:41.57
+______________________
+keywords: 念|虎穴|PAD|PAD
+target: 毁誉不入念|方知心已空|魔宫并虎穴|还与道场同
+output: 虎行金可市|何知何是空|何庸虽黍鼠|不知世场同
+
+epoch: 4, 501/2971 16.9%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.236
+  gen loss: 3.723  ppl:41.40
+______________________
+keywords: 水亭|山林|PAD|PAD
+target: 山林含古翠|萧爽水亭虚|岂乏幽栖者|临清此玩鱼
+output: 山林水水木|水散对亭居|一有山人处|山流有是居
+
+epoch: 4, 601/2971 20.2%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.232
+  gen loss: 3.719  ppl:41.24
+______________________
+keywords: 中原|人闲|造物|PAD
+target: 此去秦关路几多|中原无鹿海无波|荷蓑不是人闲事|造物小儿如子何
+output: 中地人川不不何|山原风奈亦云波|此花欲用闲间物|只物无儿造此何
+
+epoch: 4, 701/2971 23.6%, 0.15s per iter, lr: 0.0008, tr: 1.00, tau: 0.229
+  gen loss: 3.715  ppl:41.08
+______________________
+keywords: 子孙|白头|青山|PAD
+target: 白草茨庵白葛衣|白头懒剃雪根稀|子孙登录俱天上|独扫青山待客归
+output: 青发青中无子衣|夜头老剃老霜飞|自孙自此多无下|万有青山旧月归
+
+epoch: 4, 801/2971 27.0%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.225
+  gen loss: 3.712  ppl:40.93
+______________________
+keywords: 愧|荷|隐|闲官
+target: 二年鞭弭侍君轩|立仗从来愧不言|乞得闲官九仙隐|身谋优稳荷明恩
+output: 闲公之石老尤门|眼马遐来愧缊言|莫取闲身闲方境|归轻优钵妄衣恩
+
+epoch: 4, 901/2971 30.3%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.222
+  gen loss: 3.708  ppl:40.78
+______________________
+keywords: 边|PAD|PAD|PAD
+target: 夫婿泛淮船|闺门一步前|如何中夜梦|却在大江边
+output: 边婿亦天边|去门闻日边|春何不夜月|明在五江边
+
+epoch: 4, 1001/2971 33.7%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.218
+  gen loss: 3.705  ppl:40.63
+______________________
+keywords: 门巷|新晴|小窗|PAD
+target: 池南欹柳燕将雏|门巷新晴转绿芜|花隔小窗人不到|一帘香雾斗摴蒱
+output: 新塘门枕弄晴雏|门巷新晴绿绿芜|门鸟小窗春不到|一枝春雾看新蒱
+
+epoch: 4, 1101/2971 37.1%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.215
+  gen loss: 3.701  ppl:40.49
+______________________
+keywords: 满眼|年年|老树|PAD
+target: 东风满眼皆陈迹|老树荒园更断烟|今昔相看只如此|但拚痛饮过年年
+output: 春风吹树秋春迹|满去荒苔落不然|山日年逢无如此|今知衰饮老年年
+
+epoch: 4, 1201/2971 40.4%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.212
+  gen loss: 3.698  ppl:40.35
+______________________
+keywords: 天南|秋草|PAD|PAD
+target: 汉庭谁问投荒客|十载天南着白衣|秋草茫茫恶溪路|岭头遥送北人稀
+output: 秋家秋复南南草|十日城边秋雁衣|秋草茫茫天秋水|天南无望雁山归
+
+epoch: 4, 1301/2971 43.8%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.208
+  gen loss: 3.694  ppl:40.22
+______________________
+keywords: 吹笛|PAD|PAD|PAD
+target: 湖上轻风拂柳条|美人吹笛向平桥|欲知胥浦潮初退|正是秦淮雪半消
+output: 一上风帆吹袖条|楼人吹笛月南桥|一知别色无生急|月是斜人落里消
+
+epoch: 4, 1401/2971 47.2%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.205
+  gen loss: 3.691  ppl:40.08
+______________________
+keywords: 夕阳|寂寂|云影|华表
+target: 栖神山下玄元馆|华表巍然鹤未归|寂寂小亭人不见|夕阳云影共依依
+output: 夕鸦不下无都府|长屋华然一鹤归|寂寂寥窗明不见|夕阳山影夕悠依
+
+epoch: 4, 1501/2971 50.5%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.202
+  gen loss: 3.688  ppl:39.95
+______________________
+keywords: 森罗|区区|秋毫|PAD
+target: 被褐怀珍眼力高|区区不复数秋毫|从来方才湛如水|万象森罗何处逃
+output: 一褐多人秋欲高|诗区何用议评毫|天今万寸知然玉|万里森森不处逃
+
+epoch: 4, 1601/2971 53.9%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.199
+  gen loss: 3.684  ppl:39.82
+______________________
+keywords: 蹉跎|归计|PAD|PAD
+target: 住山人少说山多|空只年年忆薜萝|不是自心应不信|眼前归计又蹉跎
+output: 归山归去有踪阿|脚有当来著故萝|不是旧家归不见|年前何去又蹉跎
+
+epoch: 4, 1701/2971 57.3%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.196
+  gen loss: 3.681  ppl:39.70
+______________________
+keywords: 湖海|PAD|PAD|PAD
+target: 千篇奏牍漫多知|百战收功未出奇|名下难居身可辱|却将湖海换西施
+output: 湖年万罢尽题时|功丈功功不易奇|海在旧言湖世祷|不将心海换鱼施
+
+epoch: 4, 1801/2971 60.6%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.193
+  gen loss: 3.678  ppl:39.58
+______________________
+keywords: 日月|洞中|出郭|PAD
+target: 洞中日月洞中仙|不算离家是几年|出郭始知人代变|又须抛却古时钱
+output: 出中深月照庭天|不见中家有洞年|纵郭不知人世后|故添携却问来禅
+
+epoch: 4, 1901/2971 64.0%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.190
+  gen loss: 3.675  ppl:39.46
+______________________
+keywords: 谢客|主人|玲珑|杜门
+target: 此君原是主人翁|夙夜惺惺俨在中|只为杜门能谢客|一间虚室自玲珑
+output: 杜花为是不人翁|何志怀惺俨不中|后恐闭门无几客|不朝无阁似玲珑
+
+epoch: 4, 2001/2971 67.4%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.187
+  gen loss: 3.672  ppl:39.34
+______________________
+keywords: 明月|清香|森森|秋色
+target: 清香满座瓜分玉|明月澄空酒漾金|不是夜凉难就醉|一帘秋色竹森森
+output: 翠秋亭树琅枝绿|彷月珠清月力金|一是老深明到醉|时声明色满萧森
+
+epoch: 4, 2101/2971 70.7%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.184
+  gen loss: 3.669  ppl:39.23
+______________________
+keywords: 南游|金精|春雨|PAD
+target: 金精谷口初相遇|喜子南游有远怀|不见汉章遗石鼓|碧苔春雨上丹崖
+output: 春笼巧口春生似|一见南游与几来|怪是南家春迹在|春苔春雨溢南台
+
+epoch: 4, 2201/2971 74.1%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.182
+  gen loss: 3.666  ppl:39.11
+______________________
+keywords: 风花|PAD|PAD|PAD
+target: 家鸡到处不须争|醉点风花亦有情|我见白头张汝弼|今年又在寿春城
+output: 风山花处不知倾|风里风花似自情|不亦桃头今老弼|君朝此是此阳耕
+
+epoch: 4, 2301/2971 77.4%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.179
+  gen loss: 3.664  ppl:39.00
+______________________
+keywords: 客思|夕阳|PAD|PAD
+target: 闲与芦花立水边|归心客思两茫然|夕阳收尽天风急|一树寒鸦落野田
+output: 夕客诗花作客边|乱来日思欲悠然|故阳明尽寒风远|吹片寒鸦落夕天
+
+epoch: 4, 2401/2971 80.8%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.176
+  gen loss: 3.661  ppl:38.89
+______________________
+keywords: 海门|清秋|闭关|鲸波
+target: 鲸波千迭海门还|劝尔清秋且闭关|但使六尘缘境净|眼前长是补陀山
+output: 海鲵挟尺海涛间|今得清秋夜闭关|莫觉此年飞底恶|不中不是海天山
+
+epoch: 4, 2501/2971 84.2%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.173
+  gen loss: 3.658  ppl:38.78
+______________________
+keywords: 红尘|诗思|吟魂|PAD
+target: 曾经烂漫濯吾缨|忍别潺湲月下声|便入红尘染诗思|吟魂犹合数年清
+output: 诗闻诗醉醉吟缨|诗看吟湲梦满平|一是五尘飞天句|一哦不自梦诗程
+
+epoch: 4, 2601/2971 87.5%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.171
+  gen loss: 3.655  ppl:38.67
+______________________
+keywords: 想像|击筑|东吴|PAD
+target: 北吴原不是东吴|古意如今问有无|击筑馀风劳想像|一时俗尚喜言苏
+output: 吴来南是是前吴|可意无今不大无|我筑高年吹往像|可番祛驾不如孤
+
+epoch: 4, 2701/2971 90.9%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.168
+  gen loss: 3.652  ppl:38.57
+______________________
+keywords: 谁管|PAD|PAD|PAD
+target: 药知性亦病知源|谁管尸灵骨已寒|痛下一针双眼活|耆婆应未得其传
+output: 谁苗天命自非难|谁道人灵不不完|却惜朱枝无泪底|却婆何不抵师然
+
+epoch: 4, 2801/2971 94.3%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.166
+  gen loss: 3.650  ppl:38.46
+______________________
+keywords: 风撼|PAD|PAD|PAD
+target: 清者何曾饮盗泉|僧盂底饭逆巢田|此疑欲问师无语|风撼长松啸半天
+output: 风夜风曾到一仙|自房那用得风眠|不身身解无何意|风雨潇松自月天
+
+epoch: 4, 2901/2971 97.6%, 0.15s per iter, lr: 0.0007, tr: 1.00, tau: 0.163
+  gen loss: 3.647  ppl:38.36
+______________________
+run validation...
+in training mode: 0
+epoch: 4, lr: 0.0007, tr: 1.00, tau: 0.161
+  gen loss: 4.188  ppl:65.90
+______________________
+validation Done: 1
+saving model...
+teach forcing ratio decay...
+shuffle data...
+keywords: 道人|日落|PAD|PAD
+target: 蓝水飞流界玉峰|风声寒落隔溪松|道人细味悲秋句|日落空江闻远钟
+output: 日岭桥边水五峰|翠云落竹水林松|道人不说无秋意|自落千江落雁钟
+
+epoch: 5, 1/2971 0.0%, 0.00s per iter, lr: 0.0007, tr: 0.91, tau: 0.161
+  gen loss: 3.645  ppl:38.29
+______________________
+keywords: 花光|酒中|东风|PAD
+target: 龙骖晓入望春宫|正逢春雪舞东风|花光并洒天文上|寒气行消御酒中
+output: 酒楼虎日醉仙风|花迷春色尚芳风|花光不与东风老|一气逼人玉苑中
+
+epoch: 5, 101/2971 3.4%, 0.15s per iter, lr: 0.0007, tr: 0.91, tau: 0.159
+  gen loss: 3.643  ppl:38.22
+______________________
+keywords: 峰顶|PAD|PAD|PAD
+target: 集云峰顶风霜饱|黄檗洲前水石清|不入贡包供玉食|祇应山泽擅高名
+output: 峰峰峰顶峰峦顶|不檗前前一石清|不到洞州招帖笛|却应馋泽有龙情
+
+epoch: 5, 201/2971 6.8%, 0.15s per iter, lr: 0.0007, tr: 0.91, tau: 0.156
+  gen loss: 3.642  ppl:38.17
+______________________
+keywords: 寒色|PAD|PAD|PAD
+target: 偶向妙峰亭上望|一襟寒色近春分|晴风吹放天全露|吹尽江南江北云
+output: 寒到寒山顶上闻|碧峰寒色照人云|风空吹雨寒寒露|一彻寒南万北云
+
+epoch: 5, 301/2971 10.1%, 0.15s per iter, lr: 0.0007, tr: 0.91, tau: 0.154
+  gen loss: 3.640  ppl:38.10
+______________________
+keywords: 真隐|避地|结草|居
+target: 避地成真隐|依山结草庐|此身无籍在|随寓即成居
+output: 结地无何隐|遗然结草庐|何身何外地|何处是齁鱼
+
+epoch: 5, 401/2971 13.5%, 0.15s per iter, lr: 0.0007, tr: 0.91, tau: 0.152
+  gen loss: 3.639  ppl:38.04
+______________________
+keywords: 林峦|PAD|PAD|PAD
+target: 树含晓色护林峦|重露如岚滴翠寒|猿鸟尽逢山叟惯|未尝惊怪竹皮冠
+output: 林间暝色迥林峦|云叠繁霜翠露寒|不鹤不来春路惯|不知僧起竹林冠
+
+epoch: 5, 501/2971 16.9%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.149
+  gen loss: 3.637  ppl:37.98
+______________________
+keywords: 疏雨|PAD|PAD|PAD
+target: 暮云不肯破重阴|祇系萱堂夜夜心|马上北风吹泪落|细随疏雨湿衣襟
+output: 疏山疏雨雨朝阴|新爱深花络寂心|不上相风无雨落|自怜身在过征襟
+
+epoch: 5, 601/2971 20.2%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.147
+  gen loss: 3.636  ppl:37.93
+______________________
+keywords: 韦编|羲皇|飞雨|清凉
+target: 时时飞雨作清凉|六月南方似北方|阁上独居无一事|韦编聊复到羲皇
+output: 祝融开雨过高凉|归去如何水镜光|不用高醒无一事|韦编编复见羲皇
+
+epoch: 5, 701/2971 23.6%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.145
+  gen loss: 3.634  ppl:37.87
+______________________
+keywords: 江海|PAD|PAD|PAD
+target: 东南山水足清晖|茅屋枫林共石矶|谁坐扁舟沙际住|也知江海客忘归
+output: 江风江月照江辉|高兴衡林叶一矶|不道扁舟无个语|看来今阁有来归
+
+epoch: 5, 801/2971 27.0%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.143
+  gen loss: 3.633  ppl:37.82
+______________________
+keywords: 城西|结束|王粲|出塞
+target: 双鞲结束气如云|亚子城西酒半醺|欲向故人歌出塞|近来王粲倦从军
+output: 城旌遥束并戎云|一盖城西塞半醺|吴向城人询一堰|一城犹气不游军
+
+epoch: 5, 901/2971 30.3%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.140
+  gen loss: 3.631  ppl:37.77
+______________________
+keywords: 灞陵|PAD|PAD|PAD
+target: 唤做农夫却逢掖|道是禅和又幅巾|灞陵雪中耸肩客|天津桥上皱眉人
+output: 一起春夫醉不著|十是人翁不馈巾|灞陵风后今青壁|曾涯桥上看眉颦
+
+epoch: 5, 1001/2971 33.7%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.138
+  gen loss: 3.630  ppl:37.72
+______________________
+keywords: 春水|柳色|PAD|PAD
+target: 一尉何曾及布衣|时平却忆卧柴扉|故园柳色催南客|春水桃花待北归
+output: 柳片曹年酒水衣|几时春忆李游扉|春园春水连春去|春水满花满客归
+
+epoch: 5, 1101/2971 37.1%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.136
+  gen loss: 3.629  ppl:37.67
+______________________
+keywords: 江山|风月|休|PAD
+target: 世味渐阑如嚼蜡|惟诗直恐死方休|四时风月元无尽|万里江山更拟游
+output: 休上莼闲无此蜡|风应风与到非忧|不时风月无无用|独里江山一有愁
+
+epoch: 5, 1201/2971 40.4%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.134
+  gen loss: 3.627  ppl:37.61
+______________________
+keywords: 灵台|PAD|PAD|PAD
+target: 灵台清晓玉无瑕|独立东风玩物华|春气夜来深几许|小桃又发两三花
+output: 灵台高隐化灵瑕|一倚灵台刷玉华|珊至满来人院许|松窗开是杏三花
+
+epoch: 5, 1301/2971 43.8%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.132
+  gen loss: 3.626  ppl:37.57
+______________________
+keywords: 衣冠|日月|PAD|PAD
+target: 三山渺渺水溅溅|日月衣冠又一天|不是六鳌相拄得|便流西极已多年
+output: 日年日渺水云溅|日月光冠日一年|不是山朝峰见处|始应凿北一归年
+
+epoch: 5, 1401/2971 47.2%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.130
+  gen loss: 3.625  ppl:37.52
+______________________
+keywords: 留恋|朱唇|飘残|花神
+target: 飘残额粉见朱唇|杏艳桃娇谩妒人|解得花神留恋意|枝南枝北一般春
+output: 黄香芍上不花轮|不蕊飘开谩自人|不得花神来意处|不头枝北更般春
+
+epoch: 5, 1501/2971 50.5%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.128
+  gen loss: 3.624  ppl:37.47
+______________________
+keywords: 行客|垂|PAD|PAD
+target: 农夫秧稻满畦水|行客跨骡无树陂|热风吹面日方午|忽见绿岩冰柱垂
+output: 垂家行客何村稻|县尽沿驴侬所迟|半官吹雨成行过|老见天杨山色垂
+
+epoch: 5, 1601/2971 53.9%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.126
+  gen loss: 3.622  ppl:37.42
+______________________
+keywords: 小艇|山花|东风|酒旗
+target: 山花琐细簇邮亭|小艇渔归水气腥|一路东风嘶去马|土墙斜飐酒旗青
+output: 山花深里酒春亭|杨艇轻舟小拍腥|一曲东风吹雨后|半花杨日酒旗青
+
+epoch: 5, 1701/2971 57.3%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.124
+  gen loss: 3.621  ppl:37.38
+______________________
+keywords: 芊芊|安眠|碧树|绿荫
+target: 平坡软草细芊芊|碧树遥枝绿荫圆|羊豕自如知饱后|牧儿箕坐得安眠
+output: 一生日午傍芊芊|碧树红临带树绵|我豕不来人几久|安儿不首饱安眠
+
+epoch: 5, 1801/2971 60.6%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.122
+  gen loss: 3.620  ppl:37.34
+______________________
+keywords: 孱颜|山翠|鹿门|PAD
+target: 采药仙人去不还|鹿门山翠郁孱颜|霜髯尚困卑官缚|自问胡颜上此山
+output: 鹿药山翁不不还|松门山下湿难颜|一台不有风飞去|更是何尘不蔡山
+
+epoch: 5, 1901/2971 64.0%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.121
+  gen loss: 3.619  ppl:37.29
+______________________
+keywords: 圣人|茅茨|歌舞|唐虞
+target: 茅茨不剪阶三尺|自古唐虞是圣人|万乐阿房歌舞地|只消一炬化为尘
+output: 文园台见唐前径|犹有词虞报圣人|唯里不戎非舞地|至将歌曲已为尘
+
+epoch: 5, 2001/2971 67.4%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.119
+  gen loss: 3.618  ppl:37.25
+______________________
+keywords: 淋浪|寒灯|幽|PAD
+target: 寒灯耿欲灭|照此一窗幽|坐听秋檐响|淋浪殊未休
+output: 夜灯悄幽灭|夜影影孤幽|欲对孤声响|听浪无未幽
+
+epoch: 5, 2101/2971 70.7%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.117
+  gen loss: 3.616  ppl:37.20
+______________________
+keywords: 年年|PAD|PAD|PAD
+target: 年年桂绽菊开时|长忆芳樽共一卮|请诵周人和乐句|全胜三叹陟冈诗
+output: 年年年树酒花篱|醉恨春年酒一卮|未赏年公重靖处|年胜芳径有家知
+
+epoch: 5, 2201/2971 74.1%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.115
+  gen loss: 3.615  ppl:37.15
+______________________
+keywords: 雨露|长吟|花草|陆沉
+target: 寝息随时忘陆沉|银笺挥罢自长吟|庭前花草宜人处|生意新沾雨露深
+output: 长下长风风却沉|丁环玉罢不清吟|水花花草皆春意|花意长来雨露深
+
+epoch: 5, 2301/2971 77.4%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.113
+  gen loss: 3.614  ppl:37.11
+______________________
+keywords: 想见|PAD|PAD|PAD
+target: 想见青宫拂素丝|清风雅操玉参差|一般翰墨归人世|还有章怀太子诗
+output: 想见双山隔晓枝|旋泉初颂答毫差|不窗一点留来后|想忆当江旧古期
+
+epoch: 5, 2401/2971 80.8%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.112
+  gen loss: 3.613  ppl:37.06
+______________________
+keywords: 满座|PAD|PAD|PAD
+target: 插天修干已鳞皴|谁挽青枝架水滨|却退炎威凉满座|都缘清荫布如云
+output: 满城风竹万成鳞|更谓秋衣上上滨|倒是寒天无似地|炎门无味在精云
+
+epoch: 5, 2501/2971 84.2%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.110
+  gen loss: 3.612  ppl:37.03
+______________________
+keywords: 才|PAD|PAD|PAD
+target: 不解追时好|尤非治郡才|故山猿鹤怨|应怪未归来
+output: 才学才才事|那宜少郡才|应人应鹤怨|应是不归来
+
+epoch: 5, 2601/2971 87.5%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.108
+  gen loss: 3.611  ppl:36.99
+______________________
+keywords: 园里|PAD|PAD|PAD
+target: 淅淅船篷雨点声|疏疏江面縠纹生|石峰斗起三千丈|身在假山园里行
+output: 园淅东中绿里声|船林风渚縠纹平|客桥幽水人千里|万在碧云西里行
+
+epoch: 5, 2701/2971 90.9%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.107
+  gen loss: 3.609  ppl:36.95
+______________________
+keywords: 平原|PAD|PAD|PAD
+target: 哀笳遥起戍楼间|少见平原多见山|惆怅葫芦河上客|立残斜日望乡关
+output: 平笳吹送雁楼船|一壮如生不少寰|今怅平芦无上柳|一帆斜日照春关
+
+epoch: 5, 2801/2971 94.3%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.105
+  gen loss: 3.608  ppl:36.90
+______________________
+keywords: 江水|风流|PAD|PAD
+target: 步兵偶尔忆山林|尚自风流说到今|不知千里如何味|直待鲈鱼江水深
+output: 江江江尔渡江林|白有风流忆旧今|江知何里江江水|只到潮鱼江上深
+
+epoch: 5, 2901/2971 97.6%, 0.15s per iter, lr: 0.0006, tr: 0.91, tau: 0.103
+  gen loss: 3.607  ppl:36.86
+______________________
+run validation...
+in training mode: 0
+epoch: 5, lr: 0.0006, tr: 0.91, tau: 0.102
+  gen loss: 4.155  ppl:63.78
+______________________
+validation Done: 1
+teach forcing ratio decay...
+shuffle data...
+keywords: 鸡犬|桑麻|篱落|PAD
+target: 稻穗登场谷满车|家家鸡犬更桑麻|谩栽木槿成篱落|已得清阴又得花
+output: 稻穗初临稻口沙|家家鸡犬隔桑麻|可来桃槿篱篱落|不见春来荠一花
+
+epoch: 6, 1/2971 0.0%, 0.00s per iter, lr: 0.0006, tr: 0.89, tau: 0.102
+  gen loss: 3.606  ppl:36.83
+______________________
+keywords: 谩|官满|PAD|PAD
+target: 五斗徒劳谩折腰|三年两鬓为谁焦|今朝官满重归去|还挈来时旧酒瓢
+output: 官十年劳苦狎腰|何年俛地不生消|今朝始府无重去|不向人时结社浇
+
+epoch: 6, 101/2971 3.4%, 0.15s per iter, lr: 0.0006, tr: 0.89, tau: 0.101
+  gen loss: 3.605  ppl:36.78
+______________________
+keywords: 雪满|门庭|PAD|PAD
+target: 不出门庭十五年|旧游遥历重凄然|昂藏徒有平生志|容易因循雪满颠
+output: 雪见庭庭雪二年|旧时无见几门然|昂头不见无生志|家易当循枉满船
+
+epoch: 6, 201/2971 6.8%, 0.15s per iter, lr: 0.0006, tr: 0.89, tau: 0.099
+  gen loss: 3.604  ppl:36.73
+______________________
+keywords: 中朝|金石|PAD|PAD
+target: 鸡骨频占欲满篝|可怜金石若为流|中朝定有蠲租诏|不解民间目下愁
+output: 金石堆频玉尽檐|敢怜金粟粲为酬|栋间不是金租税|不是金间不送愁
+
+epoch: 6, 301/2971 10.1%, 0.15s per iter, lr: 0.0006, tr: 0.89, tau: 0.098
+  gen loss: 3.603  ppl:36.69
+______________________
+keywords: 行行|霜蹄|PAD|PAD
+target: 宝匣青萍剑|霜蹄白鼻䯄|行行日欲暮|前路鲁朱家
+output: 霜藏千霜底|霜蹄带兔䯄|邻人骑渐暮|不路路筋华
+
+epoch: 6, 401/2971 13.5%, 0.15s per iter, lr: 0.0006, tr: 0.89, tau: 0.096
+  gen loss: 3.601  ppl:36.65
+______________________
+keywords: 闭门|笑|PAD|PAD
+target: 三年一别一番新|几度相逢笑有因|僧未参方官未擢|闭门人亦出门人
+output: 天公一笑一番新|万度相看说语邻|说道个军无况了|闭门无静爱门人
+
+epoch: 6, 501/2971 16.9%, 0.15s per iter, lr: 0.0006, tr: 0.89, tau: 0.095
+  gen loss: 3.600  ppl:36.61
+______________________
+keywords: 朝阳|学道|金猊|PAD
+target: 厅左清闲处|金猊罩宝香|令君今学道|来此吸朝阳
+output: 宫阁朝朝事|朝猊万里香|朝人方日道|不是召朝阳
+
+epoch: 6, 601/2971 20.2%, 0.15s per iter, lr: 0.0006, tr: 0.89, tau: 0.093
+  gen loss: 3.599  ppl:36.56
+______________________
+keywords: 嶙峋|天阙|银河|翘首
+target: 柱撑天阙出嶙峋|虹跨银河落涧津|粤客独来翘首立|五云高处不胜春
+output: 天天天竺倚嶙峋|云贯星河一照滨|粤客不醒翘首望|不更回卧有胜人
+
+epoch: 6, 701/2971 23.6%, 0.15s per iter, lr: 0.0006, tr: 0.89, tau: 0.092
+  gen loss: 3.598  ppl:36.53
+______________________
+keywords: 乡里|明朝|温柔|PAD
+target: 温柔乡里唤春回|低唱樽前肉作台|判取明朝都醉杀|解酲一笑有人开
+output: 天柔乡里送春来|雪唱催前唱食台|今得明光又是后|不教不笑任馀来
+
+epoch: 6, 801/2971 27.0%, 0.15s per iter, lr: 0.0006, tr: 0.89, tau: 0.090
+  gen loss: 3.597  ppl:36.49
+______________________
+keywords: 零落|悠悠|珊瑚|日斜
+target: 悠悠马上困思茶|休歇僧房到日斜|殿背无人绿钱满|小盆零落珊瑚花
+output: 野悠墓上看风家|花向残窗一日斜|城市风人无如尽|金鸡犹落东风花
+
+epoch: 6, 901/2971 30.3%, 0.15s per iter, lr: 0.0006, tr: 0.89, tau: 0.089
+  gen loss: 3.596  ppl:36.44
+______________________
+keywords: 功名|读书|深山|PAD
+target: 到手功名赋子虚|深山长谷觅安居|读书已足功名事|更读人间未读书
+output: 乃处功名不考虚|乾坤深在读书书|区书读是无功字|更读前间读读书
+
+epoch: 6, 1001/2971 33.7%, 0.15s per iter, lr: 0.0006, tr: 0.89, tau: 0.088
+  gen loss: 3.595  ppl:36.40
+______________________
+keywords: 清凉|长安|PAD|PAD
+target: 独秀峰前是宝坊|坐令热恼变清凉|人人认得长安路|珍重旃檀一瓣香
+output: 长有长前雪故装|一来清暑石清凉|如间不得长安水|不重平安一夜香
+
+epoch: 6, 1101/2971 37.1%, 0.15s per iter, lr: 0.0006, tr: 0.89, tau: 0.086
+  gen loss: 3.593  ppl:36.36
+______________________
+keywords: 唤作|满|腰金|PAD
+target: 曳紫腰金满阙庭|被渠唤作集瓜蝇|适从何处来居此|面目人嫌鬼亦憎
+output: 谁履锵肢下世庭|开人剪作小芳蝇|适来不处寻相士|不壁风间半火憎
+
+epoch: 6, 1201/2971 40.4%, 0.15s per iter, lr: 0.0006, tr: 0.89, tau: 0.085
+  gen loss: 3.592  ppl:36.32
+______________________
+keywords: 天下|文明|归田|PAD
+target: 天下文明日|云从隘九霄|归田沾霈泽|同幸际皇朝
+output: 天下文明士|而中隘九霄|归田归霈泽|祇是是归朝
+
+epoch: 6, 1301/2971 43.8%, 0.15s per iter, lr: 0.0006, tr: 0.89, tau: 0.084
+  gen loss: 3.591  ppl:36.29
+______________________
+keywords: 龙堆|山势|PAD|PAD
+target: 截将山势白云回|双作丁灵得胜台|南塞可怜成北塞|牧羝谁在黑龙堆
+output: 山流山势入云开|捕得鱼宁一自来|投陌山怜吴血极|牧羝不是广龙堆
+
+epoch: 6, 1401/2971 47.2%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.082
+  gen loss: 3.590  ppl:36.25
+______________________
+keywords: 喧|焚香|黄鹂|阶下
+target: 世间极乐唯无事|高坐焚香日几时|阶下无人喧鸟集|前身或恐是黄鹂
+output: 焚间多目无何此|闲下焚香坐读时|阶下黄人更不雀|幽身拄是是黄鹂
+
+epoch: 6, 1501/2971 50.5%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.081
+  gen loss: 3.589  ppl:36.21
+______________________
+keywords: 峥嵘|青青|尘埃|PAD
+target: 风饕雪虐岁峥嵘|寸草寒窗独宁馨|长恐出山泉水浊|尘埃到汝失青青
+output: 尘尘石虐易峥嵘|此草千花不自馨|今恨青门无石阔|尘埃拂处不尘青
+
+epoch: 6, 1601/2971 53.9%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.080
+  gen loss: 3.588  ppl:36.17
+______________________
+keywords: 头颅|清泉|中兴|皇天
+target: 中兴封事百年无|身倚皇天自不孤|酌罢清泉问秦桧|已无寸土寄头颅
+output: 皇兴唐事本年枯|勋缚清家气有区|一我清泉还自客|死知功禄与行颅
+
+epoch: 6, 1701/2971 57.3%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.079
+  gen loss: 3.587  ppl:36.14
+______________________
+keywords: 气象|锦袍|承恩|玉阶
+target: 胪传唱彻九霄清|三殿云高五色明|此日承恩多气象|玉阶先曳锦袍行
+output: 玉传新彻玉天情|千殿香中玉色明|宝日升恩宫寿象|金颜金赐玉衣行
+
+epoch: 6, 1801/2971 60.6%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.078
+  gen loss: 3.586  ppl:36.10
+______________________
+keywords: 倦客|烟霞|天涯|长安
+target: 君从花下忆天涯|予亦长安五见花|惟有青山怜倦客|几人容易得烟霞
+output: 长家天县寄山涯|予亦长安客色花|惟有东山同我客|不年能与到长沙
+
+epoch: 6, 1901/2971 64.0%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.076
+  gen loss: 3.586  ppl:36.07
+______________________
+keywords: 抛掷|佳人|春风|PAD
+target: 佳人自折一枝红|把唱新词曲未终|惟向眼前怜易落|不如抛掷任春风
+output: 南人莫比一枝红|风酒阳词曲曲风|惟有佳前花小老|不须何处折金笼
+
+epoch: 6, 2001/2971 67.4%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.075
+  gen loss: 3.585  ppl:36.05
+______________________
+keywords: 高卧|PAD|PAD|PAD
+target: 高卧洞庭三十春|芰荷香里独垂纶|莫嫌无事闲销日|有事始怜无事人
+output: 高卧高房云月春|谁荷高里一携纶|高言屈计闲中得|忘客无知无事人
+
+epoch: 6, 2101/2971 70.7%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.074
+  gen loss: 3.584  ppl:36.01
+______________________
+keywords: 怅望|仙台|增|PAD
+target: 玉函捧上五云堆|著意通幽此一回|三十年来增怅望|更无人上望仙台
+output: 我函台出墨台开|紫述君天一景回|怅十年前同怅望|不无人语一仙台
+
+epoch: 6, 2201/2971 74.1%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.073
+  gen loss: 3.583  ppl:35.97
+______________________
+keywords: 书窗|分明|PAD|PAD
+target: 动静无端画一圈|分明擘破又浑全|日光漏得先天意|钻入书窗个个圆
+output: 一静风端一不圈|分明记楮一成天|书轮不出无生辨|钻刺瓷窗一个圆
+
+epoch: 6, 2301/2971 77.4%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.072
+  gen loss: 3.582  ppl:35.94
+______________________
+keywords: 苍翠|玉帐|渭水|PAD
+target: 玉帐屯兵渭水湄|琼林锡宴夜归迟|四山苍翠秋无影|月浸中天白羽旗
+output: 瘦甃金辉雪水湄|风瑶瑶杖集英期|玉山佳翠云光际|留照霜间月玉时
+
+epoch: 6, 2401/2971 80.8%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.071
+  gen loss: 3.581  ppl:35.90
+______________________
+keywords: 高|孟轲|PAD|PAD
+target: 先忧后乐范文正|此志此言高孟轲|暇日登临固宜乐|其如天下有忧何
+output: 汉生何世不增何|岂日何时皆不过|何日始高重无病|不如万里仰无和
+
+epoch: 6, 2501/2971 84.2%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.070
+  gen loss: 3.580  ppl:35.87
+______________________
+keywords: 宫花|势|腰肢|PAD
+target: 纤眉丹脸小腰肢|宜着时新峭窄衣|头上宫花妆翡翠|宝蝉珍蝶势如飞
+output: 宫腰腰脚亸腰围|黛蕊宫妆竞壁衣|花上柳花娇点翠|绣花花下舞争飞
+
+epoch: 6, 2601/2971 87.5%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.069
+  gen loss: 3.579  ppl:35.84
+______________________
+keywords: 名园|桃李|西施|PAD
+target: 西施台下见名园|百草千花特地繁|欲问吴王当日事|后来桃李若为言
+output: 名施诗下玉堂园|紫尺千红满地存|珍向东唐名日事|不庭桃李不为言
+
+epoch: 6, 2701/2971 90.9%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.068
+  gen loss: 3.578  ppl:35.81
+______________________
+keywords: 高风|白露|愁杀|清节
+target: 白露凝霜抱叶眠|渴肠愁杀夜来蝉|群儿莫谩相轻贱|清节高风死亦妍
+output: 白露黄霜雪病眠|高羌风绝庾来眠|归儿不问留思去|清节高高不不怜
+
+epoch: 6, 2801/2971 94.3%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.067
+  gen loss: 3.578  ppl:35.78
+______________________
+keywords: 香车|贵人|兰膏|PAD
+target: 兰膏画炬出贫民|宝马香车属贵人|月姊雨师暗商榷|不须妆点上元春
+output: 兰膏香史美宫春|宝马香车不玉人|莫姊未花真香榷|先须摹点缀元春
+
+epoch: 6, 2901/2971 97.6%, 0.15s per iter, lr: 0.0005, tr: 0.89, tau: 0.066
+  gen loss: 3.577  ppl:35.75
+______________________
+run validation...
+in training mode: 0
+epoch: 6, lr: 0.0005, tr: 0.89, tau: 0.065
+  gen loss: 4.145  ppl:63.13
+______________________
+validation Done: 1
+saving model...
+teach forcing ratio decay...
+shuffle data...
+keywords: 凤楼|天寒|PAD|PAD
+target: 羞与宁王作管吹|肯随嬴女凤楼期|清平未奏云门乐|几见天寒坠叶时
+output: 天见天容后凤思|天随春女作吹丝|天寒不尽天天乐|只有天寒一凤时
+
+epoch: 7, 1/2971 0.0%, 0.00s per iter, lr: 0.0005, tr: 0.87, tau: 0.065
+  gen loss: 3.576  ppl:35.73
+______________________
+keywords: 未开|绿叶|水边|PAD
+target: 水边移得竹边栽|树小条新花未开|绿叶参差须细看|尚疑低处有青梅
+output: 莫边绿种水边栽|绿底花开绿未开|绿叶已差春未细|莫疑身处是时梅
+
+epoch: 7, 101/2971 3.4%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.064
+  gen loss: 3.575  ppl:35.68
+______________________
+keywords: 白头|苦|PAD|PAD
+target: 老兄多病更多愁|秪恐今年已白头|镫下裁书心独苦|更怜有妹在衢州
+output: 咄来不是苦伤愁|一恐南宵不白头|镫下有成成不苦|那怜鹦鹉学青州
+
+epoch: 7, 201/2971 6.8%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.063
+  gen loss: 3.574  ppl:35.65
+______________________
+keywords: 区区|河|PAD|PAD
+target: 寒傍阳坡煖浴河|闷吹芦管倦眠蓑|宁生当日何为者|车底区区扣角歌
+output: 区区区关理逆河|仰来芦管割游多|他知口日无人者|不马焉能不角歌
+
+epoch: 7, 301/2971 10.1%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.062
+  gen loss: 3.573  ppl:35.61
+______________________
+keywords: 斜日|寒光|翠微|漠漠
+target: 天然漠漠有依依|散作寒光锁翠微|斜日晚来休拄笏|帝庭看傍衮龙飞
+output: 漠涯漠漠雨寒依|夹作寒光一翠微|斜日半晴无怅杖|一城斜月柳龙衣
+
+epoch: 7, 401/2971 13.5%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.061
+  gen loss: 3.571  ppl:35.57
+______________________
+keywords: 人世|PAD|PAD|PAD
+target: 君吟康乐曾吟处|涧碧泉红秋一春|安得此泉成雨去|洗空人世撒花尘
+output: 人家人乐人无处|我水泉流水绕人|料得此身无一后|为来尘世有天尘
+
+epoch: 7, 501/2971 16.9%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.060
+  gen loss: 3.570  ppl:35.53
+______________________
+keywords: 江湖|小溪|照|PAD
+target: 属玉双飞下绿蒲|小溪分水照林庐|疏泉漫作江湖意|不种封君万尾鱼
+output: 桐我江溪不水湖|小溪斜水照溪庐|欲镫一淬江湖趣|不为江南一里鱼
+
+epoch: 7, 601/2971 20.2%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.059
+  gen loss: 3.570  ppl:35.50
+______________________
+keywords: 玉龙|白云|PAD|PAD
+target: 石出江门蹲玉龙|白云横束括苍峰|幽林坐啸无人见|祇听鸾音振万松
+output: 玉骨金南白玉龙|白云亭截白山龙|长松万断无人到|却有风笙拂石峰
+
+epoch: 7, 701/2971 23.6%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.058
+  gen loss: 3.569  ppl:35.47
+______________________
+keywords: 盈虚|消长|PAD|PAD
+target: 世界无人作不成|几多奸宄暗经营|寒来暑往痴迷过|消长盈虚理乱生
+output: 一上长人不画成|一回寒宄更香营|寒来一气无虚甚|一得长盈一病声
+
+epoch: 7, 801/2971 27.0%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.057
+  gen loss: 3.568  ppl:35.45
+______________________
+keywords: 名王|PAD|PAD|PAD
+target: 五岭人头岭并高|名王猎火尽山毛|清明上巳争抛盏|十万蕃魂在白蒿
+output: 一十云名王海高|王山高猎列登皋|不笳迥下人间在|谁五年酋一掌袍
+
+epoch: 7, 901/2971 30.3%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.056
+  gen loss: 3.567  ppl:35.42
+______________________
+keywords: 钓船|杖藜|昨夜|PAD
+target: 杖藜日日看芝山|山下溪云共往还|昨夜小溪新水涨|钓船流向寺前湾
+output: 昨藜徐日杖藜闲|山月盘旋不一还|昨夜西风新雨涨|渔船闲水小桥湾
+
+epoch: 7, 1001/2971 33.7%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.056
+  gen loss: 3.566  ppl:35.39
+______________________
+keywords: 蟠|PAD|PAD|PAD
+target: 市腰石有千年涧|石眼泉无一日乾|天下苍生应有望|不知龙向此中蟠
+output: 一门古上无年树|不壁泉流一点乾|安得此生何不此|不知何子是何蟠
+
+epoch: 7, 1101/2971 37.1%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.055
+  gen loss: 3.566  ppl:35.36
+______________________
+keywords: 想见|春水|初晴|谷雨
+target: 谷雨初晴花乱吹|金河春水腻如脂|挈瓶小试团龙饼|想见东都全盛时
+output: 春雨初晴春满离|碧陵春水绿初丝|挈杯欲摘新栾饼|应见春风卖胜时
+
+epoch: 7, 1201/2971 40.4%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.054
+  gen loss: 3.565  ppl:35.33
+______________________
+keywords: 冷眼|长年|谁言|龙湫
+target: 十里松溪到上流|断崖千尺泻龙湫|谁言尊者心无著|冷眼长年看不休
+output: 谁二年篁一处头|老崖无尺泻龙湫|谁言此者无如地|冷眼清空一月休
+
+epoch: 7, 1301/2971 43.8%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.053
+  gen loss: 3.564  ppl:35.30
+______________________
+keywords: 风物|送客|PAD|PAD
+target: 水落寒江送客舟|雁声云影共悠悠|晋陵风物今何似|须信相如故倦游
+output: 江绕山原日客舟|风风吹影共悠悠|一朝风物今何似|惟信人思不国游
+
+epoch: 7, 1401/2971 47.2%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.052
+  gen loss: 3.563  ppl:35.27
+______________________
+keywords: 明珠|馀|除|PAD
+target: 诗来恰值酒醒馀|起步秋庭病忽除|唤妇不须愁夜黑|老夫今日得明珠
+output: 明珠不好雨盈馀|一盏悬涛月眼疏|睡得不妨频痛永|垄人犹已不安珠
+
+epoch: 7, 1501/2971 50.5%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.051
+  gen loss: 3.562  ppl:35.25
+______________________
+keywords: 西清|PAD|PAD|PAD
+target: 显谟延阁照西清|玉轴牙签各有名|圣略秘机贻万世|君王垂拱致升平
+output: 清哉曾与世西清|更局诗签万自生|庙食遗经犹不古|不家不地不升平
+
+epoch: 7, 1601/2971 53.9%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.051
+  gen loss: 3.562  ppl:35.23
+______________________
+keywords: 水西|钟|PAD|PAD
+target: 东平不复叹涂穷|有侄贤如阮仲容|净观庵中诗作社|水西山下酒分钟
+output: 每西水管水人钟|曾见全侯第与容|我扫渊中无一者|西西无下水如钟
+
+epoch: 7, 1701/2971 57.3%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.050
+  gen loss: 3.561  ppl:35.20
+______________________
+keywords: 研磨|老病|厌|PAD
+target: 人生几丸墨|老病厌操持|好与贤明宰|研磨共救时
+output: 老间病不地|老病不驰持|便是林中叟|时复复谈时
+
+epoch: 7, 1801/2971 60.6%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.049
+  gen loss: 3.560  ppl:35.18
+______________________
+keywords: 雨过|PAD|PAD|PAD
+target: 飞泉百道寒苍壁|雨过残雷隐隐闻|一幅珠帘长不卷|仙人石室正眠云
+output: 雨过落尺雨无翠|雨过泉声响翠闻|一夜红帘红绿断|满人玉上隐岧云
+
+epoch: 7, 1901/2971 64.0%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.048
+  gen loss: 3.560  ppl:35.15
+______________________
+keywords: 花开|病中|仙郎|草草
+target: 病中恨不见花开|赖有仙郎折送来|一笑相看如有得|呼儿草草具樽罍
+output: 草堂草不为君开|赖有春人旧赠来|一片相看无锦信|不童说树亦仙罍
+
+epoch: 7, 2001/2971 67.4%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.048
+  gen loss: 3.559  ppl:35.13
+______________________
+keywords: 多情|就中|杨柳|老成
+target: 春至风花各自荣|就中杨柳最多情|自从初学宫腰舞|直至飘绵不老成
+output: 杨雨无情不自成|就中应柳已多情|不从一学生中舞|谁到多零不敢鸣
+
+epoch: 7, 2101/2971 70.7%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.047
+  gen loss: 3.558  ppl:35.10
+______________________
+keywords: 锁|仙人|峰头|PAD
+target: 铁柱洪都压怪螭|龟山金笮系支祈|何如玄帝峰头锁|问着仙人总不知
+output: 仙石峰崖控众畿|石山高笮互人机|跨人乞鹤峰头石|也著仙人不不知
+
+epoch: 7, 2201/2971 74.1%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.046
+  gen loss: 3.558  ppl:35.08
+______________________
+keywords: 野鹤|天末|远峰|孤云
+target: 天末远峰生掩冉|石间流涧落寒清|因君写得三株树|忽起孤云野鹤情
+output: 远上孤山云野映|江栏秋水水人清|野风不出高千在|岁听孤云起鹤鸣
+
+epoch: 7, 2301/2971 77.4%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.046
+  gen loss: 3.557  ppl:35.06
+______________________
+keywords: 伤心|乱红|飘泊|白发
+target: 晓雨催春不惜花|乱红飘泊委泥沙|伤心忆得年时事|白发风前只叹嗟
+output: 白发催花花可花|乱红飘荡乱墙沙|伤心欲得君年事|白发萧萧鬓鬓嗟
+
+epoch: 7, 2401/2971 80.8%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.045
+  gen loss: 3.556  ppl:35.04
+______________________
+keywords: 细草|昼|PAD|PAD
+target: 卜吉崇岗思怆然|双魂同閟昼如年|山中细草初回碧|庐墓人啼血色鲜
+output: 细筑崇冈起草然|草庵依坐蠹编烟|不中细草无人首|不阜荒间几溅鲜
+
+epoch: 7, 2501/2971 84.2%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.044
+  gen loss: 3.556  ppl:35.02
+______________________
+keywords: 晴烟|花柳|PAD|PAD
+target: 洞箫如缕到尊前|明月高楼夜可怜|何处一声凄易断|千家花柳障晴烟
+output: 半庭吹断上春前|万月清悬撞宴怜|何处楼声吹断断|千家柳柳一新烟
+
+epoch: 7, 2601/2971 87.5%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.043
+  gen loss: 3.555  ppl:34.99
+______________________
+keywords: 传语|官职|PAD|PAD
+target: 为余传语岭头云|君自无心笑我勤|我亦暂来称使者|眼看官职似看君
+output: 阿君文武亦头闻|君去成言慕语群|何日人时归吏者|不须佛职有相君
+
+epoch: 7, 2701/2971 90.9%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.043
+  gen loss: 3.554  ppl:34.97
+______________________
+keywords: 石壁|急|欲行|PAD
+target: 古县依山惬乍游|欲行因路始穷幽|搀空石壁樛林合|更做行程急也留
+output: 石寺无然旧壮休|欲寻何此过寻愁|搀先石上无松下|更有人人更急留
+
+epoch: 7, 2801/2971 94.3%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.042
+  gen loss: 3.554  ppl:34.94
+______________________
+keywords: 春水|PAD|PAD|PAD
+target: 祇许春水细有声|不容灯焰恼黄昏|是为白石清泉伴|乞与蒲团便垛根
+output: 春有春风一浪论|不知残火点人昏|故乡巫发成风水|乞与归团一垛根
+
+epoch: 7, 2901/2971 97.6%, 0.15s per iter, lr: 0.0005, tr: 0.87, tau: 0.042
+  gen loss: 3.553  ppl:34.92
+______________________
+run validation...
+in training mode: 0
+epoch: 7, lr: 0.0005, tr: 0.87, tau: 0.041
+  gen loss: 4.136  ppl:62.56
+______________________
+validation Done: 1
+teach forcing ratio decay...
+shuffle data...
+keywords: 繁霜|诗人|击壤|白首
+target: 花开游女斗明妆|马上谁怜白首郎|社叟从今歌击壤|诗人不用叹繁霜
+output: 白开一子竞芳光|一上谁家妒玉郎|愿得不来嗤病壤|不人偏作听秋霜
+
+epoch: 8, 1/2971 0.0%, 0.00s per iter, lr: 0.0005, tr: 0.86, tau: 0.041
+  gen loss: 3.553  ppl:34.91
+______________________
+keywords: 人去|乘龙|留影|PAD
+target: 千松千竹倚千岩|一石一泉成一庵|尽道乘龙人去后|片鳞留影在山南
+output: 人年万载挂云岩|拨尽无声无石庵|若道龙槎人去后|不知犹得许乘南
+
+epoch: 8, 101/2971 3.4%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.040
+  gen loss: 3.552  ppl:34.88
+______________________
+keywords: 东西|怅望|PAD|PAD
+target: 当年同苦乐|今日各东西|白发相看老|江云怅望低
+output: 东年望乡海|不日是东西|落发青望处|青南几望迷
+
+epoch: 8, 201/2971 6.8%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.040
+  gen loss: 3.551  ppl:34.85
+______________________
+keywords: 简斋|梅|笑|调羹
+target: 简斋绝句天为笑|旋到调羹鼎伴来|只合拜梅为座主|画梅且尔况真梅
+output: 蜡毬初艺无然笑|旋乞开羹俟鼐来|应恐先公能一笑|尚图犹与卜陶梅
+
+epoch: 8, 301/2971 10.1%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.039
+  gen loss: 3.550  ppl:34.82
+______________________
+keywords: 咫尺|居山|欲知|清修
+target: 宠数亲承咫尺颜|清修虔命似居山|欲知不老个中事|应向如今悟八还
+output: 不见修朋翰尺颜|清居风命尚馀环|欲知所得难中意|应是人今问不山
+
+epoch: 8, 401/2971 13.5%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.039
+  gen loss: 3.550  ppl:34.80
+______________________
+keywords: 剥啄|萧萧|人意|PAD
+target: 剥啄能来两玉人|饭蔬糜粟共吾贫|更欣两子知人意|为作萧萧破暑新
+output: 窗啄苔来两鬓身|萧蔬糜菊味如真|山怜一屐无多意|为爱萧萧一病人
+
+epoch: 8, 501/2971 16.9%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.038
+  gen loss: 3.549  ppl:34.78
+______________________
+keywords: 夜夜|休兵|PAD|PAD
+target: 夜夜工夫总一般|坎男离女共同欢|专心直待阴阳足|却马休兵国自安
+output: 夜夜哀号一不滩|坎离咽合是谁欢|若心不待秋阳翅|不是驯嘶不里安
+
+epoch: 8, 601/2971 20.2%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.037
+  gen loss: 3.548  ppl:34.75
+______________________
+keywords: 臣心|丹心|PAD|PAD
+target: 臣心百折类抽丝|欲写丹心退食时|那得朝廊千万丈|代将牙笏为书思
+output: 丹心心万寄丹丝|一写丹心寸食时|一得丹来诸万树|炎时天笏为昭棋
+
+epoch: 8, 701/2971 23.6%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.037
+  gen loss: 3.548  ppl:34.73
+______________________
+keywords: 小子|PAD|PAD|PAD
+target: 全归有名训|珍重恐伤肤|小子启手足|吾今知免夫
+output: 小家小子子|魏重效君躯|小子黄前足|何儿不不无
+
+epoch: 8, 801/2971 27.0%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.036
+  gen loss: 3.547  ppl:34.71
+______________________
+keywords: 初醒|官闲|金门|纱窗
+target: 纱窗日上梦初醒|惊喜官闲志虑宁|记淂金门听漏日|几回和月候龙庭
+output: 纱窗睡起觉初醒|帘觉书闲梦未清|睡得金门关不永|洞回春梦照朝庭
+
+epoch: 8, 901/2971 30.3%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.036
+  gen loss: 3.546  ppl:34.69
+______________________
+keywords: 春寒|PAD|PAD|PAD
+target: 二月燕城暖渐回|北风吹雪遍楼台|春寒毕竟无多日|桃李何须怨未开
+output: 春十春支春未回|雪风吹雪满花台|春寒不竟春消日|只李何时问主来
+
+epoch: 8, 1001/2971 33.7%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.035
+  gen loss: 3.546  ppl:34.67
+______________________
+keywords: 消息|PAD|PAD|PAD
+target: 柳絮飞时话别离|梅花开后待郎归|梅花开后无消息|更待明年柳絮飞
+output: 消絮飞花春别衣|春花无后更君归|春花不尽无消息|又向东朝又絮飞
+
+epoch: 8, 1101/2971 37.1%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.035
+  gen loss: 3.545  ppl:34.64
+______________________
+keywords: 吴山|PAD|PAD|PAD
+target: 楚水吴山未了因|匆匆魂梦客边身|拒霜已是何年种|刚得今朝作主人
+output: 吴水吴山入有身|匆匆不梦梦还新|伤霜不过无曾处|不是吴年又画人
+
+epoch: 8, 1201/2971 40.4%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.034
+  gen loss: 3.544  ppl:34.62
+______________________
+keywords: 瑞|吾诗|PAD|PAD
+target: 狩获祥麟而史作|梦吞白凤以玄成|吾诗岂得无佳瑞|枝上啁嘈翠羽声
+output: 狩祖初从瑞气节|龙中赤首夺为轻|吾师妙是无瑕句|且上分啾不作声
+
+epoch: 8, 1301/2971 43.8%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.034
+  gen loss: 3.544  ppl:34.59
+______________________
+keywords: 溪|行乐|PAD|PAD
+target: 与君相别若耶溪|十载湘航与蜀梯|恰到六朝行乐处|台城东畔冶亭西
+output: 溪君行见各为溪|水载西江又北溪|不似天桥行乐处|山城寺望有城西
+
+epoch: 8, 1401/2971 47.2%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.033
+  gen loss: 3.543  ppl:34.58
+______________________
+keywords: 惊飞|萧萧|小池|PAD
+target: 野格由来倦小池|惊飞却下碧江涯|月昏风急何处宿|秋岸萧萧黄苇枝
+output: 小水萧来不不时|晚鸿谇到燕鸳飞|萧明犹有风人去|风夜萧萧风叶枝
+
+epoch: 8, 1501/2971 50.5%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.033
+  gen loss: 3.543  ppl:34.56
+______________________
+keywords: 微月|试问|PAD|PAD
+target: 微月生西岭|清光日渐多|直从圆处满|试问夜如何
+output: 微月微孤夕|潮风万日多|直须窗夜去|试问紫薇何
+
+epoch: 8, 1601/2971 53.9%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.032
+  gen loss: 3.542  ppl:34.54
+______________________
+keywords: 绿阴|满眼|吟诗|小窗
+target: 病无情绪惰吟诗|笔砚空存兴已非|满眼绿阴春树老|小窗初日动晴晖
+output: 绿来俗绪两吟诗|满眼清存酒未非|满眼绿阴青昼底|小窗闲破雨窗晖
+
+epoch: 8, 1701/2971 57.3%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.032
+  gen loss: 3.541  ppl:34.51
+______________________
+keywords: 归去|眼中|觉|PAD
+target: 在在常参一宿觉|的的生缘非永嘉|还我今朝却归去|大千俱属眼中花
+output: 一身归去欲何酲|不的无前触所家|病想颜朝归归去|眼都还在老中花
+
+epoch: 8, 1801/2971 60.6%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.031
+  gen loss: 3.541  ppl:34.49
+______________________
+keywords: 存|飞燕|画梁|曲槛
+target: 又见荷开满故园|夙红昨紫俨然存|画梁飞燕前身赵|曲槛歌莺阿姊樊
+output: 花见春花柳画园|宛枝娇日竞成存|春梁燕子飞飞是|曲曲朱莺不母园
+
+epoch: 8, 1901/2971 64.0%, 0.15s per iter, lr: 0.0005, tr: 0.86, tau: 0.031
+  gen loss: 3.540  ppl:34.47
+______________________
+keywords: 天宇|澄清|山中|寄声
+target: 捣香复筛辣|兵厨泻芳酒|天宇澄清澜|山中寄声否
+output: 天衣天筛辣|皇厨天天油|天意无人赏|山泉一幽兴
+
+epoch: 8, 2001/2971 67.4%, 0.15s per iter, lr: 0.0004, tr: 0.86, tau: 0.030
+  gen loss: 3.540  ppl:34.45
+______________________
+keywords: 思|雄|贤才|PAD
+target: 贤才思述作|崖石尚磨砻|元才词华丽|颜公笔迹雄
+output: 贤才无建武|不首亦依然|不来造客表|临公表里雄
+
+epoch: 8, 2101/2971 70.7%, 0.15s per iter, lr: 0.0004, tr: 0.86, tau: 0.030
+  gen loss: 3.539  ppl:34.43
+______________________
+keywords: 风起|水边|阑干|树杪
+target: 沙鹭汀鸥尽日闲|水边风起万荷翻|客来莫厌重楼望|树杪阑干直对山
+output: 水苑洲洲起日闲|江边风起树花闲|不来不问看来看|且在阑干倚到还
+
+epoch: 8, 2201/2971 74.1%, 0.15s per iter, lr: 0.0004, tr: 0.86, tau: 0.029
+  gen loss: 3.538  ppl:34.41
+______________________
+keywords: 朱颜|阳春|苦辛|昭阳
+target: 未得蒙恩最苦辛|朱颜岁岁惜阳春|何须久望銮舆幸|但看昭阳失宠人
+output: 朱必朱恩不苦辛|娉婷宁复独花春|何如更作天舆去|但使昭阳第故人
+
+epoch: 8, 2301/2971 77.4%, 0.15s per iter, lr: 0.0004, tr: 0.86, tau: 0.029
+  gen loss: 3.538  ppl:34.39
+______________________
+keywords: 夜半|紫气|苍茫|PAD
+target: 紫气苍茫起|遥瞻若木东|红轮夜半出|摇动金银宫
+output: 夜气苍茫外|苍闻落化公|夜尘夜夜夜|不落隔龙钟
+
+epoch: 8, 2401/2971 80.8%, 0.15s per iter, lr: 0.0004, tr: 0.86, tau: 0.028
+  gen loss: 3.537  ppl:34.38
+______________________
+keywords: 云飞|PAD|PAD|PAD
+target: 冉冉征途自不闲|云飞鸟倦亦知还|何如蓬荜韬光者|放浪形骸宇宙间
+output: 云冉云飞去可攀|今山云语不知还|相须萍荜移光好|曾得还容一宙间
+
+epoch: 8, 2501/2971 84.2%, 0.15s per iter, lr: 0.0004, tr: 0.86, tau: 0.028
+  gen loss: 3.537  ppl:34.36
+______________________
+keywords: 春风|PAD|PAD|PAD
+target: 萱草成窠杏子青|夜闻禁漏晓闻莺|吹回一觉昭阳梦|帐外春风太薄情
+output: 春草花阴绿正生|老来春得不风莺|春风春片春阳殿|不见春风不液生
+
+epoch: 8, 2601/2971 87.5%, 0.15s per iter, lr: 0.0004, tr: 0.86, tau: 0.028
+  gen loss: 3.536  ppl:34.34
+______________________
+keywords: 望远|PAD|PAD|PAD
+target: 海上风清入桂林|好山何处一登临|都门四月相携别|不尽长江望远心
+output: 远上青山雁望林|人山遥处觅陶临|林门一月无如处|不见春安万洛音
+
+epoch: 8, 2701/2971 90.9%, 0.15s per iter, lr: 0.0004, tr: 0.86, tau: 0.027
+  gen loss: 3.536  ppl:34.32
+______________________
+keywords: 花竹|PAD|PAD|PAD
+target: 势路权门不负人|林亭花竹且藏身|山禽地瘴嘲啾叫|又使无明动一尘
+output: 竹里萦门竹坞身|林泉深竹荫相身|何中不僻嘲风语|人去时时不地人
+
+epoch: 8, 2801/2971 94.3%, 0.15s per iter, lr: 0.0004, tr: 0.86, tau: 0.027
+  gen loss: 3.535  ppl:34.31
+______________________
+keywords: 馀|荣辱|萧条|PAD
+target: 步出湓城吊古馀|前程又复即舟居|客身到处无荣辱|随分萧条两箧书
+output: 早晚萧城十屈丘|行身今日有萧居|萧来自得无人辱|时见青条似鬓书
+
+epoch: 8, 2901/2971 97.6%, 0.15s per iter, lr: 0.0004, tr: 0.86, tau: 0.026
+  gen loss: 3.535  ppl:34.29
+______________________
+run validation...
+in training mode: 0
+epoch: 8, lr: 0.0004, tr: 0.86, tau: 0.026
+  gen loss: 4.133  ppl:62.34
+______________________
+validation Done: 1
+saving model...
+teach forcing ratio decay...
+shuffle data...
+keywords: 扁舟|江天|溪头|PAD
+target: 惨惨江天散六花|磷磷寒碧不藏砂|扁舟蓑笠撑何去|应向溪头问酒家
+output: 溪淡江天月不花|磷磷云脉不胜槎|扁舟自笠撑舟处|应是溪头问钓家
+
+epoch: 9, 1/2971 0.0%, 0.00s per iter, lr: 0.0004, tr: 0.84, tau: 0.026
+  gen loss: 3.534  ppl:34.27
+______________________
+keywords: 松雪|PAD|PAD|PAD
+target: 百年谁继赵松雪|近数毗陵王绂高|忽复乘云去无迹|登楼怀忆使心劳
+output: 松年松复松根雪|一日人陵一气高|未听鸡鸣惊来迹|满临临古旧君劳
+
+epoch: 9, 101/2971 3.4%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.026
+  gen loss: 3.534  ppl:34.25
+______________________
+keywords: 心事|新诗|丹青|PAD
+target: 凌霜心事许谁知|书付萧萧竹两枝|秘意当年浑未解|丹青千载绘新诗
+output: 一霄心事总谁知|今带新然一数枝|门得诗年谁不足|丹青写里有吾诗
+
+epoch: 9, 201/2971 6.8%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.025
+  gen loss: 3.533  ppl:34.22
+______________________
+keywords: 分阴|PAD|PAD|PAD
+target: 三年两夕会西山|寸晷分阴若自悭|白发相期来洗髓|又扶竹杖叩云关
+output: 老闾不上不分山|万寸阴阴一有山|不首老逢无问我|碧云衰外一门关
+
+epoch: 9, 301/2971 10.1%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.025
+  gen loss: 3.532  ppl:34.20
+______________________
+keywords: 路入|深林|PAD|PAD
+target: 瘦筇吟倚上苔梯|路入深林望转迷|料得仙宫应不远|白云深处午鸡啼
+output: 路筇破出碧林梯|云入深林路远迷|行得此人无路见|忽云深处有阴迷
+
+epoch: 9, 401/2971 13.5%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.024
+  gen loss: 3.532  ppl:34.18
+______________________
+keywords: 年年|日暮|PAD|PAD
+target: 路绕长堤万柳斜|年年春草待香车|君王不宴芳春酒|空锁名园日暮花
+output: 日入长安万里斜|年年春暮自春车|不王日日重菲酒|日逐春风看日花
+
+epoch: 9, 501/2971 16.9%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.024
+  gen loss: 3.531  ppl:34.16
+______________________
+keywords: 西京|号|哀|PAD
+target: 危晁知不免|削楚虑空长|东市哀朝服|西京号智囊
+output: 剑晁何不远|焉木复空裳|不望西鸿汉|西京贺令良
+
+epoch: 9, 601/2971 20.2%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.024
+  gen loss: 3.531  ppl:34.14
+______________________
+keywords: 潮平|宿|水禽|怕听
+target: 夜寂秋偏爽|潮平月渐低|惯傍水禽宿|怕听水禽啼
+output: 夜宿潮来好|蛩平水月迷|水闻寒寨语|来有卖边啼
+
+epoch: 9, 701/2971 23.6%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.023
+  gen loss: 3.530  ppl:34.13
+______________________
+keywords: 策马|新笋|满地|PAD
+target: 寺前新笋已成竿|策马重来独自看|可惜班皮空满地|无人解取作头冠
+output: 新花黄绿迸成竿|渭杖相来过自看|平惜西荆成结眼|无人解作濯诗看
+
+epoch: 9, 801/2971 27.0%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.023
+  gen loss: 3.530  ppl:34.11
+______________________
+keywords: 独步|天气|PAD|PAD
+target: 因随芳草行来远|为爱清波归去迟|独步独吟仍独坐|初凉天气未寒时
+output: 独君独草皆人往|闲向云阴去去迟|独步不吟无自步|风来雨气飒凉时
+
+epoch: 9, 901/2971 30.3%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.023
+  gen loss: 3.529  ppl:34.09
+______________________
+keywords: 乱走|PAD|PAD|PAD
+target: 蝉眼龟形脚似蛛|未尝正面向人趋|如今饤在盘筵上|得似江湖乱走无
+output: 乱石奔山乱土枯|未知不是绿炎扶|如今不饾眉头上|不似当南雨后无
+
+epoch: 9, 1001/2971 33.7%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.022
+  gen loss: 3.529  ppl:34.08
+______________________
+keywords: 樱桃|惊飞|羽毛|粉墙
+target: 惊飞失势粉墙高|好个声音好羽毛|小婢不须催柘弹|且从枝上吃樱桃
+output: 羽飞粉却上墙高|忽截林梢巧女毛|不婢不知三急急|枯凭松下听啼猱
+
+epoch: 9, 1101/2971 37.1%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.022
+  gen loss: 3.528  ppl:34.06
+______________________
+keywords: 幽人|酒杯|诗句|PAD
+target: 独与幽人臭味同|细看诗句酒杯中|霜林万木无颜色|只有孤标傲晓风
+output: 梅坐幽人一味同|酒看诗句成味中|此馀雪壑无消色|只与梅山格雪融
+
+epoch: 9, 1201/2971 40.4%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.022
+  gen loss: 3.528  ppl:34.05
+______________________
+keywords: 山路|日斜|远树|PAD
+target: 远树烟中出|孤峰鸟外青|日斜山路迥|人在最高亭
+output: 远树山山路|斜村远外青|日斜山路远|猿在白高青
+
+epoch: 9, 1301/2971 43.8%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.021
+  gen loss: 3.527  ppl:34.03
+______________________
+keywords: 文书|挥毫|萧萧|PAD
+target: 了却文书可是痴|幅巾行散任风吹|挥毫飒飒诗惊雨|洒面萧萧雨送诗
+output: 挥却文书翰奈谁|投巾终履任萧时|挥毫洒飒风成老|直作萧萧洒哺诗
+
+epoch: 9, 1401/2971 47.2%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.021
+  gen loss: 3.527  ppl:34.02
+______________________
+keywords: 谁知|青楼|春风|PAD
+target: 活色生香第一流|手中移得近青楼|谁知艳性终相负|乱向春风笑不休
+output: 谁水从香春未秋|春持滋得小黄楼|谁教落子成何用|不点春风不不休
+
+epoch: 9, 1501/2971 50.5%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.021
+  gen loss: 3.526  ppl:34.00
+______________________
+keywords: 老农|分明|朱门|茫茫
+target: 旷土茫茫无主名|朱门惟恐籍分明|老农犹记淳熙事|太息文公志未行
+output: 老去心茫不定情|朱门深有曳分明|黄来不有淳风在|不守车书不不轻
+
+epoch: 9, 1601/2971 53.9%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.020
+  gen loss: 3.526  ppl:33.99
+______________________
+keywords: 情人|银台|PAD|PAD
+target: 银台相望渺银河|瀫水情人待亦多|妾本一身非两体|一时难作往来梭
+output: 银台银对若无河|瀫水情人镜我多|纵本自双真我翼|却时情与故来多
+
+epoch: 9, 1701/2971 57.3%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.020
+  gen loss: 3.526  ppl:33.97
+______________________
+keywords: 慈颜|文采|PAD|PAD
+target: 桐州彩棒暂宣威|首辟萱堂上寿卮|堂上慈颜笑还语|老莱文采愧吾儿
+output: 文江文笔玉相时|一别慈堂万玉墀|君焕慈颜三相语|丹青不雅自相宜
+
+epoch: 9, 1801/2971 60.6%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.020
+  gen loss: 3.525  ppl:33.96
+______________________
+keywords: 清辉|中秋|PAD|PAD
+target: 一轩谁与写清辉|地近城闉却少知|只待中秋深夜看|玉蟾低蘸碧琉璃
+output: 清中清复筑清辉|冷下中秋月不知|只恐好山无不尽|玉簪无映碧琉璃
+
+epoch: 9, 1901/2971 64.0%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.019
+  gen loss: 3.525  ppl:33.94
+______________________
+keywords: 黄州|蹉跎|官职|红裙
+target: 㪷升白米能供酒|暝目红裙难听歌|为谢黄州王内翰|莫言官职也蹉跎
+output: 黄金庭院春如给|辄色红尘恼疗歌|坐报故州为太史|不言官职事蹉跎
+
+epoch: 9, 2001/2971 67.4%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.019
+  gen loss: 3.524  ppl:33.93
+______________________
+keywords: 力|PAD|PAD|PAD
+target: 丘笔郑克段|轲言象爱兄|回天力不足|削地罚犹轻
+output: 问壑已先叹|轲言抑与名|元然力力力|削地罚疲生
+
+epoch: 9, 2101/2971 70.7%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.019
+  gen loss: 3.524  ppl:33.91
+______________________
+keywords: 拂拂|PAD|PAD|PAD
+target: 雨歇山愈碧|杨花拂拂飞|幽人偶无趣|似是惜春归
+output: 拂拂烟川绿|莺花扑拂飞|不人不相语|强惜爱山飞
+
+epoch: 9, 2201/2971 74.1%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.019
+  gen loss: 3.523  ppl:33.90
+______________________
+keywords: 凄凄|山河|大地|PAD
+target: 六月炎天飞片雪|山河大地冷凄凄|三年祇道消融尽|冻合侯家水一溪
+output: 大国山天天不地|一山清练月明凄|须更大有无磨日|一夜江门大上堤
+
+epoch: 9, 2301/2971 77.4%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.018
+  gen loss: 3.523  ppl:33.89
+______________________
+keywords: 旧识|乘月|PAD|PAD
+target: 知君雅趣在沧洲|游戏名斋亦以舟|旧识盈川川上路|几时乘月下严州
+output: 栖君不业久蓬洲|此目人斋古佛幽|不事旧盈旧水水|几回乘月到长州
+
+epoch: 9, 2401/2971 80.8%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.018
+  gen loss: 3.522  ppl:33.87
+______________________
+keywords: 习静|钱|垂帘|PAD
+target: 老依卜市不论钱|习静年来白已玄|安得相逢王辅嗣|垂帘闲坐说先天
+output: 午来榕筑过知钱|静静无光满日圆|习得身逢无一旨|春来先日小垂天
+
+epoch: 9, 2501/2971 84.2%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.018
+  gen loss: 3.522  ppl:33.86
+______________________
+keywords: 恩深|绿野|魏阙|PAD
+target: 绿野身名魏阙心|玄成衔谢为恩深|汉廷可但扶阳宠|殷室还期傅说霖
+output: 诏野黄轻入紫林|宣都观里少谁深|白云倘有东阳甚|博孝侯宜圣主金
+
+epoch: 9, 2601/2971 87.5%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.017
+  gen loss: 3.522  ppl:33.85
+______________________
+keywords: 开|荷钱|PAD|PAD
+target: 四月曾湖上|荷钱劣可穿|归来开短纸|十里已红莲
+output: 竹月荷花雨|荷花买钓钱|荷来不镜镜|不里踏成眠
+
+epoch: 9, 2701/2971 90.9%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.017
+  gen loss: 3.521  ppl:33.83
+______________________
+keywords: 虚空|幽窗|云雨|小山
+target: 口如布谷本无语|身似虚空何所还|观音岩迥出云雨|好住幽窗望小山
+output: 虚心虚谷冲无雨|一是虚空不处山|一心但壑云千起|趺处幽窗竹翠山
+
+epoch: 9, 2801/2971 94.3%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.017
+  gen loss: 3.521  ppl:33.82
+______________________
+keywords: 雨云|皑皑|遥山|PAD
+target: 近岫披晴雾|遥山纵雨云|皑皑疑雪积|莽莽若江分
+output: 雨日云榛雾|遥山雪有云|皑皑如有里|莽莽古为云
+
+epoch: 9, 2901/2971 97.6%, 0.15s per iter, lr: 0.0004, tr: 0.84, tau: 0.017
+  gen loss: 3.521  ppl:33.81
+______________________
+run validation...
+in training mode: 0
+epoch: 9, lr: 0.0004, tr: 0.84, tau: 0.016
+  gen loss: 4.126  ppl:61.91
+______________________
+validation Done: 1
+teach forcing ratio decay...
+shuffle data...
+keywords: 白衣|望见|PAD|PAD
+target: 回舟望见雪来时|此兴山阴不与知|天上白衣殊变化|人间臭腐正神奇
+output: 望看望见白纷时|此去何中不可知|回上白云还未态|人间那腐不相知
+
+epoch: 10, 1/2971 0.0%, 0.00s per iter, lr: 0.0004, tr: 0.82, tau: 0.016
+  gen loss: 3.520  ppl:33.80
+______________________
+keywords: 窗下|携酒|PAD|PAD
+target: 子云窗下草玄经|寒雀争喧户昼扃|好事应无携酒榼|相过聊欲煮茶瓶
+output: 落花楼上白堂亭|足雀喧飞白户扃|想见不无携酒榼|就逢莫复问归经
+
+epoch: 10, 101/2971 3.4%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.016
+  gen loss: 3.520  ppl:33.78
+______________________
+keywords: 人家|长林|东南|PAD
+target: 山下平平百顷田|人家多厌粥和𫗴|不应限却东南地|丰草长林塞眼前
+output: 长色长林路不田|人家蚁少买肥𫗴|不知不海东南路|长草长林万北前
+
+epoch: 10, 201/2971 6.8%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.016
+  gen loss: 3.519  ppl:33.76
+______________________
+keywords: 国计|PAD|PAD|PAD
+target: 皇家新店跨神州|泉府虽盈万姓愁|今日何人忧国计|独劳天子自持筹
+output: 国人国国国金筹|千下新调救里侯|今日出人知此国|殷怜明主振征头
+
+epoch: 10, 301/2971 10.1%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.016
+  gen loss: 3.519  ppl:33.74
+______________________
+keywords: 吾君|PAD|PAD|PAD
+target: 十邑驱驰阅四旬|尽空囹圄报吾君|僧窗渐觉猿吟远|城市嚣尘自此分
+output: 吾载年驰不可邻|吾驱囹圄老吾君|吾窗一觉无声苦|不上归尘不在闻
+
+epoch: 10, 401/2971 13.5%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.016
+  gen loss: 3.518  ppl:33.73
+______________________
+keywords: 飞燕|省|PAD|PAD
+target: 烛花影里粉姿闲|一点愁侵两点山|不怕带他飞燕妒|无言相逐省弓弯
+output: 燕支飞里燕香闲|飞点飞心一鬓关|人怕沙头飞燕子|枉心春伴逐夫还
+
+epoch: 10, 501/2971 16.9%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.015
+  gen loss: 3.518  ppl:33.72
+______________________
+keywords: 花王|风流|春心|PAD
+target: 逐逐黄蜂粉蝶忙|雕栏曲处见花王|春心自是应难制|做出风流滋味长
+output: 春水风风入面香|花笼不蘖不风光|春心不似春无识|一了风流不味长
+
+epoch: 10, 601/2971 20.2%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.015
+  gen loss: 3.518  ppl:33.70
+______________________
+keywords: 昨夜|PAD|PAD|PAD
+target: 庭梧昨夜试新霜|坠叶成丹蝶已黄|更堪羌笛城头起|一片关山在夕阳
+output: 昨花昨夜起秋霜|新叶萧阴旅梦霜|犹无一笛吹头笛|昨夜清江万夕阳
+
+epoch: 10, 701/2971 23.6%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.015
+  gen loss: 3.517  ppl:33.69
+______________________
+keywords: 握手|蓟门|残雪|殷勤
+target: 驿楼相别不胜悲|握手殷勤问后期|何处垆头同一醉|冷风残雪蓟门时
+output: 五楼残见日曾思|握手相勤问旧枝|残雪满庭寒不见|不残残雪夜门迟
+
+epoch: 10, 801/2971 27.0%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.015
+  gen loss: 3.517  ppl:33.67
+______________________
+keywords: 山南|PAD|PAD|PAD
+target: 山北山南听老农|裤襦歌已满城中|邦人愿得三年住|翻恐朝廷识弱翁
+output: 山北山南山雨翁|裤襦谁舞入华蓬|山人此作天公事|村作辽阳第此翁
+
+epoch: 10, 901/2971 30.3%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.014
+  gen loss: 3.516  ppl:33.66
+______________________
+keywords: 堂中|初出|PAD|PAD
+target: 蜜黄初出一枝春|分似堂中得定人|各各闻香获三昧|信知文字本非真
+output: 初蜂初出出番新|分得中中结蜜真|莫自堂香获不昧|中知初字亦无真
+
+epoch: 10, 1001/2971 33.7%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.014
+  gen loss: 3.516  ppl:33.64
+______________________
+keywords: 孤舟|秋深|白鹭|PAD
+target: 新插茅檐红槿篱|秋深黄叶已飞飞|滩头水阔孤舟去|渡口风寒白鹭啼
+output: 白鹭洲山白白围|秋深篱叶飒相依|孤头不见秋舟客|月下潮痕夜鹭飞
+
+epoch: 10, 1101/2971 37.1%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.014
+  gen loss: 3.515  ppl:33.63
+______________________
+keywords: 幽人|云去|云松|青山
+target: 云松空莫莫|幽人久不来|今朝乘云去|青山为我开
+output: 云山云翠测|幽人无不来|幽朝云外里|青山何处来
+
+epoch: 10, 1201/2971 40.4%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.014
+  gen loss: 3.515  ppl:33.62
+______________________
+keywords: 云峰|秋风|霜林|PAD
+target: 水涌云峰碧四围|天连江色雁初飞|秋风不见汾河棹|人在霜林倚夕晖
+output: 云石峰峦秋玉围|秋风云上映来飞|秋风一入鲈鱼梦|归在烟林霁碧晖
+
+epoch: 10, 1301/2971 43.8%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.014
+  gen loss: 3.515  ppl:33.61
+______________________
+keywords: 纷纷|明月|紫云|PAD
+target: 不嫁吴王凤作群|山中偃卧发纷纷|冰纨照面如明月|石鼓歌声入紫云
+output: 天见乘风作上云|纷云明蹇卧生纷|白轮不用无明月|曾照秦声入紫云
+
+epoch: 10, 1401/2971 47.2%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.013
+  gen loss: 3.514  ppl:33.60
+______________________
+keywords: 皇家|艰难|未|PAD
+target: 艰难功业属皇家|每为农桑下诏多|滥抚一同何补报|祇先劝课未皇他
+output: 艰难难业付艰多|每向天家未九多|滥抚九时天上去|先将书课课休多
+
+epoch: 10, 1501/2971 50.5%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.013
+  gen loss: 3.514  ppl:33.59
+______________________
+keywords: 玉树|PAD|PAD|PAD
+target: 玉树花飘凤失栖|一声初压管弦低|清回烦暑成潇洒|艳逐寒云变惨凄
+output: 玉树琼枝玉树低|昂声啼鸟玉弦嘶|春风燕雀知何洒|明色新裁玉殿低
+
+epoch: 10, 1601/2971 53.9%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.013
+  gen loss: 3.514  ppl:33.57
+______________________
+keywords: 君去|楚乡|PAD|PAD
+target: 君去西川路|知余滞楚乡|巴江书莫寄|九派是浔阳
+output: 君去心如远|年余几楚乡|莫歌何不怨|若月是长阳
+
+epoch: 10, 1701/2971 57.3%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.013
+  gen loss: 3.513  ppl:33.56
+______________________
+keywords: 侵晓|PAD|PAD|PAD
+target: 玉燕垂符小|珠囊结艾青|更将长命缕|侵晓奉慈庭
+output: 侵殿朝馀润|金帘不子青|天将天命缕|无晓起椒龄
+
+epoch: 10, 1801/2971 60.6%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.013
+  gen loss: 3.513  ppl:33.55
+______________________
+keywords: 王孙|榾柮|PAD|PAD
+target: 啾啾寒雀拂檐来|榾柮炉深欲作灰|雪上红缨高大过|王孙西去猎黄台
+output: 生啾玉食玉云梅|榾柮炉香未吐开|领满老尘飞处梦|王孙何子不黄来
+
+epoch: 10, 1901/2971 64.0%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.012
+  gen loss: 3.513  ppl:33.54
+______________________
+keywords: 嵯峨|满眼|PAD|PAD
+target: 嵯峨高锁夕阳红|斜入吟窗秀色浓|六里青山长满眼|不劳云片学奇峰
+output: 嵯峨满插接天峰|邺照孤城月气浓|满十七年山满眼|不知何外满仙踪
+
+epoch: 10, 2001/2971 67.4%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.012
+  gen loss: 3.512  ppl:33.53
+______________________
+keywords: 著|PAD|PAD|PAD
+target: 宫相湮沦久|兹泉日夜生|泉存人不见|空复著虚名
+output: 老树分甘著|幽辰自已声|泉言人不识|空有老人名
+
+epoch: 10, 2101/2971 70.7%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.012
+  gen loss: 3.512  ppl:33.52
+______________________
+keywords: 风叶|PAD|PAD|PAD
+target: 宦接乡山事已稀|谪居犹得近王畿|劝君今夜且雄饮|明日出城风叶飞
+output: 风叶风闾不已非|谪仙风自旧臣畿|朝君风叶秋风老|明月西门风雨飞
+
+epoch: 10, 2201/2971 74.1%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.012
+  gen loss: 3.512  ppl:33.51
+______________________
+keywords: 清风|黄花|还作|PAD
+target: 黄花随处隐天流|万壑清风一夜秋|可是谪仙缘未满|不妨还作此山囚
+output: 黄花不处有清游|洞壑清风一钓舟|不惜黄花无觅死|一须还作一时游
+
+epoch: 10, 2301/2971 77.4%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.012
+  gen loss: 3.511  ppl:33.49
+______________________
+keywords: 松风|双峰|迟迟|PAD
+target: 石髓门前水|松风谷外钟|迟迟半轮月|未忍出双峰
+output: 云髓双前石|松风泻口松|迟迟谢行月|幽觉听山峰
+
+epoch: 10, 2401/2971 80.8%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.011
+  gen loss: 3.511  ppl:33.49
+______________________
+keywords: 远游|PAD|PAD|PAD
+target: 腊月牂牁三十日|相思觅句上谯楼|遥知今夜柴炉会|说我无家更远游
+output: 游尽长牁送十里|看花千句到江楼|却知此日西门坐|独与西情寄远游
+
+epoch: 10, 2501/2971 84.2%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.011
+  gen loss: 3.511  ppl:33.47
+______________________
+keywords: 料理|天气|PAD|PAD
+target: 天气欲晴还欲阴|强扶头起更岑岑|睡魔欲遣茶料理|政恐蔬肠不易禁
+output: 清气清然眼未寻|丁宁造角欲无阴|偶魔不困痡烟理|睡要不妨天敢禁
+
+epoch: 10, 2601/2971 87.5%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.011
+  gen loss: 3.511  ppl:33.47
+______________________
+keywords: 沉沦|辛苦|黄云|种
+target: 笼炊汤沸饼如银|辛苦焉知种麦人|今岁夏初似高凤|黄云欲割半沉沦
+output: 黄云瓜饼不生均|辛苦人家种种莼|今日黄多无有士|黄云辛侑鲁沉沦
+
+epoch: 10, 2701/2971 90.9%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.011
+  gen loss: 3.510  ppl:33.45
+______________________
+keywords: 群仙|青螺|墙外|PAD
+target: 障山可奈白云何|露出峰尖能几多|宛似群仙粉墙外|髻环历历见青螺
+output: 罗花百尺耸云阿|竹杖西头出几何|宛似仙仙真玉下|清鬟风尽见青娥
+
+epoch: 10, 2801/2971 94.3%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.011
+  gen loss: 3.510  ppl:33.44
+______________________
+keywords: 红蓼|鱼鸟|湖山|老去
+target: 绿荷红蓼掉歌还|桃柳连堤水拍湾|和靖不归坡老去|空教鱼鸟管湖山
+output: 老阴红蓼绿于斑|老去湖山一半湾|老靖不知鱼老去|湖留鸥鸟弄婴山
+
+epoch: 10, 2901/2971 97.6%, 0.15s per iter, lr: 0.0004, tr: 0.82, tau: 0.011
+  gen loss: 3.510  ppl:33.44
+______________________
+run validation...
+in training mode: 0
+epoch: 10, lr: 0.0004, tr: 0.82, tau: 0.010
+  gen loss: 4.124  ppl:61.78
+______________________
+validation Done: 1
+saving model...
+teach forcing ratio decay...
+shuffle data...
+keywords: 梦回|京华|雨过|道路
+target: 味如脍雪色如霞|远寄包封道路赊|酒醒梦回凉雨过|不知身世在京华
+output: 雨乡道美过如霞|看道归来道路赊|近醒梦回春月过|梦知身在在京华
+
+epoch: 11, 1/2971 0.0%, 0.00s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.509  ppl:33.43
+______________________
+keywords: 收拾|宝藏|PAD|PAD
+target: 龙龛宝藏照人寒|奥老功成住圣安|却请定公来领略|收拾香火礼旃檀
+output: 宝门新筑白油看|奥室相名不不乾|不笑俸山收一略|一藏金焰燎烧檀
+
+epoch: 11, 101/2971 3.4%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.509  ppl:33.41
+______________________
+keywords: 幽人|泉声|PAD|PAD
+target: 山中烟岚午未开|石桥东下水潆洄|幽人独占清溪住|卧听泉声木杪来
+output: 松竹萧萝护枕开|石床流畔水云洄|凭栏莫问山溪水|流听泉声送杪来
+
+epoch: 11, 201/2971 6.8%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.509  ppl:33.40
+______________________
+keywords: 雪花|海门|归去|平沙
+target: 淋淋出海门|百里雪花喷|坐看东归去|平沙空有痕
+output: 江漓湿翠门|雪色踏初昏|四看飞归去|平沙一自痕
+
+epoch: 11, 301/2971 10.1%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.508  ppl:33.39
+______________________
+keywords: 垂虹|石湖|苏州|松江
+target: 松江未过不胜愁|过了垂虹百不忧|忽见石湖山上塔|定知塔背是苏州
+output: 石江滟滟石胜秋|送我松萝傍水头|一忆松湖滩上塔|始知曾外是苏州
+
+epoch: 11, 401/2971 13.5%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.508  ppl:33.38
+______________________
+keywords: 君王|龙舟|PAD|PAD
+target: 禁城柳色蔼春晖|江上龙舟去若飞|典笥预开金锁待|君王初进五时衣
+output: 君垣江下照如晖|归上花舟送不飞|龙笥君先三十泪|君王不赐五侯归
+
+epoch: 11, 501/2971 16.9%, 0.17s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.508  ppl:33.37
+______________________
+keywords: 辞|簪绅|薄宦|PAD
+target: 薄宦六年辞故山|故山祇在梦魂间|簪绅何苦自缠缚|却羡归牛自在闲
+output: 薄宦归经归故山|山人今在别中间|风缨不事来拘缚|却羡君来与在闲
+
+epoch: 11, 601/2971 20.2%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.507  ppl:33.36
+______________________
+keywords: 云山|秦淮|烟雨|PAD
+target: 当年随我出西州|到处云山共胜游|那料秦淮烟雨里|倚筇看子上孤舟
+output: 云山一片一城州|我处云山总一游|若料故淮烟雨里|自筇终尽过林舟
+
+epoch: 11, 701/2971 23.6%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.507  ppl:33.34
+______________________
+keywords: 水天|织女|客星|PAD
+target: 泛泛五湖霜气清|漫漫不辨水天形|虽无织女支机石|且对姮娥称客星
+output: 天水天弦天气清|漫将天险水如星|人然未女真机石|且有姮娥月客星
+
+epoch: 11, 801/2971 27.0%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.507  ppl:33.33
+______________________
+keywords: 征鸿|归去|愧|PAD
+target: 此身重滞愧征鸿|况对庭前郢树风|暂至京师便归去|敢期今日有黄公
+output: 归身归九若无中|归复苍闱一树风|欲寄相师归相去|拟言归日到家鸿
+
+epoch: 11, 901/2971 30.3%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.506  ppl:33.32
+______________________
+keywords: 出师|艰危|文|世
+target: 扶汉如周夙所期|遗孤委托在艰危|出师二表文犹在|伊傅存心世共知
+output: 前著危今世事之|今经己克在何时|当师不识千章在|不吕无亡世不知
+
+epoch: 11, 1001/2971 33.7%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.506  ppl:33.31
+______________________
+keywords: 僧房|PAD|PAD|PAD
+target: 岩石青青梧叶黄|石泉竹径对僧房|慈航苦海今何在|一部楞严在佛旁
+output: 僧窦寒松竹叶黄|石泉深杖一僧床|僧僧寺爱无何在|一日楞严一卷张
+
+epoch: 11, 1101/2971 37.1%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.505  ppl:33.30
+______________________
+keywords: 香风|PAD|PAD|PAD
+target: 绮陌香风袭骑忙|千门红紫斗春长|宁知跨凤吹箫处|犹有忘忧在北堂
+output: 香阁香风入玉香|紫年万烛斗芬妆|香知主簿伤箫管|只在黄情驻上方
+
+epoch: 11, 1201/2971 40.4%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.505  ppl:33.28
+______________________
+keywords: 仿佛|隔岸|PAD|PAD
+target: 舟泊梧城一水长|乡音仿佛是吾乡|先人遗迹碑阴在|隔岸环山草色香
+output: 稚子西桐隔夜长|篷人无佛记湘乡|一从远爱无中在|隔岸青溪隔树荒
+
+epoch: 11, 1301/2971 43.8%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.505  ppl:33.28
+______________________
+keywords: 风雨|夜深|乘月|PAD
+target: 世间无远可为游|六合朝行夕已周|坛上夜深风雨静|小仙乘月系苍虬
+output: 夜深月月不怜留|风月何年不此秋|乘上夜深风雨恶|一乘乘月夜扁舟
+
+epoch: 11, 1401/2971 47.2%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.505  ppl:33.27
+______________________
+keywords: 景物|过雨|PAD|PAD
+target: 暮春景物称山家|屋角团团绿叶遮|薄晚微云疏过雨|一番小麦颤轻花
+output: 雨云收物不山家|屋角疏篱雨后斜|好暮不风初破雨|一声新雨颤春花
+
+epoch: 11, 1501/2971 50.5%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.504  ppl:33.26
+______________________
+keywords: 碧玉|酌|PAD|PAD
+target: 笋成森碧玉|麦熟敛黄云|村酒不堪酌|一杯能易醺
+output: 碧舆碧玉玉|翠子不青云|客枕凉相听|谁杯浇几醺
+
+epoch: 11, 1601/2971 53.9%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.504  ppl:33.24
+______________________
+keywords: 白浪|江中|路|暗
+target: 白浪暗江中|南泠路不通|高樯帆自满|出浦莫呼风
+output: 白云生相同|江洲北渺通|白歌潮浪去|不浦不知风
+
+epoch: 11, 1701/2971 57.3%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.504  ppl:33.23
+______________________
+keywords: 掀髯|PAD|PAD|PAD
+target: 台省诸公六出奇|江湖狂客一生痴|无人为问净光老|抚掌掀髯端为谁
+output: 茗碗人间小十奇|刻棋浪子醉时诗|从来不爱江名者|抚掌相篷看白谁
+
+epoch: 11, 1801/2971 60.6%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.503  ppl:33.22
+______________________
+keywords: 白发|忧国|流落|PAD
+target: 麒麟堕地天不惜|流落荒郊鲁叟悲|白发杜陵忧国泪|临风独咏八哀诗
+output: 白麟阁落人涯见|白水千城古战诗|白发老陵祠国恨|谁风更遣一姨思
+
+epoch: 11, 1901/2971 64.0%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.503  ppl:33.21
+______________________
+keywords: 清欢|吹箫|肠断|昨夜
+target: 腻发堆云镜舞鸾|五云仙洞接清欢|归来失却吹箫伴|肠断昆山昨夜寒
+output: 昨色清辉覆面寒|仙云深梦夜清欢|飞来自是无箫侣|只断清山第夜寒
+
+epoch: 11, 2001/2971 67.4%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.503  ppl:33.20
+______________________
+keywords: 惭|PAD|PAD|PAD
+target: 三殿晨开锡宴初|太官顺节进龟鱼|微臣笔力惭燕许|谩赋群官上玉除
+output: 一十何趋正欲书|内平不进奉贤鱼|黄臣不幸民无适|万道豳风致太除
+
+epoch: 11, 2101/2971 70.7%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.502  ppl:33.20
+______________________
+keywords: 将军|青草|春雨|PAD
+target: 千年孤剑倚皇天|青草黄茅万仞烟|今日将军劳苦地|几家春雨艾畬田
+output: 春年春雨斩青天|青草将花照里边|今日天风春望事|将军春色斗将田
+
+epoch: 11, 2201/2971 74.1%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.502  ppl:33.19
+______________________
+keywords: 柳条|PAD|PAD|PAD
+target: 相别春云绾柳条|相思千里路遥遥|丘隅养就冲天翼|迟尔乘风上碧霄
+output: 腊见无情柳未条|柳条春叶系征腰|柳园不就春霄去|投尔先生一柳霄
+
+epoch: 11, 2301/2971 77.4%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.502  ppl:33.18
+______________________
+keywords: 隔帘|日晏|关|试看
+target: 日晏到门三斗尘|隔帘午暝托朝真|乘肩鼻涕关何事|试看斤风向郢人
+output: 日出关门万十春|隔帘相对更愁绅|隔闲不观从何事|试看青儿作上人
+
+epoch: 11, 2401/2971 80.8%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.502  ppl:33.17
+______________________
+keywords: 纨扇|PAD|PAD|PAD
+target: 五月五日热太烘|疾挥纨扇不能攻|欲呼小艇耶溪去|荷叶荷花十里风
+output: 纨月凉风水不空|六风纨扇扇须风|只应玉妇归溪汲|荷叶荷花不里红
+
+epoch: 11, 2501/2971 84.2%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.501  ppl:33.16
+______________________
+keywords: 看山|闲云|PAD|PAD
+target: 落叶随流水|闲云与闭关|幽人无限意|不语自看山
+output: 看日闲山水|闲云过雨关|不人无一意|不见看相山
+
+epoch: 11, 2601/2971 87.5%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.501  ppl:33.16
+______________________
+keywords: 流红|春衫|松风|莓苔
+target: 一溪桃雨流红去|万壑松风响翠来|即景欲吟吟未得|春衫随处坐莓苔
+output: 松萝阴李春莺扫|却里松风一石崖|一是山知无处得|春衫随处有莓苔
+
+epoch: 11, 2701/2971 90.9%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.501  ppl:33.15
+______________________
+keywords: 贫|过|传家|PAD
+target: 尔祖传家唯此钵|中虽无物不忧贫|持从闹市门头过|倒廪倾囷自有人
+output: 自祖传家一有数|不间不似亦能贫|有将误授能前过|赢廪灯囷一不人
+
+epoch: 11, 2801/2971 94.3%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.501  ppl:33.14
+______________________
+keywords: 客路|雨过|流莺|PAD
+target: 春郊雨过绿杨齐|客路流莺万树啼|行到南阳瞻岘首|故园只在数峰西
+output: 雨风雨过杏杨齐|客路流莺送树啼|行到故山春客首|故人桃隔水声西
+
+epoch: 11, 2901/2971 97.6%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.500  ppl:33.13
+______________________
+run validation...
+in training mode: 0
+epoch: 11, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 4.120  ppl:61.57
+______________________
+validation Done: 1
+teach forcing ratio decay...
+shuffle data...
+keywords: 筋力|夜阑|鞍马|PAD
+target: 少年鞍马疾如飞|卖尽儒衣买战衣|老去不知筋力减|夜阑犹梦解重围
+output: 夜年豪马走如飞|击得春冠买不机|傥得不来筋力倦|夜阑干自过江归
+
+epoch: 12, 1/2971 0.0%, 0.00s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.500  ppl:33.13
+______________________
+keywords: 山色|廿年|吟眺|尘土
+target: 山色已含暝|叶声新报秋|廿年尘土客|吟眺不胜愁
+output: 山色俯无秋|秋声到枕秋|廿年尘土客|吟得不胜愁
+
+epoch: 12, 101/2971 3.4%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.500  ppl:33.11
+______________________
+keywords: 重阳|化工|霜馀|PAD
+target: 酒开瓮面扑人香|菊折霜馀满把黄|我是化工君信否|放迟一月作重阳
+output: 骥酣不里透衣霜|自蕊霜葩带禁香|自是一般清勿否|他翁何片便重阳
+
+epoch: 12, 201/2971 6.8%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.499  ppl:33.10
+______________________
+keywords: 东皋|PAD|PAD|PAD
+target: 草暖郊原老牸肥|牧童青笠绿蓑衣|想应耕罢东皋晚|急度河梁冒雨归
+output: 东阁东原已未肥|牧童来雀蟹蓑衣|东君不解东皋老|急雨东风数雨归
+
+epoch: 12, 301/2971 10.1%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.499  ppl:33.08
+______________________
+keywords: 长算|朝家|PAD|PAD
+target: 疆事须长算|朝家得实能|坐来酬万务|心地自虚凝
+output: 长里朝长物|朝廷天自能|如来一圣寿|何地有天承
+
+epoch: 12, 401/2971 13.5%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.499  ppl:33.07
+______________________
+keywords: 紫微|乾坤|虎龙|PAD
+target: 闪灼虎龙神剑飞|好凭身事莫相违|传时须在乾坤力|便透三清入紫微
+output: 乾灼山头剑剑归|乾山箕处到相违|大书一取乾坤里|莫是乾峰与紫微
+
+epoch: 12, 501/2971 16.9%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.498  ppl:33.05
+______________________
+keywords: 儿郎|绿杨|兄弟|PAD
+target: 蔡家兄弟好儿郎|骨秀同熏知见香|好在绿杨堤上路|幅巾来往自相羊
+output: 绿家不弟各相徉|一在山心玉几香|好向罗杨堤上柳|儿童争往下骑羊
+
+epoch: 12, 601/2971 20.2%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.498  ppl:33.04
+______________________
+keywords: 计|PAD|PAD|PAD
+target: 戡难功何补|欺孤计已深|尽饶摧导玉|那解贱黄金
+output: 不在多名在|空心老已深|大空才古处|那敢贱人心
+
+epoch: 12, 701/2971 23.6%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.497  ppl:33.03
+______________________
+keywords: 鳌头|PAD|PAD|PAD
+target: 安排灯火作鳌头|人乐公来再有秋|转雨作晴谈笑事|他州谁得似吾州
+output: 鳌头一火上鳌头|万事天家未不游|万转天霖浑不处|任年端是一头愁
+
+epoch: 12, 801/2971 27.0%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.497  ppl:33.02
+______________________
+keywords: 垂杨|圣明|乐府|西山
+target: 西山云色玉泉流|两岸垂杨夹彩舟|一曲上陵新乐府|圣明不事具茨游
+output: 五山何气晓为流|别两垂杨拂道舟|一棹东风吹乐府|圣人争敢在天楼
+
+epoch: 12, 901/2971 30.3%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.497  ppl:33.01
+______________________
+keywords: 澄清|荆州|PAD|PAD
+target: 海不扬波蜃气平|十年南徼赖澄清|九重拊髀方西顾|未遣荆州髀肉生
+output: 澄上澄州势气平|天年京徼赖鄞清|今天拊髀今消会|一必荆州髀肉生
+
+epoch: 12, 1001/2971 33.7%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.496  ppl:33.00
+______________________
+keywords: 题名|老眼|PAD|PAD
+target: 待隐园依北固山|题名石在墨痕乾|何时布袜青鞋去|老眼摩挲试再看
+output: 春得题林老斗宽|题诗全眼有痕乾|应曾得谷青鞋去|老眼看挲字一看
+
+epoch: 12, 1101/2971 37.1%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.496  ppl:32.99
+______________________
+keywords: 琼花|PAD|PAD|PAD
+target: 绮筵雕俎换新声|博取琼花出玉英|肯信博陵崔十四|平生愿作乐中筝
+output: 琼花琼蕊旧琼英|藻士琼浆缠御英|借使仙山多子里|不生不得贺兰名
+
+epoch: 12, 1201/2971 40.4%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.496  ppl:32.97
+______________________
+keywords: 黄绢|蓬户|青州|PAD
+target: 自接曲生蓬户外|便呼伯雅竹床头|真逢幼妇著黄绢|直遣从事到青州
+output: 青是青江尘岛畔|便须黄雅向青头|更烦黄纸黄钱字|自恐三军作妇州
+
+epoch: 12, 1301/2971 43.8%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.495  ppl:32.97
+______________________
+keywords: 记|黄龙|拥鼻|PAD
+target: 黄龙记昔游|园客有佳遗|不谓洛生吟|辍餐时拥鼻
+output: 糊窗百得时|荡里有新诗|欲见凤凰箫|但餐待下迟
+
+epoch: 12, 1401/2971 47.2%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.495  ppl:32.96
+______________________
+keywords: 辽海|斗|嫖姚|PAD
+target: 十年辽海斗兵稀|边马乘秋转更肥|共道嫖姚新按塞|不愁明月满金微
+output: 华年不见海龙威|赣塞连天又北飞|海说嫖姚家海去|不禁天月照天飞
+
+epoch: 12, 1501/2971 50.5%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.495  ppl:32.95
+______________________
+keywords: 萧萧|梦魂|寂寥|逢君
+target: 客窗风雨夜萧萧|曾剔银缸共寂寥|别后逢君何处所|梦魂时落浙江潮
+output: 风途何雨不萧萧|独记灯河一寂寥|不是逢君不处去|梦魂惊梦浙江潮
+
+epoch: 12, 1601/2971 53.9%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.495  ppl:32.94
+______________________
+keywords: 红粉|阴阴|荷花|PAD
+target: 老梅临沼绿阴阴|一朵荷花透入林|不比世间红粉面|结交真有岁寒心
+output: 绿槐阴水绕阴阴|杖履溪头傍小林|翠竹红间红粉腻|故根何实种桃心
+
+epoch: 12, 1701/2971 57.3%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.494  ppl:32.92
+______________________
+keywords: 酒熟|潦倒|高阳|PAD
+target: 床头酒熟百花香|不必吴姬劝客尝|花下与君𢬵潦倒|酒徒早已属高阳
+output: 倒头沽熟菊花黄|裛饮佳姬笑酒尝|我亦高君𢬵潦倒|不妨不是拜高阳
+
+epoch: 12, 1801/2971 60.6%, 0.15s per iter, lr: 0.0004, tr: 0.80, tau: 0.010
+  gen loss: 3.494  ppl:32.92
+______________________
+keywords: 麒麟|南归|蛾眉|PAD
+target: 汉使南归绝信音|毡庭青草始知春|蛾眉却解安邦国|羞杀麒麟阁上人
+output: 南国南归未识真|张车毡草几为尘|蛾眉不笑人间主|一杀麒王阁上人
+
+epoch: 12, 1901/2971 64.0%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.494  ppl:32.91
+______________________
+keywords: 青龙|空房|疏|PAD
+target: 闻师行讲青龙疏|本寺住来多少年|静扫空房唯独坐|千茎秋竹在檐前
+output: 井梧井尽龙龙眠|讲是无人不少年|老看白庭遗昨立|青门疏竹荫空前
+
+epoch: 12, 2001/2971 67.4%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.493  ppl:32.90
+______________________
+keywords: 白头|PAD|PAD|PAD
+target: 诗成邂逅得穷愁|眼见郎潜又白头|人物向来山吏部|篇章今日谢宣州
+output: 白成头白白头愁|适底诗君不白头|汝物白人无下月|傥逢相日对家楼
+
+epoch: 12, 2101/2971 70.7%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.493  ppl:32.89
+______________________
+keywords: 异姓|PAD|PAD|PAD
+target: 异姓侯王约重陈|谁知兴复自陪臣|滕公刚笑轻齐尉|大勇直须庸妄人
+output: 十姓从来不异亲|小知鲁业鲁神臣|滕王昔是调轻举|猛勇何曾更姓人
+
+epoch: 12, 2201/2971 74.1%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.493  ppl:32.88
+______________________
+keywords: 苍梧|青山|PAD|PAD
+target: 寂历青山静赏机|野情那似宦情微|抱琴欲渡湘江去|云暗苍梧雨欲飞
+output: 苍寞苍梧不不衣|飘人无复故情微|浮琴自写谁江路|不湿苍梧泪后飞
+
+epoch: 12, 2301/2971 77.4%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.493  ppl:32.87
+______________________
+keywords: 玉树|落花|PAD|PAD
+target: 仙凫谒帝楚江归|芳草洲连赤壁矶|遥对双峰怀玉树|琴声寂寂落花稀
+output: 春人玉玉玉江归|云树萋前草玉矶|遥望夕流双玉树|落花啼寞雨花稀
+
+epoch: 12, 2401/2971 80.8%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.492  ppl:32.86
+______________________
+keywords: 画船|城中|PAD|PAD
+target: 城中莲子买将归|未问尝新早与迟|偶忆涌金门外晓|画船带露摘来时
+output: 城中画叶几扁时|湖是城城画晚迟|一得城金门外望|画船相月藕芦枝
+
+epoch: 12, 2501/2971 84.2%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.492  ppl:32.85
+______________________
+keywords: 君王|春红|PAD|PAD
+target: 吴蚕入茧染春红|缫尽柔丝未论功|若得君王回一顾|不辞白发上阳宫
+output: 春王短茧不春红|缫尽春红褪有工|君个君王多美醉|不知千发更春风
+
+epoch: 12, 2601/2971 87.5%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.492  ppl:32.84
+______________________
+keywords: 风味|PAD|PAD|PAD
+target: 葱汤麦饭两相宜|葱暖丹田麦疗饥|莫道儒家风味薄|隔邻犹有未炊时
+output: 风油不粒饱三宜|风味香砂未足奇|养道神家甘味好|修身菜有未归时
+
+epoch: 12, 2701/2971 90.9%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.491  ppl:32.83
+______________________
+keywords: 柳条|细腰|婀娜|风飘
+target: 婀娜新枝舞细腰|多连山口任风飘|期君莫恃为樊圃|脆软由来是柳条
+output: 婀娜柔枝夹柳腰|风风冰色绿风飘|可君不道无谁圃|恐有姚来不故腰
+
+epoch: 12, 2801/2971 94.3%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.491  ppl:32.82
+______________________
+keywords: 独步|PAD|PAD|PAD
+target: 八十诗僧岁莫闲|又随白浪上包山|青霜四面橙栾熟|独步三门独自还
+output: 独十年怀不见攀|截随鹓鹤下西山|行云叶面无黄好|独步艰竿独倚栏
+
+epoch: 12, 2901/2971 97.6%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.491  ppl:32.81
+______________________
+run validation...
+in training mode: 0
+epoch: 12, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 4.120  ppl:61.57
+______________________
+validation Done: 1
+saving model...
+teach forcing ratio decay...
+shuffle data...
+keywords: 长安|题诗|醉里|PAD
+target: 日彩浮金丹阙晓|烟光凝翠碧山秋|长安旧路天西北|醉里题诗送客游
+output: 酒暮长花醉里间|云光皓翠拥云头|长安醉里无涯北|醉里题诗醉里舟
+
+epoch: 13, 1/2971 0.0%, 0.00s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.491  ppl:32.81
+______________________
+keywords: 明月|PAD|PAD|PAD
+target: 镜中色相类吾深|吾面终难镜里寻|明月印空空受月|是他空月本无心
+output: 明面风明明明深|吾本何人不里心|欲月自中人自迹|一轮清露照人心
+
+epoch: 13, 101/2971 3.4%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.490  ppl:32.80
+______________________
+keywords: 琼楼|岁华|天香|PAD
+target: 且更淮南了岁华|天香深窈竹西家|忽然踏碎琼楼月|相伴夫人暮倚花
+output: 春看仙家岁岁华|天涯浮处有篱斜|忽然不碎玻瑶晚|始对扶人倚岁花
+
+epoch: 13, 201/2971 6.8%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.490  ppl:32.78
+______________________
+keywords: 围|PAD|PAD|PAD
+target: 层甍星拱埶翚飞|乾象盘□百宝围|黼扆中临同北极|坐齐七政运璿玑
+output: 一官如雪照翚飞|万里森桓万象围|黼扆中间洮俯极|斯看时宝运璿玑
+
+epoch: 13, 301/2971 10.1%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.489  ppl:32.76
+______________________
+keywords: 庭柯|扫除|犊鼻|挂
+target: 腹中书籍虽无几|可奈多知作病何|正欲扫除无复理|聊将犊鼻挂庭柯
+output: 懒中不法无无过|可奈庭情负后何|一日一除焚卷见|聊将一鼻议庭柯
+
+epoch: 13, 401/2971 13.5%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.489  ppl:32.75
+______________________
+keywords: 新诗|PAD|PAD|PAD
+target: 风吹鹤发短萧萧|数首新诗酒一瓢|爱看前村风色好|不知行过竹西桥
+output: 新来诗发不亭萧|酒载新诗一半消|最客秋风闻爆好|青知何处几林桥
+
+epoch: 13, 501/2971 16.9%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.489  ppl:32.74
+______________________
+keywords: 悲|PAD|PAD|PAD
+target: 闻道更新帜|多应废旧旗|征衣无伴捣|独处自然悲
+output: 悲说悲悲岁|多情诮酒时|不夫无不侣|心坐不相悲
+
+epoch: 13, 601/2971 20.2%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.488  ppl:32.73
+______________________
+keywords: 狂客|山雨|PAD|PAD
+target: 樱颗红垂山雨晴|荷钱绿卷水风生|佳人莫惜频行斝|狂客从教醉绝缨
+output: 山笋山稀白雨晴|距花满酒绿如生|扁舟不解留相客|不客何来不一情
+
+epoch: 13, 701/2971 23.6%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.488  ppl:32.71
+______________________
+keywords: 折|PAD|PAD|PAD
+target: 三宫九庙事方危|狼子心肠未可知|若使无人折狂虏|东南那个是男儿
+output: 折年折曲寄堪悲|狼虎何年有必知|毕使有能能杨虏|何皋何敢是男儿
+
+epoch: 13, 801/2971 27.0%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.487  ppl:32.70
+______________________
+keywords: 谁将|PAD|PAD|PAD
+target: 日觉儒风薄|谁将霸道羞|乱臣无所惧|何用读春秋
+output: 谁暮谁冠面|谁将霸女流|来看将一恨|终以答碑愁
+
+epoch: 13, 901/2971 30.3%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.487  ppl:32.69
+______________________
+keywords: 琴书|湖光|花木|PAD
+target: 琴书澹泊古羲轩|花木幽闲汉绮园|碧落青嵩无用买|湖光一曲道真浑
+output: 湖书不墨不湖轩|花木萧禽自水喧|谁海波光春处处|湖光山片画人存
+
+epoch: 13, 1001/2971 33.7%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.487  ppl:32.68
+______________________
+keywords: 珠宫|PAD|PAD|PAD
+target: 君知曹子幻奇功|法界由来一性风|等是少年夸狡狯|杖端聊挂蕊珠宫
+output: 珠王珠国不知宫|法界无多不字通|四是人年人狡狯|一头来作小珠宫
+
+epoch: 13, 1101/2971 37.1%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.486  ppl:32.67
+______________________
+keywords: 山云|山花|PAD|PAD
+target: 山北山南日几回|半山山舍更传杯|一声羌笛山云裂|二月山花有落梅
+output: 山寺山花山北回|山岩云水不山杯|一声一笛吹头落|却月山花落落梅
+
+epoch: 13, 1201/2971 40.4%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.486  ppl:32.65
+______________________
+keywords: 将军|怅望|白首|PAD
+target: 将军新拥节旄闲|紫塞云浮豹尾班|白首边城休怅望|马蹄未出玉门关
+output: 将军高筑墓旄间|天翠楼中白尾山|白首将城犹怅望|黄将犹免遂鞍关
+
+epoch: 13, 1301/2971 43.8%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.486  ppl:32.64
+______________________
+keywords: 寻春|他年|华发|PAD
+target: 华发寻春喜见梅|一株临路雪培堆|凤城南陌他年忆|杳杳难随驿使来
+output: 华发寻春去欲梅|朝枝留水尚漫堆|他凰池畔春年好|杳杳难随驿使来
+
+epoch: 13, 1401/2971 47.2%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.485  ppl:32.63
+______________________
+keywords: 催我|扁舟|欲识|雪
+target: 欲识诗清处|须来天尽头|可人一溪雪|催我上扁舟
+output: 欲识扁舟趣|烟寻一上头|扁怜还欲上|不我未扁舟
+
+epoch: 13, 1501/2971 50.5%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.485  ppl:32.62
+______________________
+keywords: 遥瞻|成行|蔷薇|罗衣
+target: 先帝宫人总道妆|遥瞻陵柏泪成行|旧恩恰似蔷薇水|滴在罗衣到死香
+output: 金垄东中按是妆|遥瞻紫寝起痕香|今年此似宫薇露|流出罗衣几处方
+
+epoch: 13, 1601/2971 53.9%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.485  ppl:32.61
+______________________
+keywords: 翩翩|翱翔|PAD|PAD
+target: 文彩翩翩锦作衣|花阴同立亦同飞|何当得侣翱翔凤|集向明时览德辉
+output: 翩笔翩翩入翼衣|翱间不是御楼归|平当拔似凌翔凤|凤尾鸾珰上楚辉
+
+epoch: 13, 1701/2971 57.3%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.484  ppl:32.60
+______________________
+keywords: 春游|PAD|PAD|PAD
+target: 十字街头结绮楼|半垂珠箔看春游|花前认得金羁马|约鬓帘中笑上眸
+output: 春水春头春绮游|娇规珠箔倚春游|花前拭得花前曲|不见青前作语楼
+
+epoch: 13, 1801/2971 60.6%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.484  ppl:32.59
+______________________
+keywords: 白日|浮云|萧萧|PAD
+target: 西北浮云白日微|萧萧木叶傍人飞|那知十载穷途泪|并向秋风湿我衣
+output: 白去浮云白日微|萧萧芦苇覆人飞|一知一里浮云去|白日青风苜不衣
+
+epoch: 13, 1901/2971 64.0%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.484  ppl:32.58
+______________________
+keywords: 客梦|屈曲|春阴|PAD
+target: 三面屏围屈曲山|篆炉灰冷柏无烟|霜钟不管春阴薄|声到寒窗客梦边
+output: 春月春风绕曲烟|一春烟冷酒烟烟|只今声入人阴里|日日春窗梦不边
+
+epoch: 13, 2001/2971 67.4%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.483  ppl:32.57
+______________________
+keywords: 吴江|纤纤|云里|PAD
+target: 锦帆高揭绣帘开|鼍鼓声悲凤管哀|月子纤纤云里见|吴江不尽暮潮来
+output: 云云云挂白云开|鼍鼓嘈嘈凤管哀|月下纤纤云未去|江江越女芰潮来
+
+epoch: 13, 2101/2971 70.7%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.483  ppl:32.56
+______________________
+keywords: 春红|翁|浣花|笑杀
+target: 千枝万朵怨春红|白缬黄楼髻子中|折向尊前君不饮|参差笑杀浣花翁
+output: 一枝万树竞春红|笑发红花春未空|折得折前问君得|却嫌花杀浣花翁
+
+epoch: 13, 2201/2971 74.1%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.483  ppl:32.55
+______________________
+keywords: 花枝|寒食|雨脚|PAD
+target: 风吹雨脚细于丝|泠暖浑如寒食时|不待千山消尽雪|小红已到杏花枝
+output: 风吹雨脚弄花枝|怅作山花雨脚丝|不是花年寒寒食|冷园寒放杏花枝
+
+epoch: 13, 2301/2971 77.4%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.483  ppl:32.54
+______________________
+keywords: 云薄|平田|疏|叶落
+target: 分洲小水秋苹白|接渚平田晚稻香|云薄挂枝疏叶落|村前对坐午天凉
+output: 晓秋■卫遥如浅|漠叶平田稻稻香|何叶不归风雨落|秋边深处水炊凉
+
+epoch: 13, 2401/2971 80.8%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.482  ppl:32.53
+______________________
+keywords: 东风|天涯|PAD|PAD
+target: 隔岁立春先十日|东风已觉到天涯|钗头彩胜簪来好|莫笑酡颜鬓已华
+output: 天岸春中天客日|东风吹作不天涯|尊前不仗天涯处|自向酡颜鬓未华
+
+epoch: 13, 2501/2971 84.2%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.482  ppl:32.52
+______________________
+keywords: 迥出|青云|人寰|PAD
+target: 高亭迥出人寰表|须信仙凡路已分|世上俗尘那得到|如今步步是青云
+output: 高山迥出青寰外|看信青人咫入分|更上人尘无得见|山何长步到青云
+
+epoch: 13, 2601/2971 87.5%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.482  ppl:32.51
+______________________
+keywords: 泪痕|PAD|PAD|PAD
+target: 翠袖年年积泪痕|罗帏夜夜忆君恩|纱窗月色不成梦|金井乌啼更断魂
+output: 欲竹长年泪泪痕|昔浮独照忆君恩|梦窗忽暗更知梦|唯锁梧啼月满魂
+
+epoch: 13, 2701/2971 90.9%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.481  ppl:32.50
+______________________
+keywords: 叠嶂|紫翠|天末|PAD
+target: 叠嶂层峦紫翠中|旧知雷雨起蛟龙|只今磴道千盘折|天末何年一夜风
+output: 叠嶂层层紫翠重|一时紫雨起蛟龙|天今天水无年外|天末天风一派中
+
+epoch: 13, 2801/2971 94.3%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.481  ppl:32.49
+______________________
+keywords: 手种|青松|道人|泉
+target: 崇福庵边安静泉|往来渐次四十年|道人只在山深处|手种青松已拂天
+output: 手种青前不道圆|泉来无觉看时年|道人手在青松处|拄植松松插满泉
+
+epoch: 13, 2901/2971 97.6%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.481  ppl:32.48
+______________________
+run validation...
+in training mode: 0
+epoch: 13, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 4.121  ppl:61.59
+______________________
+validation Done: 1
+teach forcing ratio decay...
+shuffle data...
+keywords: 小径|PAD|PAD|PAD
+target: 万峰西走白云平|二仲来时小径成|登望更谁知此意|楼前何限太行情
+output: 小山小畔小云生|几十馀年一小成|闲览门无无此意|可前何处故匆情
+
+epoch: 14, 1/2971 0.0%, 0.00s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.480  ppl:32.47
+______________________
+keywords: 弱水|海外|徘徊|PAD
+target: 山亭无路少徘徊|跬步狂澜涨九垓|不是蜃楼浮海外|也应弱水限蓬莱
+output: 我中临限入徘徊|跬步云山一海垓|不信棹楼楼海外|也知人羽去人莱
+
+epoch: 14, 101/2971 3.4%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.480  ppl:32.46
+______________________
+keywords: 海内|泉声|知音|天涯
+target: 天涯一归客|海内两知音|万古泉声在|应知此老心
+output: 海涯何千客|海内有相音|今里天声在|山知故意心
+
+epoch: 14, 201/2971 6.8%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.479  ppl:32.44
+______________________
+keywords: 久客|他乡|逢|征尘
+target: 久客逢馀闰|他乡别故人|自然堪下泪|谁忍望征尘
+output: 客久逢逢闰|他乡去故人|东怜今敬仲|不与折乡春
+
+epoch: 14, 301/2971 10.1%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.479  ppl:32.43
+______________________
+keywords: 情怀|溪流|看山|PAD
+target: 霜晴随意到南庵|近有溪流远看山|小醉情怀听别鹤|数声清弄入幽闲
+output: 一风水处看山山|水日山流一片山|不谢情怀无不酒|情声归去满山山
+
+epoch: 14, 401/2971 13.5%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.479  ppl:32.41
+______________________
+keywords: 洞里|PAD|PAD|PAD
+target: 笑侧华阳一幅巾|碧眸苍鬓貌如春|罗浮洞里通勾曲|疑怪相逢似故人
+output: 洞里青山一洞春|不溪谁与不如真|相逢莫里无勾税|灵是曹逢不故人
+
+epoch: 14, 501/2971 16.9%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.478  ppl:32.40
+______________________
+keywords: 黄发|羲皇|意|寄傲
+target: 寄傲羲皇以上人|古今虽隔意常亲|圣时方欲询黄发|未许公收致主身
+output: 疾傲游皇学上人|一今遗意意何新|分明黄始知黄发|未必高私格主人
+
+epoch: 14, 601/2971 20.2%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.478  ppl:32.39
+______________________
+keywords: 雪|PAD|PAD|PAD
+target: 春来冰未泮|冬至雪初晴|为报方袍客|丰年瑞已成
+output: 雪来雪雪雪|春至雪初晴|已报梅寒客|还年不雪生
+
+epoch: 14, 701/2971 23.6%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.477  ppl:32.38
+______________________
+keywords: 甘雨|山路|PAD|PAD
+target: 万物此中元活脱|眼前何处不流行|去年记得方山路|甘雨和风说大程
+output: 山里山时无不计|眼前山路是曾行|只今三得山山路|甘雨枯风过向生
+
+epoch: 14, 801/2971 27.0%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.477  ppl:32.36
+______________________
+keywords: 禁中|PAD|PAD|PAD
+target: 卧病兼旬不下床|小庭花落燕飞忙|禁中文墨如山积|不道闲时日许长
+output: 五看中秋不禁堂|醒中无下任双香|衔中不见春多暮|不比匡时分月长
+
+epoch: 14, 901/2971 30.3%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.477  ppl:32.35
+______________________
+keywords: 玉关|未信|边月|PAD
+target: 曾约机头玉指环|正愁边月几回弯|今朝未信人还蚤|闺梦犹应度玉关
+output: 玉约先关玉兔还|今如无月照时还|玉关不见人间月|月里犹堪夜玉关
+
+epoch: 14, 1001/2971 33.7%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.476  ppl:32.34
+______________________
+keywords: 黄衣|焚香|朝阳|PAD
+target: 焚香重熨赭黄衣|恐怕朝阳进御迟|禁鼓五更交早直|归来还是立班时
+output: 焚香熨下紫黄脂|玉女双双不可衣|禁苑不弦催泰起|朝来庭有太黄时
+
+epoch: 14, 1101/2971 37.1%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.476  ppl:32.32
+______________________
+keywords: 谪仙|PAD|PAD|PAD
+target: 金简朝元拥玉华|碧壶香满谪仙家|石坛冷挂银潢水|会待秋风送客槎
+output: 东凤仙来第座华|文章华案谪仙家|仙坛仙药银壶水|恍得仙风入谪槎
+
+epoch: 14, 1201/2971 40.4%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.475  ppl:32.31
+______________________
+keywords: 天晴|东风|PAD|PAD
+target: 斑斑羽拂晓烟青|一样东风两样声|计拙不如鸱妇巧|绸缪桑户趁天晴
+output: 东风初帽过天晴|晚夕丹风染素平|不后未知缘枭巧|绸缪何叶救春晴
+
+epoch: 14, 1301/2971 43.8%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.475  ppl:32.30
+______________________
+keywords: 玄霜|紫|PAD|PAD
+target: 高舂铃下索焚香|镂管纹笺发彩章|应在后园凉榭里|玄霜仙帽紫霓裳
+output: 紫台白索紫霜香|镂玉金楸紫紫裳|却是彤庭桃处里|几都不叶紫微裳
+
+epoch: 14, 1401/2971 47.2%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.475  ppl:32.29
+______________________
+keywords: 将军|染|璧水|赊
+target: 圆池类璧水|轻翰染烟华|将军欲定远|见弃不应赊
+output: 新明如水璧|波绡玉尘华|翠军旗传面|不为小如夸
+
+epoch: 14, 1501/2971 50.5%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.474  ppl:32.27
+______________________
+keywords: 春梦|雨声|燕子|碧桃
+target: 绿江烟草渺天涯|燕子来时未到家|宿酒恰随春梦醒|雨声落尽碧桃花
+output: 春风春雨雨无涯|半子归时燕得家|燕雨未眠风雨醒|雨声啼尽碧桃花
+
+epoch: 14, 1601/2971 53.9%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.474  ppl:32.26
+______________________
+keywords: 草木|深深|PAD|PAD
+target: 新绿深深嫩更黄|非花非草定何香|故山草木皆余爱|最爱抽梢竹过墙
+output: 深草荒深草草凉|无端草草自深妨|自人草木皆如意|聊寄清梢个几墙
+
+epoch: 14, 1701/2971 57.3%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.474  ppl:32.26
+______________________
+keywords: 笑|PAD|PAD|PAD
+target: 茅君顾我笑|谁校从官多|欲语囊中秘|其如六耳何
+output: 笑庵笑笑拙|捕我几今何|不献仍中笑|须如一代何
+
+epoch: 14, 1801/2971 60.6%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.473  ppl:32.25
+______________________
+keywords: 秋日|青山|飞鸟|PAD
+target: 秋日野亭上|四望尽青山|飞鸟去无极|白云相对闲
+output: 秋日青山路|青望白青山|鸟鸟飞飞迹|黄云空对闲
+
+epoch: 14, 1901/2971 64.0%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.473  ppl:32.24
+______________________
+keywords: 渔父|白雁|谁将|青枫
+target: 宪令谁将妒左徒|采蓠能忆握兰无|岂劳渔父相逢问|白雁青枫过五湖
+output: 谁将功将霸白符|投闲渔使楚鱼萸|江知白父生料处|白雁翩山下钓徒
+
+epoch: 14, 2001/2971 67.4%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.473  ppl:32.23
+______________________
+keywords: 棱棱|PAD|PAD|PAD
+target: 风采棱棱御史官|旌麾所至庶民安|渭川千亩填匈臆|散作毫端风雨寒
+output: 棱物棱棱不气官|兽麾拜隽驻英冠|朱川千亩千匈马|截断南端万雨寒
+
+epoch: 14, 2101/2971 70.7%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.472  ppl:32.22
+______________________
+keywords: 洞庭|采莲|PAD|PAD
+target: 遥想观涛处|犹意采莲歌|无因关塞叶|共下洞庭波
+output: 小忆鲈鱼去|秋有在松萝|采风不不上|秋见洞庭波
+
+epoch: 14, 2201/2971 74.1%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.472  ppl:32.20
+______________________
+keywords: 西风|凝睇|平分|PAD
+target: 今日樽前忽忆君|为怜秋事又平分|坐来凝睇西风久|过尽天边数片云
+output: 花岁西前忆忆君|败君新色不平分|只看一睇西风急|一见西涯一日云
+
+epoch: 14, 2301/2971 77.4%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.472  ppl:32.20
+______________________
+keywords: 窗户|萧森|空阶|冰雪
+target: 窗户尽萧森|空阶凝碧阴|不缘冰雪里|为识岁寒心
+output: 空户俯萧森|空阶苔雪阴|谁怜冰雪里|焉识岁寒心
+
+epoch: 14, 2401/2971 80.8%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.471  ppl:32.18
+______________________
+keywords: 云外|山|PAD|PAD
+target: 生计岩前树|素交云外山|愁来天地老|醉去古今闲
+output: 峻日山云路|叶衣今古山|何看云外外|无倒不成山
+
+epoch: 14, 2501/2971 84.2%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.471  ppl:32.17
+______________________
+keywords: 短檠|PAD|PAD|PAD
+target: 静掩书斋对短檠|夜深风露逼人清|遥思万壑千山里|猿正啼时月正明
+output: 短坐无端一一檠|儿深无雨又人明|隔知灯里千岩外|人叫啼螀月一明
+
+epoch: 14, 2601/2971 87.5%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.471  ppl:32.16
+______________________
+keywords: 摩挲|梅花|PAD|PAD
+target: 二十年前八桂回|摩挲苍藓读碑来|如今再自浯溪过|折得梅花伴酒杯
+output: 一片年来春色回|摩挲诗藓老碑开|一枝不见浯溪上|人得梅花一一杯
+
+epoch: 14, 2701/2971 90.9%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.470  ppl:32.15
+______________________
+keywords: 饮|PAD|PAD|PAD
+target: 跰𫏨索敌病支离|安得神方饮上池|已把屠魁观爱欲|更将流电比荣衰
+output: 饮𫏨饮饮饮难离|坎得明龙化福时|岩是心生随不者|更将何水报明时
+
+epoch: 14, 2801/2971 94.3%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.470  ppl:32.14
+______________________
+keywords: 碧云|PAD|PAD|PAD
+target: 天风吹我上层冈|露洒长松六月凉|愿借老僧双白鹤|碧云深处共翱翔
+output: 碧风吹尽碧云丘|人洗烟松偃月凉|愿得天龙禅榻坐|碧云长绕锁深翔
+
+epoch: 14, 2901/2971 97.6%, 0.15s per iter, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 3.470  ppl:32.13
+______________________
+run validation...
+in training mode: 0
+epoch: 14, lr: 0.0003, tr: 0.80, tau: 0.010
+  gen loss: 4.123  ppl:61.73
+______________________
+validation Done: 1
+saving model...
+teach forcing ratio decay...
+shuffle data...
+========================================
+Finished: Wed Oct  7 17:13:00 CEST 2026
+========================================

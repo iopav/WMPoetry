@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+
+#SBATCH -A naiss2026-4-1562-gpu
+#SBATCH -p gpu
+#SBATCH --gpus=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --time=08:00:00
+#SBATCH --job-name=wmpoetry
+#SBATCH --output=/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/WMPoetry/log/slurm-%j.out
+#SBATCH --error=/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/WMPoetry/log/slurm-%j.err
+
+set -euo pipefail
+
+BASE=/nobackup/proj/disk/naiss2026-4-902/shared/yizhil
+PROJECT=$BASE/WMPoetry
+ENV=$BASE/envs/wmpoetry
+
+# 避免登录 shell 中原来的 Conda 环境污染这个作业
+unset CONDA_PREFIX
+unset CONDA_DEFAULT_ENV
+unset CONDA_EXE
+unset CONDA_PYTHON_EXE
+unset PYTHONHOME
+unset PYTHONPATH
+
+module --quiet purge
+
+cd "$PROJECT/codes"
+
+echo "========================================"
+echo "Job ID:     $SLURM_JOB_ID"
+echo "Node:       $(hostname)"
+echo "Start:      $(date)"
+echo "Python:     $ENV/bin/python"
+echo "========================================"
+
+# 先检查环境、架构和 GPU
+"$ENV/bin/python" - <<'PY'
+import sys
+import platform
+import torch
+import numpy as np
+
+print("Python:", sys.executable)
+print("Architecture:", platform.machine())
+print("PyTorch:", torch.__version__)
+print("NumPy:", np.__version__)
+print("CUDA available:", torch.cuda.is_available())
+print("CUDA version:", torch.version.cuda)
+
+if not torch.cuda.is_available():
+    raise RuntimeError("CUDA is not available")
+
+print("GPU:", torch.cuda.get_device_name(0))
+PY
+
+echo "========================================"
+echo "Starting WMPoetry training"
+echo "========================================"
+
+srun "$ENV/bin/python" -u train.py
+
+echo "========================================"
+echo "Finished: $(date)"
+echo "========================================"

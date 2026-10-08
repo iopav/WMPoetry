@@ -46,7 +46,7 @@ class BidirEncoder(nn.Module):
             # Dynamic RNN
             total_len = embed_inps.size(1)
             packed = torch.nn.utils.rnn.pack_padded_sequence(embed_inps,
-                input_lens, batch_first=True, enforce_sorted=False)
+                input_lens.cpu(), batch_first=True, enforce_sorted=False)
             outputs, state = self.rnn(packed, None)
             # outputs: (B, L, num_directions*H)
             # state: (num_layers*num_directions, B, H)

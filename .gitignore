@@ -1,0 +1,17 @@
+cat > .gitignore <<'EOF'
+# Model checkpoints
+checkpoint/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Python / tool cache
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
+Thumbs.db
+EOF

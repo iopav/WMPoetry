@@ -1,0 +1,30 @@
+epoch: 1, lr: 0.0008, tr: 0.80, tau: 1.000
+  gen loss: 4.396  ppl:81.13
+
+epoch: 2, lr: 0.0008, tr: 1.00, tau: 1.000
+  gen loss: 4.259  ppl:70.74
+
+epoch: 3, lr: 0.0006, tr: 1.00, tau: 1.000
+  gen loss: 4.280  ppl:72.26
+
+epoch: 4, lr: 0.0005, tr: 1.00, tau: 1.000
+  gen loss: 4.315  ppl:74.79
+
+epoch: 5, lr: 0.0005, tr: 0.88, tau: 1.000
+  gen loss: 4.314  ppl:74.74
+
+epoch: 6, lr: 0.0004, tr: 0.85, tau: 1.000
+  gen loss: 4.321  ppl:75.28
+
+epoch: 7, lr: 0.0004, tr: 0.83, tau: 1.000
+  gen loss: 4.327  ppl:75.75
+
+epoch: 8, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 4.336  ppl:76.42
+
+epoch: 9, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 4.339  ppl:76.65
+
+epoch: 10, lr: 0.0003, tr: 0.80, tau: 1.000
+  gen loss: 4.345  ppl:77.11
+

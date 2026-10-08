@@ -170,7 +170,7 @@ class PatternExtractor(object):
         #print (rhythm_ids)
         for poem_pattern in self._RHYTHM_TYPES:
             eq = (np.array(poem_pattern) \
-                == np.array(rhythm_ids)).astype(np.float)
+                == np.array(rhythm_ids)).astype(float)
 
             if np.sum(eq) != 3:
                 continue
