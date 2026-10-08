@@ -1,6 +1,6 @@
 cat > .gitignore <<'EOF'
 # Model checkpoints
-checkpoint/
+# checkpoint/
 
 # Python cache
 __pycache__/
